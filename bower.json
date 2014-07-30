@@ -1,0 +1,21 @@
+{
+  "name": "mybower",
+  "version": "0.1.0",
+  "description": "my sample bower component",
+  "authors": [
+    "nixil"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "knockout": "https://github.com/knockout/knockout.git#3.2.0-beta",
+    "express": "*"
+  }
+}
