@@ -14,7 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.1",
+    "jquery": "~1.11.0",
     "knockout": "https://github.com/knockout/knockout.git#3.2.0-beta",
     "express": "*",
     "eonasdan-bootstrap-datetimepicker": "~3.0.0"
