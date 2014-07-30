@@ -16,8 +16,12 @@
   "dependencies": {
     "jquery": "~1.11.0",
     "knockout": "https://github.com/knockout/knockout.git#3.2.0-beta",
+    "koGrid": "https://github.com/Knockout-Contrib/KoGrid.git",
     "express": "*",
-    "eonasdan-bootstrap-datetimepicker": "~3.0.0"
+    "eonasdan-bootstrap-datetimepicker": "~3.0.0",
+    "metisMenu": "~1.1.1",
+    "pnotify": "~2.0.1",
+    "requirejs":"https://github.com/jrburke/requirejs.git"
   },
   "appPath": "app"
 }
