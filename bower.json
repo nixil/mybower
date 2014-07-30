@@ -16,6 +16,8 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "knockout": "https://github.com/knockout/knockout.git#3.2.0-beta",
-    "express": "*"
-  }
+    "express": "*",
+    "eonasdan-bootstrap-datetimepicker": "~3.0.0"
+  },
+  "appPath": "app"
 }
