@@ -9,7 +9,7 @@ requirejs.config({
     urlArgs: "v3.8",
     // Path mappings for the logical module names
     paths: {
-        'knockout': '/bower_components/knockout/dist/knockout',
+        'knockout': '/bower_components/knockout/dist/knockout.debug',
         'knockout.global': 'knockout.global',
         'knockout-validation': '/bower_components/knockout-validation/Dist/knockout.validation',
         //'knockout-validation': 'https://rawgithub.com/ericmbarnard/Knockout-Validation/master/Src/knockout.validation',
