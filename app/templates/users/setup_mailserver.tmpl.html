@@ -1,0 +1,76 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header"><span>Configure Mail Server</span></h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-md-8">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-gears"></i>&nbsp;SMTP Mail Server Configuration</span>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>SMTP server is used to send out new user confirmation email and to send user password recovery email. </p>
+                    </div>
+                    <div class="col-md-6">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="smtp_host">SMTP Server Host</label>
+                                <input type="text" id="smtp_host" class="form-control" data-bind="value: smtp_host, hasFocus: true">
+                                <span>&nbsp;</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="smtp_port">SMTP Server Port</label>
+                                <input type="text" id="smtp_port" class="form-control" data-bind="value: smtp_port" >
+                                <span>&nbsp;</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="smtp_security">Connection Security</label>
+                                <select id="smtp_security" class="form-control" data-bind="value: smtp_security">
+                                    <option value="SSL">SSL/TLS</option>
+                                    <option value="STARTTLS">STARTTLS</option>
+                                </select>
+                                <span>&nbsp;</span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="smtp_user">SMTP User</label>
+                                <input type="text" id="smtp_user" class="form-control" data-bind="value: smtp_user, enable: smtp_auth" >
+                                <span>&nbsp;</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="smtp_password">SMTP Password</label>
+                                <input type="password" id="smtp_password" class="form-control" data-bind="value: smtp_password, enable: smtp_auth" autocomplete="off">
+                                <span>&nbsp;</span>
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label for="smtp_auth"><input type="checkbox" id="smtp_auth" data-bind="checked: smtp_auth">User Authentication Required</label>
+                                    <span>&nbsp;</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="pull-right">
+                            <button type="button" class="btn btn-primary btn-sm" style="width: 110px" data-bind="click: saveMailServerSetting"><i class="fa fa-check-square-o"></i>&nbsp;&nbsp;Save</button>
+                            <button type="button" class="btn btn-default btn-sm" data-bind="click: sendTestMail, enable: !changed()"><i class="fa fa-file-text-o"></i>&nbsp;Send Test Mail To Myself</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row (nested) -->
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-6 -->
+
+</div>
+

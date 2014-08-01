@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header"><span>IP Table Content</span></h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+
+<div class="row">
+    <div data-bind="foreach: chainList">
+        <div class="panel panel-default">
+            <div class="panel-heading"><text data-bind="text: chain"/>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div data-bind="foreach: rules">
+                        <text data-bind="text: $data"/><br/>
+                    </div>                    
+                </div>                    
+            </div>
+        </div>
+    </div>
+</div>

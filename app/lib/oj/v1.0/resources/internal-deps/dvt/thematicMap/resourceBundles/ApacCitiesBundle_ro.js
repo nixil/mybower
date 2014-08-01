@@ -1,0 +1,1 @@
+var l={"KOR_SEOUL":[null,"Seul"],"MAC_MACAU":[null,"Macao"]};var DvtBaseMapManager=this.DvtBaseMapManager;if (!DvtBaseMapManager) DvtBaseMapManager={};if (!DvtBaseMapManager._UNPROCESSED_MAPS) DvtBaseMapManager._UNPROCESSED_MAPS=[[],[],[]];DvtBaseMapManager._UNPROCESSED_MAPS[2].push(["apac","cities",l]);

@@ -1,0 +1,253 @@
+<br/><br/>
+<div class="panel panel-default">
+    <div class="panel-heading">Scenario Metadata</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="scenarioId">Scenario ID</label>
+                        <input id="sceanrioId" class="form-control" data-bind="value: scenario.scenarioId, disable: true">
+                    </div>
+                    <div class="form-group">
+                        <label for="status">Status</label>
+                        <input id="status" class="form-control" data-bind="value: scenario.status, disable: true">
+                    </div>
+                    <div class="form-group">
+                        <label for="scenarioName">Scenario Name</label>
+                        <input id="scenarioName" class="form-control" data-bind="value: scenarioName">
+                    </div>
+                    <div class="form-group">
+                        <label > Feedback Level  </label>
+                        <select class="form-control" data-bind="options: feedbackList, 
+                                                                        optionsText: 'text',
+                                                                        optionsValue: 'code',
+                                                                        value: (getScenarioProperty('FEEDBACK_LEVEL')).value ">
+                        </select>
+                    </div>
+                    <div data-bind="if: isCollectionDate" class="form-group">
+                        <label for="collectionStartDate">Collection Start Date & Time <font>*</font></label>
+
+                        <div class='input-group date' data-bind="dateTimePicker: startDate">
+                            <input class="form-control"  placeholder="Choose a Start Date/Time" data-bind="disable: true">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                        </div>
+
+                    </div>
+                    <div data-bind="if: isSqlTunningReplayName" class="form-group">     
+                        <label >SQL Tunning Set Name </label>
+                        <input type="text" class="form-control" data-bind="value: (destinationProperty(null, 'SQL_TUNING_SET')).value ">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="customerProjectName">Customer Project Name</label>
+                        <input id="customerProjectName" class="form-control" data-bind="value: engagementName, disable: true" >
+                    </div>
+                    <div class="form-group">
+                        <label for="hideCustomer">Hide Tab from Customer</label>
+                        <select id="hideCustomer" class="form-control" data-bind="options: yesNoOption,  optionsText: 'text',
+                                                                        optionsValue: 'code',value: (getScenarioProperty( 'HIDE_FROM_CUSTOMER')).value">
+
+
+                        </select>
+
+                        <!--                        <label style="margin-bottom:18px; margin-top: 20px;">
+                                                    <input type="checkbox" data-bind='checked: (getScenarioProperty( "HIDE_FROM_CUSTOMER")).value'>
+                                                    Hide Tab from Customer
+                                                </label>-->
+                    </div>
+                    <div class="form-group">
+                        <label for="timeZone">Customer Timezone</label>
+                        <select id="timeZone" class="form-control" data-bind="options: timezoneList,  value: (getScenarioProperty( 'TIMEZONE_REGION')).value">
+
+                        </select>
+                    </div>
+                    <div data-bind="if: isDataExtrationDate" class="form-group">
+                        <label>Data Extraction Date & Time <font>* </font> </label>
+                        <div class='input-group date' data-bind="dateTimePicker: extractionDate">
+                            <input class="form-control"  placeholder="Choose a Extraction Date/Time" data-bind="disable: true">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                        </div>
+                    </div>
+                    <div data-bind="if: isCollectionDate" class="form-group">
+                        <label >Collection End Date & Time <font>* </font> </label>
+                        <div class='input-group date' data-bind="dateTimePicker: endDate">
+                            <input class="form-control"  placeholder="Choose a End Date/Time" data-bind="disable: true">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                        </div>
+                    </div>
+                    <div data-bind="if: isSqlTunningReplayName" class="form-group">     
+                        <label >Database Replay Name </label>
+                        <input type="text" class="form-control" data-bind="value: (destinationProperty(null, 'REPLAY_NAME')).value">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div data-bind="if: !isTarget()" class="btn-group pull-right">
+            <button style="margin-right: 10px;" type="button" class="btn btn-primary"  data-bind="click: saveChanges">Save</button>
+            <button  type="button" class="btn btn-warning"  onclick="location.hash = '#/lifecycle/tam-admin'">Cancel</button>
+        </div>
+    </div>
+
+</div>
+
+<div data-bind="if: isTarget">
+    <div  class="panel panel-default">
+        <div class="panel-heading">Scenario Configuration</div>
+        <div class="panel-body">
+            <h4>Include Utilization and Maximum Percentile</h4>
+            <br/>
+            <div class="row">
+                <div class="col-md-6">
+                    <form role="form">
+                        <div class="form-group">
+                            <label  >CPU Utilization <font>* </font> </label>
+                            <select class="form-control" data-bind="options: analysisFeild,  optionsText: 'text',
+                                                                        optionsValue: 'code',value: (getScenarioProperty('MAX_ALLOWED_CPU_PCT')).value">
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label >Disk Utilization <font>* </font></label>
+                            <select class="form-control" data-bind="options: analysisFeild,  optionsText: 'text',
+                                                                        optionsValue: 'code',value: (getScenarioProperty( 'MAX_ALLOWED_DSK_PCT')).value">
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <form role="form">
+                        <div class="form-group">
+                            <label >Memory Utilization <font>* </font></label>
+                            <select class="form-control" data-bind="options: analysisFeild, optionsText: 'text',
+                                                                        optionsValue: 'code', value: (getScenarioProperty( 'MAX_ALLOWED_MEM_PCT')).value">
+
+                            </select>
+
+                        </div>
+                        <div class="form-group">
+                            <label >IO Utilization <font>* </font></label>
+                            <select class="form-control" data-bind="options: analysisFeild,  optionsText: 'text',
+                                                                        optionsValue: 'code',value: (getScenarioProperty( 'MAX_ALLOWED_DSKIO_PCT')).value">
+
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr/>
+            <h4>Include Constraints</h4>
+            <br/>
+            <div class="form-group">
+                <label class="checkbox-inline">
+                    <input type="checkbox" data-bind="checked: (getScenarioProperty( 'CONS_LIFECYCLE_STATUS')).value">
+                    System Lifecycle Status	 </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" data-bind="checked: (getScenarioProperty( 'CONS_DEPARTMENT')).value">
+                    Department </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" data-bind="checked: (getScenarioProperty( 'CONS_LINE_OF_BUSINESS')).value">
+                    Line of Business </label>
+                <label style="margin-left: 53px;" class="checkbox-inline">
+                    <input type="checkbox" data-bind="checked: (getScenarioProperty( 'CONS_LOCATION')).value">
+                    Location </label>
+            </div>
+        </div>
+    </div>
+    <div  class="panel panel-default">
+        <div class="panel-heading">Database Configuration</div>
+        <div class="panel-body"> 
+            <div class="alert alert-info">CPU SPECint if set to non-null value is used to override values extracted from Oracle Enterprise Manager.</div>
+            <script type="text/html" id="buttonCellTemplate">   
+                <div>
+                    <!-- event: {change: $userViewModel.updateErrorMsg() }, <a href='#' data-bind='click: $userViewModel.addTarget($parent.entity)'><span data-bind='text: $parent.entity[$data.field]'>&nbsp;</span> </a>-->
+                    <button class="btn btn-primary" data-bind="click: function() { $userViewModel.addTarget($parent.entity);}" >
+                        <span data-bind="text: ($parent.entity[$data.field]) != 'Y' ? 'Exclude' : 'Include'"></span> 
+                    </button>
+                </div>
+                </script>
+                <script type="text/html" id="inputCellTemplate">   
+                    <div>
+                        <input type="text"  data-bind=" value:$parent.entity[$data.field], enable: (($parent.entity['EXCLUDE']) != 'Y')" class="col-xs-6 dbinputbox"> </input>
+                    </div>
+                    </script>
+                    <script type="text/html" id="checkBoxCellTemplate">   
+                        <div class="checkbox">
+                            <input type="checkbox" data-bind="checked: $parent.entity[$data.field],enable: (($parent.entity['EXCLUDE']) != 'Y')"></input>
+                        </div>
+                        </script>
+                        <script type="text/html" id="dropDownCellTemplate">  
+                            <div class="col-xs-6">
+                                <select data-bind="options: $userViewModel.utilizationOption, optionsText: 'text',
+                                                                        optionsValue: 'code',value: $parent.entity[$data.field],
+                                                                                enable: (($parent.entity['EXCLUDE']) != 'Y')"></select>
+                       </div>
+                        </script>
+                        <div style="width: 100%; height:300px" class="col-lg-12" data-bind="koGrid: {
+                                            data: dbConfObjList,
+                                            showFilter: false,
+                                            enablePaging: true,
+                                            fixedViewPortHeight: false,
+                                            canSelectRows:false,
+                                            columnDefs: [
+                                        {field: 'DB_NAME', displayName: 'DB NAME'}
+                                        ,{field: 'SPECINT_OVERRIDE', displayName: 'CPU Capacity SPECint Overrides',cellTemplate: $('#inputCellTemplate').html()}
+                                        ,{field: 'MEM_PCT_GROWTH', displayName: 'Memory GBs % Growth',cellTemplate: $('#inputCellTemplate').html()}
+                                        ,{field: 'CPU_PCT_GROWTH', displayName: 'CPU % Growth',cellTemplate: $('#inputCellTemplate').html()}
+                                        ,{field: 'DISK_PCT_GROWTH', displayName: 'Disk GBs % Growth',cellTemplate: $('#inputCellTemplate').html()}
+                                        ,{field: 'IO_PCT_GROWTH', displayName: 'IO ops % Growth',cellTemplate: $('#inputCellTemplate').html()}
+                                        ,{field: 'INC_RAC_DISK_ANALYSIS', displayName: 'Include RAC Disk Utilization',cellTemplate: $('#checkBoxCellTemplate').html()}
+                                        ,{field: 'HCC_COMPRESS_SEG_SIZE_GB', displayName: 'HCC - Data to compress in GB',cellTemplate: $('#inputCellTemplate').html()}
+                                        ,{field: 'ADV_COMPRESS_SEG_SIZE_GB', displayName: 'Adv - Data to compress in GB',cellTemplate: $('#inputCellTemplate').html()}
+                                         ,{field: 'EXCLUDE', displayName: 'Action',cellTemplate: $('#buttonCellTemplate').html()}
+                                     ]}">
+
+                        </div>
+                        <!--<div><span data-bind="text: errorMsg"></span></div>-->
+
+                    </div>
+                </div>
+
+                <div  class="panel panel-default">
+                    <div class="panel-heading">Destination Configuration Overrides</div>
+                    <div class="panel-body">
+                        <div class="alert alert-info">These fields, if set to non-null values, are used to override values which are extracted from Oracle Enterprise Manager.</div>
+                        <div  style="width: 100%; height:300px" class="col-lg-12" data-bind="koGrid: {
+                                            data: destnConfLst,
+                                            showFilter: false,
+                                            enablePaging: true,
+                                            canSelectRows:false,
+                                            fixedViewPortHeight: false,
+                                            columnDefs: [
+                                        {field: 'TARGET_NAME', displayName: 'TARGET NAME'}
+                                        ,{field: 'SPECINT_OVERRIDE', displayName: 'CPU Capacity SPECint',cellTemplate: $('#inputCellTemplate').html()}
+                                        ,{field: 'USABLE_MEM_GB', displayName: 'Memory GBs',cellTemplate: $('#inputCellTemplate').html()}
+                                        ,{field: 'USABLE_DISK_SPACE_GB', displayName: 'Available Disk Space GBs',cellTemplate: $('#inputCellTemplate').html()}
+                                        ,{field: 'DISK_IO_SEC', displayName: 'Disk IO iops',cellTemplate: $('#inputCellTemplate').html()}
+                                        ,{field: 'ASM_REDUNDANCY', displayName: 'ASM Redundancy',cellTemplate: $('#dropDownCellTemplate').html()}
+                                        ,{field: 'EXCLUDE', displayName: 'Action',cellTemplate: $('#buttonCellTemplate').html()}
+                                        
+                                    ]}"></div>
+
+                        <div class="btn-group pull-right">
+                            <button style="margin-right: 10px;" type="button" class="btn btn-primary"  data-bind="click: saveChanges">Save</button>
+                            <button  type="button" class="btn btn-warning"  onclick="location.hash = '#/lifecycle/tam-admin'">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        <script>
+
+            $('input').on('change', function() {
+                console.log(this);
+            });
+
+        </script>
+
+
+
+

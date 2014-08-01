@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1><span>Lifecycle Services Dashboard</span></h1>
+        <p>Click on a Service Tile below to access a Lifecycle Service Engagement.</p>
+        
+    </div>
+    <!-- /.col-lg-12 -->
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-info-circle fa-fw"></i> Active Lifecycle Services</div>
+            <!--/.panel-heading-->
+            <div class="panel-body" data-bind="foreach: serviceInstList">
+               
+                <h data-bind="if: totalCount > 0 "> 
+                    <div class="col-md-6 col-lg-4 dashboard-panel"> 
+                        <div id="buttonId" data-bind="click: function(){ $parent.viewServiceDashboard($data)}" class="btn btn-success btn-lg btn-block" role="button">           
+                            <span><span data-bind="text: description "></span></span><br/>                        
+                            <h data-bind="if: serviceId == '1' "> 
+                           <i class="fa fa-cubes fa-3x"></i>  
+                            </h>
+                            <h data-bind="if: serviceId == '2' "> 
+                            <i class="fa fa-road fa-3x"></i>                             
+                            </h>
+                            <h data-bind="if: serviceId == '3' "> 
+                            <i class="fa fa-tachometer fa-3x"></i> 
+                            </h>
+                            <h data-bind="if: serviceId == '4' "> 
+                            <i class="fa fa-truck fa-3x"></i> 
+                            </h>
+                            <h data-bind="if: serviceId == '5' "> 
+                            <i class="fa fa-bolt fa-3x"></i>
+                            </h>
+                            <span class="fs-sm">Setup : <span data-bind="text: setUpCount"></span></span>
+                            <span class="fs-sm">In Progress : <span data-bind="text: inProgressCount"></span></span>
+                            <span class="fs-sm">Completed : <span data-bind="text: completedCount"></span></span>
+
+                        </div>
+                    </div>
+                </h> 
+                
+            </div>
+        </div>
+    </div>
+</div>

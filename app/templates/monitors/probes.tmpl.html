@@ -1,0 +1,52 @@
+<div>
+    <p><a data-bind="attr: { href: '#/myservices', title: name}">Back to My Monitoring Services</a></p>
+
+
+    <h1>Probes</h1>
+
+    <p>
+        Search CI By Name: <input data-bind="value: searchKeyword" placeholder="Keyword" />
+        <button data-bind="click: searchCiByName">Search</button>
+    </p>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>UUID</th>
+                <th>Customer</th>
+                <th>Status</th>
+                <th>Category</th>
+                <th>Type</th>
+                <th>Make</th>
+                <th>Model</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: ciList">
+            <tr>
+                <td><input type="checkbox" data-bind="checkedValue: $data, checked: $parent.chosenItems"/></td>
+                <td data-bind="text: name"></td>
+                <td data-bind="text: uuid"></td>
+                <td data-bind="text: customer"></td>
+                <td data-bind="text: status"></td>
+                <td data-bind="text: category"></td>
+                <td data-bind="text: type"></td>
+                <td data-bind="text: make"></td>
+                <td data-bind="text: model"></td>
+            </tr>
+            <tr data-bind="visible: probes && probes.length > 0">
+                <td></td>
+                <td colspan="8">
+                    <ul data-bind="foreach: probes">
+                        <li data-bind="text: 'Probe: ' + name + ' Type: ' + type "></li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <button data-bind="click: createProbes">Create Probe</button>
+   </div>
+</div>

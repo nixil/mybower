@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header"><span>Packages</span></h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-gears"></i><span>&nbsp;Package Search</span>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Filter (Regular Expression)</label>
+                        <input type="text" id="regex" class="form-control" data-bind="value: regex" >
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="pull-right">
+                        <button type="button" class="btn btn-success btn-sm" data-bind="click: search, enable: true">Search</button>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row (nested) -->
+        </div>
+        <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+    <!--div class="panel panel-default" style="width: 100%" data-bind="visible: showEventList"-->
+    <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-users fa-fw"></i>Packages Found</div>
+        <div class="panel-body">
+            <div style="width: 100%" data-bind="koGrid: packagesGrid"></div>
+        </div>
+    </div>
+</div>
+

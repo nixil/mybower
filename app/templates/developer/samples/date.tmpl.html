@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Test Page</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+        <label>Race Start Date</label>
+        <div class='input-group date' data-bind="datePicker: startDate">
+          <input class="form-control" placeholder="Choose a Start Date/Time">
+          <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="form-group">
+        <label>Race Start Time</label>
+        <div class='input-group date' data-bind="timePicker: startTime">
+          <input class="form-control">
+          <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Race End Date & Time</label>
+        <input class="form-control" type="text" data-bind="dateTimePicker: endDate">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="btn-group">
+        <button type="submit" class="btn btn-default" data-bind="click: setDate">Set Date Object</button>
+        <button type="submit" class="btn btn-default" data-bind="click: setDateString">Set Date String</button>
+        <button type="submit" class="btn btn-default" data-bind="click: setDateLongString">Set Date Long String</button>
+      </div>
+    </div>
+  </div>
+  <div class="row" data-bind="if: startDate() && endDate()">
+    <div class="col-md-12">
+      <p>Your project will start on <span data-bind="dateText: startDate"></span> at
+        <span data-bind="dateText: startTime, include: 'time'"></span> and end on <span
+            data-bind="dateText: endDate"></span>
+        at <span data-bind="dateText: endDate, include: 'time'"></span>
+      </p>
+    </div>
+  </div>
+</div>

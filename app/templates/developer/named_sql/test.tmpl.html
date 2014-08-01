@@ -1,0 +1,117 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1>Test Named SQL</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">Named SQL Details</div>
+      <div class="panel-body">
+        <form role="form">
+          <div class="form-horizontal">
+            <div class="form-group">
+              <label class="col-md-1">SQL Name</label>
+
+              <p class="col-md-5" data-bind="text: formNamedSQL.name"></p>
+              <label class="col-md-1">Data Source</label>
+
+              <p class="col-md-5" data-bind="text: formNamedSQL.dataSourceJNDI"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>SQL Statement</label>
+                <pre class="prettyprint lang-sql"><code data-bind="text:formNamedSQL.sql"></code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" data-bind="if: formNamedSQL.paramList() && formNamedSQL.paramList().length > 0">
+            <div class="col-md-12">
+              <label>Parameters</label>
+
+              <div class="well well-sm">
+                <div class="form-horizontal">
+                  <div data-bind="foreach: formNamedSQL.paramList">
+                    <div class="form-group">
+                      <label class="col-md-1">
+                        <span data-bind="text: name"></span>
+                      </label>
+
+                      <div class="col-md-5">
+                        <input class="form-control" data-bind="value: testValue">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-left">
+            <!--button type="submit" class="btn btn-primary" data-bind="click: createNewUser">New User</button-->
+            <button type="button" class="btn btn-primary" data-bind="click: testNamedSql"><i class="fa fa-bolt"></i>&nbsp;&nbsp;Execute
+            </button>
+            <button type="button" class="btn btn-default" data-bind="click: cancelEdit"><i class="fa fa-trash-o"></i>&nbsp;&nbsp;Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" data-bind="if: testSqlResults() && testSqlResults().length > 0">
+  <div class="col-md-12">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#simple_table" data-toggle="tab">Simple Table</a></li>
+      <li><a id="results_grid_tab" href="#advanced_table" data-toggle="tab">Advanced Table</a></li>
+      <li><a href="#results_raw" data-toggle="tab">Raw Results</a></li>
+      <li><a href="#chart_json" data-toggle="tab">OJET Chart JSON</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="simple_table">
+        <h3>SQL Query Results in Simple Table</h3>
+        <table class="table table-hover">
+          <thead>
+          <tr data-bind="foreach: resultColumns">
+            <th data-bind="text: $data"></th>
+          </tr>
+          </thead>
+          <tbody data-bind="foreach: testSqlResults">
+          <tr>
+            <!-- ko foreach: { data: $parent.resultColumns, as: 'column' } -->
+            <td data-bind="text: $parent[column]"></td>
+            <!-- /ko -->
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tab-pane fade" id="advanced_table">
+        <h3>SQL Query Results in Advanced Table</h3>
+
+        <div id="results_grid" style="width: 100%;" data-bind="koGrid: resultGridOptions"></div>
+      </div>
+      <div class="tab-pane fade" id="results_raw">
+        <h3>SQL Query Results in JSON Format</h3>
+        <label>Request URL:</label>
+        <p data-bind="text: rawJsonUrl"></p>
+        <pre class="prettyprint"><code data-bind="text:testSqlResultsString"></code></pre>
+      </div>
+      <div class="tab-pane fade" id="chart_json">
+        <h3>OJET Chart JSON Format</h3>
+          <div class="form-group">
+              <label for="groupData">Select column as group data</label>
+              <select id="groupData" data-bind="options: resultColumns,
+                                                                        value: groupColumn">
+              </select>
+              <button data-bind="click: generateChartJson">Generate</button>
+          </div>
+          <label>Request URL:</label>
+          <p data-bind="text: chartJsonUrl"></p>
+          <pre class="prettyprint"><code data-bind="text:chartJsonString" style="color: white"></code></pre>
+      </div>
+    </div>
+  </div>
+</div>

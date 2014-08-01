@@ -1,0 +1,188 @@
+<div class="row">
+    
+    <div class="col-lg-12">
+        <h2 class="page-header"><span>Migration Run Summary</span></h2> 
+    </div>
+
+    
+    <!--  Pre Migration Tasks show as Table-->
+    <!--
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Pre Migration Tasks</div>
+                <div class="panel-body min-height-200">
+                    <table data-bind="ojComponent: 
+                    {
+                    component: 'ojTable', 
+                    data: preMigTasksVal, 
+                    columns: [{headerText: 'Phase Name', field: 'phase_name', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Value', field: 'value', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Description', field: 'description', headerStyle: 'text-align: left; white-space:nowrap;'}
+                             ]
+                    }">
+                    </table>
+                </div>
+        </div>
+    </div> 
+    -->
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Pre Migration Tasks</div>
+                <div class="panel-body min-height-400">
+                    <h6>Summary: </h6>
+                    <h6>Purpose: </h6>
+                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 200px" data-bind="koGrid: gOPreMigTaskSerVal"></div> 
+                </div>
+        </div>
+    </div>
+        
+    <!--  Migration Tasks show as Table-->
+    <!-- commenting out this to show it in a dataGrid 
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Migration Tasks</div>
+                <div class="panel-body min-height-200">
+                    <table data-bind="ojComponent: 
+                    {
+                    component: 'ojTable', 
+                    data: MigTasksVal, 
+                    columns: [{headerText: 'Phase Name', field: 'phase_name', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Value', field: 'value', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Description', field: 'description', headerStyle: 'text-align: left; white-space:nowrap;'}
+                             ]
+                    }">
+                    </table>
+                </div>
+        </div>
+    </div>
+    show it as dataGrid -->
+    
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Migration Execution Summary</div>
+                <div class="panel-body min-height-400">
+                    <h6>Summary: A projection of time for each migration stage</h6>
+                    <h6>Purpose: This is a table that shows how long the migration phases took to complete for each of the runs</h6>
+                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 300px" data-bind="koGrid: gOMigTasks"></div> 
+                </div>
+        </div>
+    </div>
+        
+        <!--  Table Migration Status show as Table-->
+    <!--
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Table Migration Status</div>
+                <div class="panel-body min-height-200">
+                    <h6>Summary: Summary of table migration success</h6>
+                    <table data-bind="ojComponent: 
+                    {
+                    component: 'ojTable', 
+                    data: tblMigStatusVal, 
+                    columns: [{headerText: 'Database Name', field: 'database_name', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Started On', field: 'migration_started', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Status', field: 'text', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Category', field: 'category', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Table Count', field: 'tables_cnt', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: '%age Completion', field: 'tables_pct', headerStyle: 'text-align: left; white-space:nowrap;'}
+                             ]
+                    }">
+                    </table>
+                </div>
+        </div>  
+    </div>
+    -->
+    
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Table Migration Status</div>
+                <div class="panel-body min-height-200">
+                    <h6>Summary: Summary of table migration success</h6>
+                    <h6>Purpose: This is a table that displays (as a percentage) the progress have been made</h6>
+                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 200px" data-bind="koGrid: gOtblMigStatus"></div> 
+                </div>
+        </div>
+    </div>
+    
+        
+
+    <!--  Incomplete Migrated Tables show as Table-->
+    <!-- 
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Incomplete Migrated Tables</div>
+            <div class="panel-body min-height-200">
+                <h6>Summary: Summary of objects migrated from source database to target</h6>
+                    <table data-bind="ojComponent: 
+                    {
+                    component: 'ojTable', 
+                    data: incomplMigTbls, 
+                    columns: [{headerText: 'Table Name', field: 'table_name_diff', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Table Owner (Target)', field: 'owner_target', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Nr. Rows (Source)', field: 'row_count_src', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Nr. Rows (Target)', field: 'row_count_trg', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Diff', field: 'nr_diff', headerStyle: 'text-align: left; white-space:nowrap;'}
+                             ]
+                    }"> 
+                    </table>
+            </div>
+        </div>
+    </div>
+    -->
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Incomplete Migrated Tables</div>
+                <div class="panel-body min-height-200">
+                    <h6>Summary: Summary of objects migrated from source database to target</h6>
+                    <h6>Purpose: </h6>
+                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 200px" data-bind="koGrid: gOincomplMigTbls"></div> 
+                </div>
+        </div>
+    </div>
+    
+        
+    <!--  Migrated Objects By Type show as Table-->
+    <!--
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Migrated Objects By Type</div>
+                <div class="panel-body min-height-200">
+                    <h6>Summary: Summary of objects migrated from source database to target</h6>
+                    <table data-bind="ojComponent: 
+                    {
+                    component: 'ojTable', 
+                    data: migObjstatusVal, 
+                    columns: [{headerText: 'Object Name', field: 'object_type', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Source', field: 'total_objects_src', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Target', field: 'total_objects_trg', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Difference', field: 'nr_diff', headerStyle: 'text-align: left; white-space:nowrap;'}
+                             ]
+                    }">
+                    </table>
+                </div>
+        </div> 
+    </div>
+    -->
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Migrated Objects By Type</div>
+                <div class="panel-body min-height-400">
+                    <h6>Summary: A list of migrated objects grouped by type</h6>
+                    <h6>Purpose: This is a table that gives a summary of all objects that have been migrated in the Validation phase of the migration</h6>
+                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 200px" data-bind="koGrid: gOmigObjstatusVal"></div> 
+                </div>
+        </div>
+    </div>
+        
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Missing Objects On Target</div>
+                <div class="panel-body min-height-400">
+                    <h6>Summary: </h6>
+                    <h6>Purpose: </h6>
+                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 300px" data-bind="koGrid: gOmigObjOnTrgVal"></div> 
+                </div>
+        </div>
+    </div>
+    
+</div>

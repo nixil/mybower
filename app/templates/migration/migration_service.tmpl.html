@@ -1,0 +1,601 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1><span><a href="#/lifecycle/serviceDashboard">Migration Services</a> <i class="fa fa-caret-right"></i> <span data-bind="text:engagement_name"> </span></span></h1>
+        
+    </div>
+    <!-- /.col-lg-12 -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel-body"> 
+                <!-- Nav tabs -->
+                <ul id="migtab" class="nav nav-tabs">
+                    <li class="active"><a href="#targets" data-toggle="tab" data-bind='click: forceResize'><i class="fa fa-cogs fa-fw"></i> Select Targets</a> </li>                
+
+                    <!-- ko foreach: scenarioList -->
+                    <li><a href="#migrun1" data-toggle="tab" data-bind="click: function(){ $parent.viewScenario($data)}"><i class="fa fa-cloud-upload fa-fw"></i><h data-bind="text: description"></h></a> </li>
+                    <!-- /ko -->
+                </ul>
+
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!-- ----------- 1st TAB - Select Targets ----------------- -->
+                    <div class="tab-pane active" id="targets">
+                        <h4>Select Targets</h4>
+                        
+                   
+                    </div>  <!-- /.tab-pane active targets-->
+                    <!-- ------------------ End of 1st TAB ------------------ -->
+                    <!-- --- 2nd TAB Migration Run 1 BEGINS HERE ------------- -->
+                    <div class="tab-pane" id="migrun1">
+
+                        <h4>Run 1</h4>
+                        <p>Migration Runs are tests to allow you to find any issues prior to a live migration. View the migration phase reports with your ASE to address issues raised.</p>
+                        
+                        <!-- Begins AJAIN code -->
+                            <div class="panel-group" id="accordion" >
+                                <div class="panel panel-default">
+                                    
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"> <a data-toggle="collapse" data-bind="click: function() {showRegion('mig2Tab');}" data-parent="#accordion" href="#collapseOne">Analysis Status</a> </h4>
+                                    </div>
+                                    
+                                    <div style="height: auto;" id="collapseOne" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="pull-left">
+                                                        <h4>Pre-migration Assessment Report</h4>
+                                                        <p>Report of pre-migration assessment. Use this information to address flagged issues with your ASE</p>
+                                                    </div>
+`                                                   <div class="pull-right">
+                                                        <div class="col-md-12">
+                                                            <label for="pkgRunId" class="oj-label-inline">Choose Analysis Package: </label>
+                                                            <select id="pkgRunId" class="form-control" data-bind="options: pkgRunIds, optionsValue: 'PACKAGE_RUN_ID', optionsText: 'PID_RUN_TIME', value: pkgRunId"></select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <h6></h6>
+                                                    </div>
+                                                </div> <!-- <div class="col-md-12"> -->
+                                            </div> <!-- <div class="row" -->
+                                        
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading"><i class="fa fa-dribbble fa-fw"></i>Table Transfer Method</div>
+                                                        <div class="panel-body min-height-200">
+                                                            <h6>Purpose: A breakdown of table migration methods</h6>
+                                                            <h6>Summary: The Migration Service automatically analyses the table data to be migrated and determines the best method of transferring that table</h6>
+                                                            <div width="100%" data-bind="ojComponent: {
+                                                                    component: 'ojChart', 
+			                                            type: 'pie',
+                                                                    animationOnDisplay:'auto', 
+                                                                    styleDefaults: {colors: ['#ff1414', '#000000','#424545', '#a3a3a3'], threeDEffect: 'off', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                                                                    animationOnDataChange: 'auto',
+                                                                    seriesEffect: 'gradient',
+                                                                    hideAndShowBehavior: 'withRescale',
+                                                                    selection: 'single',
+                                                                    legend: {rendered: 'on', position: 'bottom', scrolling: 'on'},
+                                                                    overview: {rendered: 'on'},                            
+                                                                    series: tblTrfMthd, 
+                                                                    groups: pieGroup
+                                                                    }"
+                                                            > </div>
+                                                        </div>
+                                                </div>
+                                                </div>
+                                                <!-- -->
+                                                <div class="col-md-4">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading"><i class="fa fa-dribbble fa-fw"></i>Data Transfer Volume</div>
+                                                        <div class="panel-body min-height-200">
+                                                            <h6>Purpose: Percentage of data being transferred in a particular method</h6>
+                                                            <h6>Summary: The migration service automatically analyses data volumes and types then determines the most appropriate method of migrating that data</h6>
+		                                            <div width="100%" data-bind="ojComponent: {
+                                                                    component: 'ojChart',
+			                                            type: 'pie',
+                                                                    animationOnDisplay:'auto', 
+                                                                    styleDefaults: {colors: ['#ff1414', '#000000','#424545', '#a3a3a3'], threeDEffect: 'off', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                                                                    animationOnDataChange: 'auto',
+                                                                    seriesEffect: 'gradient',
+                                                                    hideAndShowBehavior: 'withRescale',
+                                                                    legend: {rendered: 'on', position: 'bottom', scrolling: 'on'},
+                                                                    overview: {rendered: 'on'},                            
+                                                                    selection: 'single',
+                                                                    series: dataTrfVol, 
+                                                                    groups: pieGroup
+                                                                    }" 
+                                                             > </div> 
+                                                        </div>
+                                                </div>
+                                                </div>
+                                                <!-- -->
+                                                <div class="col-md-4">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading"><i class="fa fa-dribbble fa-fw"></i>Data Compression(%)</div>
+                                                        <div class="panel-body min-height-200">
+                                                            <h6>Purpose: Percentage of data available for compression during the migration</h6>
+                                                            <h6>Summary: Informs the customer how much data could be compressed as part of the migration. The customer can then look at 'Migration Compression Progression' figures to decide how much of that percentage they actually want to compress during the migration.</h6>
+                                                            <div width="100%" data-bind="ojComponent: {
+                                                                    component: 'ojChart',
+			                                            type: 'pie',
+                                                                    animationOnDisplay:'auto', 
+                                                                    styleDefaults: {colors: ['#ff1414', '#000000','#424545', '#a3a3a3'], threeDEffect: 'off', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                                                                    animationOnDataChange: 'auto',
+                                                                    seriesEffect: 'gradient',
+                                                                    hideAndShowBehavior: 'withRescale',
+                                                                    legend: {rendered: 'on', position: 'bottom', scrolling: 'on'},
+                                                                    overview: {rendered: 'on'},
+                                                                    selection: 'single',
+                                                                    series: dataCompPer, 
+                                                                    groups: pieGroup
+                                                                    }" 
+                                                            > </div>
+                                                        </div>
+                                                </div>
+                                                </div>
+                                                <!-- -->
+
+                                                <div class="col-md-12">
+                                                    <h6></h6>
+                                                </div>
+
+                                                <!-- /.col-lg-12 -->
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="panel-body"> 
+                                                            <!-- Nav tabs -->
+                                                            <ul class="nav nav-tabs">
+                                                                <li class="active"><a href="#Report1" data-toggle="tab" data-bind="click: function() {showRegion('mig2Tab');}"><i class="fa fa-cogs fa-fw"></i>Object Compression Projection</a> </li>
+                                                                <li><a href="#Report2" data-toggle="tab" data-bind="click: function() {showRegion('mig3Tab');}"><i class="fa fa-cloud-upload fa-fw"></i>Invalid Objects By Owner</a> </li>
+                                                                <li><a href="#Report3" data-toggle="tab" data-bind="click: function() {showRegion('mig4Tab');}"><i class="fa fa-cloud-upload fa-fw"></i>Invalid Objects Count by Type</a> </li>
+                                                            </ul>
+                                                            <!-- Tab panes --> 
+                                                            <div class="tab-content">
+                                                            <!---------------------- 1st TAB ----------------------- -->
+                                                            <div class="tab-pane active" id="Report1">
+                                                                <!-- <h4>Object Compression Projection</h4> -->
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="panel panel-default">
+                                                                            <div class="panel-heading"><i class="fa fa-list-alt fa-fw"></i>Object Compression Projection</div>
+                                                                            <div class="panel-body min-height-200">
+                                                                                <h6>Summary: Objects available for compression as part of the migration and different compression rates</h6>
+                                                                                <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 300px" data-bind="koGrid: gOmigCompProj"></div> 
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!------------------------ 2nd TAB --------------------- -->
+                                                            <div class="tab-pane fade" id="Report2">
+                                                                <!-- <h4>Invalid Objects By Owner</h4> -->
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="panel panel-default">
+                                                                            <div class="panel-heading"><i class="fa fa-list-alt fa-fw"></i>Invalid Objects By Owner</div>
+                                                                            <div class="panel-body min-height-200">
+                                                                                <h6>Summary: Objects marked Invalid post Migration. Review to determine if objects were Invalid prior to migration. If not previously invalid then investigate issue</h6>
+                                                                                <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 300px" data-bind="koGrid: gOinvaldObjByOwn"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>                
+                                                                </div>
+                                                            </div>
+                                                            <!------------------------ 3rd TAB --------------------- -->
+                                                            <div class="tab-pane fade" id="Report3">
+                                                                <!-- <h4>Invalid Objects Count by Type</h4> -->
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="panel panel-default">
+                                                                            <div class="panel-heading"><i class="fa fa-list-alt fa-fw"></i>Invalid Objects Count by Type</div>
+                                                                            <div class="panel-body min-height-200">
+                                                                                <h6>Summary: Objects marked Invalid post Migration. Review to determine if objects were Invalid prior to migration. If not previously invalid then investigate issue</h6>
+                                                                                <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 300px" data-bind="koGrid: gOinvalidObjByType"></div> 
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                
+                                                                </div>
+                                                            </div>
+                                                            </div> <!-- <div class="tab-content" -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- <div class="row" -->
+                                        </div> <!-- panel body -->
+                                    </div>
+                                </div>  <!-- div class="panel panel-default" -->
+
+                                <!-- Migration Status Accordian STARTS HERE  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"> <a data-bind="click: function() {showRegion('mig1Status');}" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Migration Status</a> </h4>
+                                    </div>
+
+                                    <div data-bind="if: pageRegions.mig1Status" id="collapseTwo" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                
+                                                <div class="col-md-12">
+                                                    <div class="panel panel-default">
+                                                    <div class="panel-heading"><i class="fa fa-clock-o fa-fw"></i>Migration Status Time is: <span data-bind="text: showMigTime"> </span> </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-12">
+                                                    <h6></h6>
+                                                </div>
+                                                
+                                                <div class="col-md-6"> 
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading"><i class="fa-bar-chart fa-fw"></i>Data Migrated onto Destination</div>
+                                                        <div class="panel-body min-height-500">
+                                                            <h6>Summary: Total amount of data successfully migrated</h6>
+                                                            <h6>Purpose: Tracks the live total of migrated data through the migration process from start to finish</h6>
+ 
+                                                            <div style="width:100%;height: 500px" data-bind="ojComponent: { 
+                                                                 component: 'ojChart',
+                                                                 type: 'line',
+                                                                 series: pDSizeofDataMig,
+                                                                 groups: pGSizeofDataMig,
+                                                                 animationOnDisplay: 'auto',
+                                                                 animationOnDataChange: 'auto',
+                                                                 hoverBehavior: 'dim',
+                                                                 zoomAndScroll: 'live',
+                                                                 hideAndShowBehavior: 'withRescale',
+                                                                 overview: {rendered: 'on'},
+                                                                 dataCursor: 'on',
+                                                                 dataCursorBehavior: 'smooth',
+                                                                 legend: {position: 'top'},
+                                                                 yAxis: {title: 'MB'}
+                                                            }"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- -->
+                                                <div class="col-md-6">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading"><i class="fa-bar-chart fa-fw"></i>Migration Throughput</div>
+                                                        <div class="panel-body min-height-500">
+                                                            <h6>Summary: Transfer rate in of data being migrated</h6>
+                                                            <h6>Purpose: Monitoring the throughput tracks the speed and efficiency if the migration. The ASE can control throughput if necessary and able</h6>
+
+                                                            <div style="width:100%;height: 500px" data-bind="ojComponent: {
+                                                                 component: 'ojChart',
+			                                         type: 'area', 
+                                                                 animationOnDisplay:'auto', 
+                                                                 selection: 'single',
+                                                                 series: pDDataThroughput, 
+                                                                 groups: pGDataThroughput,
+                                                                 legend: {position: 'top'},
+                                                                 yAxis: {title: 'GB/hr'}
+                                                                }"
+                                                            ></div>
+                                                            
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                                <!-- -->
+                                                
+                                                <div class="col-md-12">
+                                                    <h6></h6>
+                                                </div>
+
+                                                <!-- /.col-lg-12 -->
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="panel-body"> 
+                                                            <!-- Nav tabs -->
+                                                            <ul class="nav nav-tabs">
+                                                                <li class="active"><a href="#MSReport1" data-toggle="tab" data-bind="click: function() {showRegion('mig1Tab');}"><i class="fa fa-cogs fa-fw"></i>Migration Job status</a> </li>
+                                                                <li><a href="#MSReport2" data-toggle="tab" data-bind="click: function() {showRegion('mig2Tab');}"><i class="fa fa-cloud-upload fa-fw"></i>Migration Status</a> </li>
+                                                            </ul>
+                                                            <!-- Tab panes -->
+                                                            <div class="tab-content">
+                                                                <!--------------------- 1st TAB ------------------------ -->
+                                                                <div class="tab-pane active" id="MSReport1">
+                                                                    <!-- <h4>Migration Job status</h4> -->
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="panel panel-default">
+                                                                                <div class="panel-heading"><i class="fa fa-list-alt fa-fw"></i>Migration Job status</div>
+                                                                                <div class="panel-body min-height-200">
+                                                                                    <h6>Summary: Current transfer jobs</h6>
+                                                                                    <h6>Purpose: Monitor the progress of individual migration jobs</h6>
+                                                                                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 300px" data-bind="koGrid: gridOmigJobStatusVLTNI"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!------------------------ 2nd TAB --------------------- -->
+                                                                <div class="tab-pane fade" id="MSReport2">
+                                                                    <!-- <h4>Migration Status - Very Large Tables</h4> -->
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="panel panel-default">
+                                                                                <div class="panel-heading"><i class="fa fa-list-alt fa-fw"></i>Migration Status - Very Large Tables</div>
+                                                                                <div class="panel-body min-height-200">
+                                                                                    <h6>Summary: Transfer jobs of large tables</h6>
+                                                                                    <h6>Purpose: Monitor the progress of individual large table migration jobs</h6>
+                                                                                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 300px" data-bind="koGrid: gridOmigJobStatusVLT"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  <!-- class="row" -->
+                                        </div>
+                                    </div> <!-- div id="collapseTwo" class="panel-collapse collapse" -->
+                                </div>  <!-- div class="panel panel-default" -->
+
+                                <!-- Migration Run Summary Accordian ------- -->
+                                <div class="panel panel-default"> 
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"> <a data-bind="click: function() {showRegion('mig1RunSum');}" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Migration Run Summary</a> </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <!--
+                                                <div class="col-md-12">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading"><i class="fa fa-list-alt fa-fw"></i>Pre Migration Tasks</div>
+                                                        <div class="panel-body min-height-200">
+                                                            <h6>Summary: Completion times for pre-migration steps</h6>
+                                                            <h6>Purpose: The Migration Service performs a number of checks and preparation steps prior to migration.</h6>
+                                                            <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 200px" data-bind="koGrid: gOPreMigTaskSerVal"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-12">
+                                                    <h6></h6>
+                                                </div>
+                                                
+                                                <div class="col-md-12">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading"><i class="fa fa-list-alt fa-fw"></i>Migration Execution Summary</div>
+                                                        <div class="panel-body min-height-200">
+                                                            <h6>Summary: Migration Completion Times</h6>
+                                                            <h6>Purpose: A breakdown of timings for each stage of your migration. Use this to determine if migration time is acceptable</h6>
+                                                            <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 300px" data-bind="koGrid: gOMigTasks"></div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                                -->
+                                                <!-- -->
+                                                <div class="col-md-12">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading"><i class="fa fa-list-alt fa-fw"></i> Migration Summary</div>
+                                                <div class="panel-body">
+		                                    <!--
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="pull-left">
+                                                                <h4>Example of HTML  Tables</h4>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <h6></h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+		                                    -->
+                                                    <!-- -- -->
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="panel panel-default">
+                                                                <!-- <div class="panel-heading"><i class="fa fa-list-alt fa-fw"></i> Pre Migration Summary</div> -->
+                                                                <div class="panel-body">
+                                                                    <div class="table-responsive">
+                                                                        <h6>Summary: Pre Migration Summary</h6>
+                                                                            <table class="table table-striped table-hover" style="background-color: #f9f9f9;">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Phase</th>
+                                                                                        <th>Duration</th>
+                                                                                        <th>Description</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody data-bind="foreach: PreMigTaskSerVal">
+                                                                                    <tr>
+                                                                                        <td data-bind="text: phase_name"></td>
+                                                                                        <td align="left" data-bind="text: value"></td>
+                                                                                        <td align="left" data-bind="text: description"></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- -- -->
+                                                        <div class="col-md-12">
+                                                            <h6></h6>
+                                                        </div>
+                                                        <!-- -- -->
+                                                        <div class="col-md-12">
+                                                            <div class="panel panel-default">
+                                                                <!-- <div class="panel-heading"><i class="fa fa-list-alt fa-fw"></i> Migration Execution Summary</div> -->
+                                                                <div class="panel-body">
+                                                                    <div class="table-responsive">
+                                                                        <h6>Summary: Migration Execution Summary</h6>
+                                                                        <table class="table table-striped table-hover" style="background-color: #f9f9f9;">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Phase</th>
+                                                                                    <th>Duration</th>
+                                                                                    <th>Description</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody data-bind="foreach: MigTaskSerVal">
+                                                                                <tr>
+                                                                                    <td data-bind="text: phase_name"></td>
+                                                                                    <td data-bind="text: value"></td>
+                                                                                    <td data-bind="text: description"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <tbody data-bind="foreach: MigTimeSerVal">
+                                                                                <tr class="info" style="font-weight: bold;">
+                                                                                    <td data-bind="text: phase_name"></td>
+                                                                                    <td data-bind="text: value"></td>
+                                                                                    <td data-bind="text: description"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>  <!-- <div class="table-responsive"> -->
+                                                                </div>  <!-- <div class="panel-body"> -->
+                                                            </div>
+                                                        </div>                
+                                                    </div>
+                                                    <!-- -- -->
+                                                </div>
+                                                </div>
+                                                </div>
+                       
+                                                <div class="col-md-12">
+                                                    <h6></h6>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="panel-body"> 
+                                                            <!-- Nav tabs -->
+                                                            <ul class="nav nav-tabs">
+                                                                <li class="active"><a href="#MRSReport1" data-toggle="tab" data-bind="click: function() {showRegion('mig1Tab');}"><i class="fa fa-cogs fa-fw"></i>Table Migration</a> </li>
+                                                                <li><a href="#MRSReport2" data-toggle="tab" data-bind="click: function() {showRegion('mig2Tab');}"><i class="fa fa-cloud-upload fa-fw"></i>Incomplete Migrated Tables</a> </li>
+                                                            </ul>
+                                                            <!-- Tab panes -->
+                                                            <div class="tab-content">
+                                                                <!--------------------- 1st TAB ------------------------ -->
+                                                                <div class="tab-pane active" id="MRSReport1">
+                                                                    <!-- <h4>Migration Job status</h4> -->
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="panel panel-default">
+                                                                                <div class="panel-heading"><i class="fa fa-list-alt fa-fw"></i>Table Migration Status</div>
+                                                                                <div class="panel-body min-height-200">
+                                                                                    <h6>Summary: %age of completed object migrations</h6>
+                                                                                    <h6>Purpose: If any objects have not completed in the run, the ASE will take corrective action</h6>
+                                                                                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 300px" data-bind="koGrid: gOtblMigStatus"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!------------------------ 2nd TAB --------------------- -->
+                                                                <div class="tab-pane fade" id="MRSReport2">
+                                                                    <!-- <h4>Migration Status - Very Large Tables</h4> -->
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="panel panel-default">
+                                                                                <div class="panel-heading"><i class="fa fa-list-alt fa-fw"></i>Incomplete Migrated Tables</div>
+                                                                                <div class="panel-body min-height-200">
+                                                                                    <h6>Summary: Tables which have failed to migrate in full</h6>
+                                                                                    <h6>Purpose: If any objects have not completed in the run, the ASE will take corrective action</h6>
+                                                                                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 300px" data-bind="koGrid: gOincomplMigTbls"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+								<!-- -------------------End of 2nd TAB --------------- -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- -->
+                                                
+                                                <div class="col-md-12">
+                                                    <h6></h6>
+                                                </div>
+                                                
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="panel-body"> 
+                                                            <!-- Nav tabs -->
+                                                            <ul class="nav nav-tabs">
+                                                                <li class="active"><a href="#MRSReport3" data-toggle="tab" data-bind="click: function() {showRegion('mig1Tab');}"><i class="fa fa-cogs fa-fw"></i>Migrated Objects By Type</a> </li>
+                                                                <li><a href="#MRSReport4" data-toggle="tab" data-bind="click: function() {showRegion('mig2Tab');}"><i class="fa fa-cloud-upload fa-fw"></i>Missing Objects On Target</a> </li>
+                                                            </ul>
+                                                            <!-- Tab panes -->
+                                                            <div class="tab-content">
+                                                                <!--------------------- 1st TAB ------------------------ -->
+                                                                <div class="tab-pane active" id="MRSReport3">
+                                                                    <!-- <h4>Migration Job status</h4> -->
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="panel panel-default">
+                                                                                    <div class="panel-heading"><i class="fa fa-list-alt fa-fw"></i>Migrated Objects By Type</div>
+                                                                                    <div class="panel-body min-height-400">
+                                                                                        <h6>Summary: Migrated objects grouped by type</h6>
+                                                                                        <h6>Purpose: This is a table that gives a summary of all objects that have been migrated in the Validation phase of the migration</h6>
+                                                                                        <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 300px" data-bind="koGrid: gOmigObjstatusVal"></div>
+                                                                                    </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <!------------------------ 2nd TAB --------------------- -->
+                                                                <div class="tab-pane fade" id="MRSReport4">
+                                                                    <!-- <h4>Migration Status - Very Large Tables</h4> -->
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="panel panel-default">
+                                                                                <div class="panel-heading"><i class="fa fa-list-alt fa-fw"></i>Missing Objects On Target</div>
+                                                                                <div class="panel-body min-height-400">
+                                                                                    <h6>Summary: Objects which did not migrate</h6>
+                                                                                    <h6>Purpose: If any objects have not completed in the run, the ASE will take corrective action</h6>
+                                                                                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 300px" data-bind="koGrid: gOmigObjOnTrgVal"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- -------------------End of 2nd TAB --------------- -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- -->
+                                            </div>  <!-- class="row" -->
+                                        </div> <!-- /class="panel-body" -->
+                                    </div>
+                                </div>  <!-- div class="panel panel-default" -->
+                                <!-- End of Migration Run Summary Accordian- -->
+                            </div>  <!-- div class="panel-group" id="accordion" -->                        
+                        <!--  Ends AJAIN Code -->
+
+                        
+                    </div> <!--div class="tab-pane fade" id="migrun1" -->
+                    <!-------------------- End of 2nd TAB ------------------ -->
+
+                    <!------------------------ 3rd TAB --------------------- -->
+                    <div class="tab-pane fade" id="migrun2">
+                        <h4>Migration Test Run 2</h4>
+                        <p>more to come soon...</p>
+                    </div>
+                    <!-------------------- End of 3rd TAB ------------------ -->
+
+                    <!----------------------- 4th TAB ---------------------  -->
+                    <div class="tab-pane fade" id="migrun3">
+                        <h4>Migration Test Run 3</h4>
+                        <p>more to come soon...</p>
+                    </div>
+                    <!-------------------- End of 4th TAB ------------------ -->
+
+                </div> <!-- End of TAB Panes -->
+            </div>  
+        </div>
+    </div>  
+</div>     
+
+

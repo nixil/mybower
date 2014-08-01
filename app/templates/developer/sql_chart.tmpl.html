@@ -1,0 +1,23 @@
+<div class="row">
+
+    <h1>Binding SQL data to chart</h1>
+    <div class="input-group">
+        <span class="input-group-addon">rest/data/sql/</span>
+        <input type="text" data-bind="value: sqlDataUrl"/>
+    </div>
+
+    <button class="btn btn-default" data-bind="click: rerender">Render Chart</button>
+
+    <div data-bind="ojComponent: {
+        component: 'ojChart',
+        type: 'line',
+        series: lineSeriesValue,
+        groups: lineGroupsValue,
+        animationOnDisplay: 'auto',
+        animationOnDataChange: 'auto',
+        orientation: orientationValue,
+        hoverBehavior: 'dim',
+        }"
+         style="width:500px;height:350px;">
+    </div>
+</div>

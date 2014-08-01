@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header"><span>System Configuration and Status</span></h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-md-8">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-gears"></i><span>&nbsp;System Configuration and Status</span>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Status</label>
+                            <br/><text data-bind="text: status"/>
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Service Status</label>
+                            <br/><text data-bind="text: serviceStatus"/>
+                            <span>&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Connection Status</label>
+                            <br/><text data-bind="text: connectionStatus"/>
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="form-group">
+                            <label>AnyConnect Client Version</label>
+                            <br/><text data-bind="text: anyconnectClientVersion"/>
+                            <span>&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label>URL Test Results</label>
+                        <div data-bind="foreach: urlHelpers">
+                            <text data-bind="text: urlStr"/>&nbsp;
+                            <!-- ko if: passed -->
+                            <label data-bind="style: { color: 'green'}">PASSED</label>
+                            <!-- /ko -->
+                            <!-- ko if: !passed -->
+                            <label data-bind="style: { color: 'red'}">FAILED</label>&nbsp;<text data-bind="text: errorMessage"/>
+                            <!-- /ko -->
+                            <br/>
+                        </div>                    
+                    </div>
+                </div>
+                <!-- /.row (nested) -->
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-6 -->
+</div>
+

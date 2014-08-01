@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header"><span>Commands</span></h1>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><i class="fa fa-gears"></i><span>&nbsp;Command Search</span>
+        <div class="pull-right">
+            <button type="button" class="btn btn-success btn-sm" data-bind="click: search, enable: true">Search</button>
+        </div>
+    </div>
+    <div class="panel-body">
+        <label>Name</label>
+        <input type="text" id="name" class="form-control" data-bind="value: name" >
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">Commands Found</div>
+    <div class="panel-body">
+        <div style="width: 100%" data-bind="koGrid: genericsGrid"></div>
+    </div>
+</div>

@@ -1,0 +1,94 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header"><span>System Configuration and Status</span></h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-md-8">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-gears"></i><span>&nbsp;System Configuration and Status</span>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Manufacturer</label>
+                            <br/><text data-bind="text: manufacturer"/>
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Model</label>
+                            <br/><text data-bind="text: model"/>
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Serial</label>
+                            <br/><text data-bind="text: serial"/>
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Memory Form</label>
+                            <br/><text data-bind="text: memoryForm"/>
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Memory Size</label>
+                            <br/><text data-bind="text: memorySize"/>
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="form-group">
+                            <label>CPU Family</label>
+                            <br/><text data-bind="text: cpuFamily"/>
+                            <span>&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>CPU Manufacturer</label>
+                            <br/><text data-bind="text: cpuManufacturer"/>
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="form-group">
+                            <label>CPU Maximum Speed</label>
+                            <br/><text data-bind="text: cpuMaxSpeed"/>
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="form-group">
+                            <label>CPU Current Speed</label>
+                            <br/><text data-bind="text: cpuCurrentSpeed"/>
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="form-group">
+                            <label>CPU Core Count</label>
+                            <br/><text data-bind="text: cpuCoreCount"/>
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="form-group">
+                            <label>CPU Core Enabled</label>
+                            <br/><text data-bind="text: cpuCoreEnabled"/>
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="form-group">
+                            <label>OS Kernel Version</label>
+                            <br/><text data-bind="text: osKernel"/>
+                            <span>&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label>Network Interfaces</label>
+                        <div data-bind="foreach: networkInterfaces">
+                            <text data-bind="text: name"/><br/>
+                        </div>                    
+                    </div>
+                </div>
+                <!-- /.row (nested) -->
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-6 -->
+</div>
+

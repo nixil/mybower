@@ -1,0 +1,1 @@
+var l={"EMEA":["EMEA","\u30E8\u30FC\u30ED\u30C3\u30D1\u3001\u4E2D\u6771\u304A\u3088\u3073\u30A2\u30D5\u30EA\u30AB"]};var DvtBaseMapManager=this.DvtBaseMapManager;if (!DvtBaseMapManager) DvtBaseMapManager={};if (!DvtBaseMapManager._UNPROCESSED_MAPS) DvtBaseMapManager._UNPROCESSED_MAPS=[[],[],[]];DvtBaseMapManager._UNPROCESSED_MAPS[2].push(["emea","region",l]);

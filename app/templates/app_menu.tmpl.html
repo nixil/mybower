@@ -1,0 +1,45 @@
+<div class="sidebar-collapse">
+    <ul class="nav" id="side-menu" data-bind="foreach: menuItems">
+        <!-- <span data-bind="if: $index() == 0"><li class="nav-title"><i class="fa fa-user fa-fw ligthen-icon"></i> Hello, <span data-bind="text: user.userName"></span> <i class="fa fa-caret-down fa-fw"></i> </li></span> -->
+        <li data-bind="if: !submenus || submenus.length == 0">
+            <a data-bind="attr: { href: url }">
+                <i class="fa fa-fw" data-bind="css:icon"></i>
+                <span class="menu-label" data-bind="text: menuText"></span>
+            </a>
+        </li>
+        <li data-bind="if: submenus && submenus.length > 0">
+            <a href="#">
+                <i class="fa fa-fw" data-bind="css:icon"></i>
+                <span data-bind="text: menuText"></span>
+                <span class="fa arrow"></span>
+            </a>
+            <ul class="nav nav-second-level" data-bind="foreach: submenus">
+                <li data-bind="if: !submenus || submenus.length == 0">
+                    <a data-bind="attr: { href: url }">
+                        <i class="fa fa-fw" data-bind="css:icon"></i>
+                        <span class="menu-label" data-bind="text: menuText"></span>
+                    </a>
+                </li>
+                <li data-bind="if: submenus && submenus.length > 0">
+                    <a href="#">
+                        <i class="fa fa-fw" data-bind="css:icon"></i>
+                        <span data-bind="text: menuText"></span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-third-level" data-bind="foreach: submenus">
+                        <li>
+                            <a data-bind="attr: { href: url }">
+                                <i class="fa fa-fw" data-bind="css:icon"></i>
+                                <span class="menu-label" data-bind="text: menuText"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-third-level -->
+                </li>
+            </ul> 
+            <!-- /.nav-second-level -->
+        </li>
+    </ul>
+    <!-- /#side-menu -->
+</div>
+<!-- /.sidebar-collapse -->

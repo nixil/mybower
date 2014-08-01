@@ -1,0 +1,115 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header"><span>Migration Services - Test Page 2</span></h1>
+        <p>Page to view individual Migration Run Status</p>
+    </div>
+    <!-- /.col-lg-12 -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel-body"> 
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="pull-left">
+                                                        <h4>Pre-migration Assessment Report</h4>
+                                                        <p>Report of pre-migration assessment. Use this information to address flagged issues with your ASE</p>
+                                                    </div>
+                                                    <!--
+`                                                   <div class="pull-right">
+                                                        <div class="col-md-12">
+                                                            <label for="pkgRunId" class="oj-label-inline">Choose Analysis Package: </label>
+                                                            <select id="pkgRunId" class="form-control" data-bind="options: pkgRunIds, optionsValue: 'PACKAGE_RUN_ID', optionsText: 'PID_RUN_TIME', value: pkgRunId"></select>
+                                                        </div>
+                                                    </div>
+                                                    -->
+                                                    <div class="col-md-12">
+                                                        <h6></h6>
+                                                    </div>
+                                                </div> <!-- <div class="col-md-12"> -->
+                                            </div> <!-- <div class="row" -->
+                                        
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading"><i class="fa fa-dribbble fa-fw"></i>Table Transfer Method</div>
+                                                        <div class="panel-body min-height-200">
+                                                            <h6>Purpose: A breakdown of table migration methods</h6>
+                                                            <h6>Summary: The Migration Service automatically analyses the table data to be migrated and determines the best method of transferring that table</h6>
+                                                            <div width="100%" data-bind="ojComponent: {
+                                                                    component: 'ojChart', 
+			                                            type: 'pie',
+                                                                    animationOnDisplay:'auto', 
+                                                                    styleDefaults: {colors: ['#ff1414', '#000000','#424545', '#a3a3a3'], threeDEffect: 'on', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                                                                    animationOnDataChange: 'auto',
+                                                                    seriesEffect: 'gradient',
+                                                                    hideAndShowBehavior: 'withRescale',
+                                                                    selection: 'single',
+                                                                    legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:11px;'},
+                                                                    overview: {rendered: 'on'},                            
+                                                                    series: tblTrfMthd, 
+                                                                    groups: pieGroup
+                                                                    }"
+                                                            > </div>
+                                                        </div>
+                                                </div>
+                                                </div>
+                                                <!-- -->
+                                                <div class="col-md-4">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading"><i class="fa fa-dribbble fa-fw"></i>Data Transfer Volume</div>
+                                                        <div class="panel-body min-height-200">
+                                                            <h6>Purpose: Percentage of data being transferred in a particular method</h6>
+                                                            <h6>Summary: The migration service automatically analyses data volumes and types then determines the most appropriate method of migrating that data</h6>
+		                                            <div width="100%" data-bind="ojComponent: {
+                                                                    component: 'ojChart',
+			                                            type: 'pie',
+                                                                    animationOnDisplay:'auto', 
+                                                                    styleDefaults: {colors: ['#ff1414', '#000000','#424545', '#a3a3a3'], threeDEffect: 'on', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                                                                    animationOnDataChange: 'auto',
+                                                                    seriesEffect: 'gradient',
+                                                                    hideAndShowBehavior: 'withRescale',
+                                                                    legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:11px;'},
+                                                                    overview: {rendered: 'on'},                            
+                                                                    selection: 'single',
+                                                                    series: dataTrfVol, 
+                                                                    groups: pieGroup
+                                                                    }" 
+                                                             > </div> 
+                                                        </div>
+                                                </div>
+                                                </div>
+                                                <!-- -->
+                                                <div class="col-md-4">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading"><i class="fa fa-dribbble fa-fw"></i>Data Compression(%)</div>
+                                                        <div class="panel-body min-height-200">
+                                                            <h6>Purpose: Percentage of data available for compression during the migration</h6>
+                                                            <h6>Summary: Informs the customer how much data could be compressed as part of the migration. The customer can then look at 'Migration Compression Progression' figures to decide how much of that percentage they actually want to compress during the migration.</h6>
+                                                            <div width="100%" data-bind="ojComponent: {
+                                                                    component: 'ojChart',
+			                                            type: 'pie',
+                                                                    animationOnDisplay:'auto', 
+                                                                    styleDefaults: {colors: ['#ff1414', '#000000','#424545', '#a3a3a3'], threeDEffect: 'on', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                                                                    animationOnDataChange: 'auto',
+                                                                    seriesEffect: 'gradient',
+                                                                    hideAndShowBehavior: 'withRescale',
+                                                                    legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:11px;'},
+                                                                    overview: {rendered: 'on'},                            
+                                                                    selection: 'single',
+                                                                    series: dataCompPer, 
+                                                                    groups: pieGroup
+                                                                    }"
+                                                            > </div>
+                                                        </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                
+                
+
+            </div>  
+        </div>
+    </div>  
+</div>     
+
+

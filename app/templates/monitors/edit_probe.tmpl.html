@@ -1,0 +1,28 @@
+<div>
+
+    <h1>Create Probes</h1>
+
+    <p>You are creating probes for following Configuration Items: </p>
+    <ul data-bind="foreach: chosenItems">
+        <li data-bind="text: name"></li>
+    </ul>
+
+    <div style="width: 500px">
+        <form role="form">
+            <div class="form-group">
+                <label>Probe Name:</label>
+                <input class="form-control" data-bind="value: currentProbe.name" placeholder="Name" />
+            </div>
+
+            <div class="form-group">
+                <label>Probe Type:</label>
+                <select class="form-control" data-bind="options: availableProbeTypes, value: currentProbe.type"></select>
+            </div>
+
+            <div class="form-group">
+                <button data-bind="click: saveProbes">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</div>

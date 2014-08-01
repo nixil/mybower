@@ -1,0 +1,190 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1><span><a href="#/lifecycle/serviceDashboard">Load Testing and Analysis Service</a> <i class="fa fa-caret-right"></i> <span data-bind="text: engagement_name"></span></span></h1>
+       
+    </div>
+    <!-- /.col-lg-12 -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel-body"> 
+                <!-- Nav tabs -->
+                <ul id="lttab" class="nav nav-tabs">
+                    <li class="active"><a href="#targets" data-toggle="tab" data-bind='click: forceResize'><i class="fa fa-cogs fa-fw"></i> Select Targets</a> </li>
+                    <!-- ko foreach: scenarioList -->
+                    <li><a href="#sql" data-toggle="tab" data-bind="click: function(){ $parent.viewScenario($data)}"><i class="fa fa-cloud-upload fa-fw"></i><h data-bind="text:description"></h></a> </li>
+                    <!-- /ko -->
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!------------- 1st TAB - Select Targets ------------------->
+                    <div class="tab-pane active" id="targets">
+                        <h4>Select Targets</h4>
+                       
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="panel panel-default">                                   
+                                    <div class="panel-heading"> <i class="fa fa-cloud-download fa-fw"></i>Production Targets
+                                        
+                                    </div>
+                                    <!-- /.panel-heading-->
+                                    <div class="panel-body">
+                                        <div class="table-responsive">
+                                            <p >Choose the databases you wish to Load Test against by clicking 'Add Source Databases'.</p>
+                                                
+                                        <div class="form-group">
+                                        <div style="width: 100%;" data-bind="koGrid: gridSrcOptions"></div>
+
+                                         </div>
+                                        <!-- /.form-group-->
+                                        </div>
+                                        <!-- /.table-responsive-->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#srcModal" data-bind="visible: adminFlg,enable: srcEnable,click: function(){ showPopupRegion('srcGrid'); }">
+                                            Add Source Databases </button>
+                                    </div>
+                                    <!-- /.panel-body -->
+                                </div>
+                                <!-- /.panel panel-default -->
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="panel panel-default">   
+                                    <div class="panel-heading"> <i class="fa fa-cloud-upload fa-fw"></i>Test Targets
+                                        
+                                    </div>
+                                    <div class="panel-body">
+                                         <div class="table-responsive">
+                                            <p >Choose the target system to test against by clicking 'Add Destination Databases'.</p>
+                                        <div class="form-group">
+                                            <div style="width: 100%;" data-bind="koGrid: gridDestnOptions"></div>
+                                        </div>
+                                        <!-- /.form-group-->
+                                        </div>
+                                        <!-- /.table-responsive-->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#destnModal" data-bind="visible: adminFlg,enable: destEnable,click: function(){ showPopupRegion('destGrid'); }">
+                                            Add Destination Databases </button>
+                                    </div>
+                                    <!-- /.panel-body -->
+                                </div>
+                                <!-- /.panel panel-default -->
+                            </div>
+                            <!-- /.col-lg-6 -->
+                             
+                            <div class="col-lg-12">
+                                <div data-bind='visible: conformationFlg' class="panel panel-default">
+                                    <div class="panel-heading"><i class="fa fa-code-fork fa-fw"></i>Confirm Source & Destination Databases
+                                       
+                                    </div>
+                                    <div class="panel-body">
+                                        <p >Confirm these are the targets required for the Load Test exercise. </p>
+                                        <div class="row-fluid">
+                                            <div class="col-lg-12">
+                                            <div class="row col-lg-6 alert alert-info">
+<!--                                            <div style="width: 100%;" data-bind="koGrid: gridFullOptions"></div>-->                                            
+                                            <h4>Production Targets</h4>
+                                            <ul data-bind="foreach: scopedSrcList">                               
+                                                <li>
+                                                   <span data-bind="text: TARGET_NAME"> </span>  
+                                               </li>
+                                            </ul>
+                                        </div>
+                                        <!-- /.form-group-->
+                                        <div class="row pull-right col-lg-6 alert alert-info">
+                                            <h4>Test Targets</h4>
+                                            <ul data-bind="foreach: scopedDestList">                               
+                                                <li>
+                                                   <span data-bind="text: TARGET_NAME"> </span>  
+                                               </li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                        </div> 
+                                        <div class="row">
+                                        <button type="submit" class="btn btn-primary" data-bind='click: saveOnConfirm, visible: adminFlg'>Confirm Source &amp; Destination Databases</button>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                    <!-- /.panel-body -->
+                                </div>
+                                <!-- /.panel panel-default -->
+                            </div>
+                            <!-- /.col-lg-12 -->
+                            
+                        </div>
+                        <!-- /.row -->
+                                                
+                                          
+                         <!--Modal Source--> 
+                        <div class="modal fade" id="srcModal" tabindex="-1" role="dialog" aria-labelledby="srcModalLabel" aria-hidden="true" data-bind="if: gridRegion.srcGrid">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="srcModalLabel">Select Target</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!--<div class="form-group">-->
+                                            <div style="width: 100%;" data-bind="koGrid: gridModalSrcOptions"></div>
+                                            <!--<div style="width: 550px;" data-bind="koGrid: srcGridOptions()"></div>-->
+                                            
+                                        <!--</div>-->
+                                         <!--/.form-group-->
+                                    </div>
+                                     <!--/.modal body-->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-bind='click: addSrcToScope'>Add</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                                    </div>
+                                     <!--/.modal footer-->
+                                </div>
+                                 <!--/.modal-content--> 
+                            </div>
+                             <!--/.modal-dialog--> 
+                        </div>
+                         <!--/.modal source--> 
+
+
+                         <!--Modal Destination--> 
+                        <div class="modal fade" id="destnModal" tabindex="-1" role="dialog" aria-labelledby="destnModalLabel" aria-hidden="true" data-bind="if: gridRegion.destGrid">
+                            <div class="modal-dialog chart-view-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="destnModalLabel">Select Target</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!--<div class="form-group">-->
+                                            <div style="width: 100%;" data-bind="koGrid: gridModalDestnOptions"></div>
+
+                                        <!--</div>-->
+                                         <!--/.form-group-->
+                                    </div>
+                                     <!--/.modal body-->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-bind='click: addDestnToScope'>Add</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                                    </div>
+                                     <!--/.modal footer-->
+                                </div>
+                                 <!--/.modal-content--> 
+                            </div>
+                             <!--/.modal-dialog--> 
+                        </div>
+                         <!--/.modal destination-->                         
+                    </div>  <!-- /.tab-pane active targets-->
+               
+                    <div class="tab-pane" id="sql">
+                        
+                    
+                        
+                    </div> 
+            
+                     
+                   
+                </div> <!-- End of TAB Panes -->
+            </div>  
+        </div>
+    </div>  
+</div>     
+
+

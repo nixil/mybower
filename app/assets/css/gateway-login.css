@@ -1,0 +1,230 @@
+body {
+	background: #fff url('../images/bg_body.png') repeat 0 0;
+	font: 13px/1.7em 'Open Sans', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif
+}
+.icon-10 {
+	font-size: 10px
+}
+.icon-20 {
+	font-size: 20px
+}
+.icon-30 {
+	font-size: 30px
+}
+.icon-40 {
+	font-size: 40px
+}
+.icon-50 {
+	font-size: 50px
+}
+.icon-70 {
+	font-size: 70px
+}
+.icon-80 {
+	font-size: 80px
+}
+.icon-90 {
+	font-size: 90px
+}
+.icon-100 {
+	font-size: 1000px
+}
+.gateway-login p {
+	font: 10px/1.7em Arial, sans-serif;
+	margin-top: 5px
+}
+.gateway-login a:active {
+	outline: none
+}
+:-moz-any-link:focus {
+ outline: none
+}
+.gateway-login ul {
+	list-style-type: none
+}
+.gateway-login h1, .gateway-login h2, .gateway-login h3, .gateway-login h4, .gateway-login h5, .gateway-login h6 {
+	font-weight: 400;
+	color: #666666;
+	-webkit-font-smoothing: antialiased
+}
+.gateway-login h1 {
+	font-weight: 200;
+	letter-spacing: -1px
+}
+.gateway-login a:hover {
+	text-decoration: none
+}
+.gateway-login .btn {
+	border-radius: 0
+}
+.gateway-login .btn:active {
+	box-shadow: none;
+	border-radius: 0px
+}
+.gateway-login .btn:focus {
+	outline: thin dotted #FFFFFF;
+	outline-offset: 0
+}
+.gateway-login .btn:hover, .gateway-login .btn:focus {
+	color: #fff
+}
+.gateway-login .form-control:focus {
+	border-color: #f28080;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 2px rgba(228,0,0,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 2px rgba(228,0,0,.6);
+	transition: border-color 0.7s, box-shadow 0.7s;
+	-webkit-transition: border-color 0.7s, box-shadow 0.7s;
+	border-radius: 0px !important
+}
+/*Padding Top*/
+.gateway-login.signin-main .wrap {
+	padding-top: 80px
+}
+/* Form Width */
+.gateway-login.signin-main .form-wrap {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 400px
+}
+.form-header {
+	padding: 10px 0;
+	text-align: center;
+	border-radius: 10px 10px 0 0;
+	background: #f4f4f4;
+	background: -moz-linear-gradient(top, #f4f4f4 0%, #fbfbfb 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4f4), color-stop(100%, #fbfbfb));
+	background: -webkit-linear-gradient(top, #f4f4f4 0%, #fbfbfb 100%);
+	background: -o-linear-gradient(top, #f4f4f4 0%, #fbfbfb 100%);
+	background: -ms-linear-gradient(top, #f4f4f4 0%, #fbfbfb 100%);
+	background: linear-gradient(to bottom, #f4f4f4 0%, #fbfbfb 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#fbfbfb', GradientType=0 );
+	border: 1px solid #d5d5d5;
+	color: #ff0000;
+	border-bottom: 3px solid #ff0000
+}
+.gateway-login.signin-main .form-main {
+	background-color: #fff;
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #f4f4f4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f4f4f4));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #f4f4f4 100%);
+	background: -o-linear-gradient(top, #ffffff 0%, #f4f4f4 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%, #f4f4f4 100%);
+	background: linear-gradient(to bottom, #ffffff 0%, #f4f4f4 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4', GradientType=0 );
+	padding: 40px 40px 20px 40px;
+	border: 1px solid #d5d5d5;
+	border-top: none !important;
+	border-bottom: none !important
+}
+.gateway-login.signin-main .form-footer {
+	background: -moz-linear-gradient(top, #f4f4f4 0%, #fbfbfb 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4f4), color-stop(100%, #fbfbfb));
+	background: -webkit-linear-gradient(top, #f4f4f4 0%, #fbfbfb 100%);
+	background: -o-linear-gradient(top, #f4f4f4 0%, #fbfbfb 100%);
+	background: -ms-linear-gradient(top, #f4f4f4 0%, #fbfbfb 100%);
+	background: linear-gradient(to bottom, #f4f4f4 0%, #fbfbfb 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#fbfbfb', GradientType=0 );
+	border: 1px solid #d5d5d5;
+	color: #ff0000;
+	border-radius: 0;
+	border-top: none !important;
+	padding: 0px 50px 10px 50px
+}
+.gateway-login.signin-main .form-footer a {
+	color: #999999;
+	font-size: 14px
+}
+.gateway-login.signin-main .form-footer a:hover {
+	text-decoration: none;
+	color: #ff0000 !important;
+	-webkit-transition: color 300ms linear;
+	-moz-transition: color 300ms linear;
+	-o-transition: color 300ms linear;
+	-ms-transition: color 300ms linear;
+	transition: color 300ms linear
+}
+.gateway-login.signin-main .form-footer .fa-undo, .fa-unlock-alt {
+	/*font-size: 12px;
+	color: #ff0000;*/
+	
+	font-size: 10pt;
+	color: #fff;
+	border-radius: 50%;
+	background-color: #ff0000;
+	margin-right: 7px;
+}
+.fa-unlock-alt {
+	padding: 5px 8px;
+}
+.fa-undo {
+	padding: 5px 7px;
+}
+.drop-shadow-pane {
+	-moz-box-shadow: 0px 4px 3px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 4px 3px rgba(0,0,0,0.1);
+	-o-box-shadow: 0px 4px 3px rgba(0,0,0,0.1);
+	box-shadow: 0px 4px 3px rgba(0,0,0,0.1)
+}
+.gateway-login.signin-main .signin {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	background: #cecece url('../images/bg_top.png') repeat 0 0;
+	text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+	-webkit-transition: background-color 200ms linear;
+	-moz-transition: background-color 200ms linear;
+	-o-transition: background-color 200ms linear;
+	-ms-transition: background-color 200ms linear;
+	transition: background-color 200ms linear
+}
+.gateway-login.signin-main .signin:hover {
+	background-color: #ff0000
+}
+.gateway-login.signin-main input[type="text"], .gateway-login.signin-main input[type="password"] {
+	background-color: #eeeeee;
+	padding-left: 20px;
+	border-radius: 0;
+	border: none;
+	margin-bottom: 10px;
+	color: #bbbbbb;
+	height: 43px
+}
+/*Reduce Top Padding & Font Sizes for Handsets */
+@media all and (max-width: 320px) {
+.gateway-login.signin-main .wrap {
+	padding-top: 10px !important
+}
+.gateway-login.signin-main .form-footer a {
+	color: #999999;
+	font-size: 8px;
+	-webkit-transition: all 200ms linear;
+	-moz-transition: all 200ms linear;
+	-o-transition: all 200ms linear;
+	-ms-transition: all 200ms linear;
+	transition: all 200ms linear
+}
+.gateway-login.signin-main .form-footer i {
+	font-size: 10px;
+	-webkit-transition: all 200ms linear;
+	-moz-transition: all 200ms linear;
+	-o-transition: all 200ms linear;
+	-ms-transition: all 200ms linear;
+	transition: all 200ms linear
+}
+.gateway-login h1, .gateway-login h2, .gateway-login h3, .gateway-login h4, .gateway-login h5, .gateway-login h6 {
+	font-size: 15px;
+	-webkit-transition: all 200ms linear;
+	-moz-transition: all 200ms linear;
+	-o-transition: all 200ms linear;
+	-ms-transition: all 200ms linear;
+	transition: all 200ms linear
+}
+}
+/*Reduce Top Padding for Handsets Portrait */
+@media all and (max-width: 480px) {
+.gateway-login.signin-main .wrap {
+	padding-top: 15px !important
+}
+}

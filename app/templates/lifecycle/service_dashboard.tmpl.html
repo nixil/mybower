@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1><span><b data-bind="text: serviceInst().description"></b></span></h1>
+        <p>Click on an Engagement Tile below to work with a Lifecycle Service.</p>
+        
+    </div>
+    <div class="col-lg-12">
+        <div class="panel panel-default"> <div class="panel-heading"> <i class="fa fa-cloud-upload fa-fw"></i>Engagement Statuses<div class="pull-right">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"> Filter <span class="caret"></span> </button>
+                        <ul class="dropdown-menu pull-right" role="menu">
+                            <li><a data-bind="click: function(){ viewEng(['New'])}">SetUp Engagements</a></li>
+
+                            <li><a data-bind="click: function(){ viewEng(['Active','Scoped'])}">In Progress Engagements</a> </li>
+                            <li><a data-bind="click: function(){ viewEng(['Closed'])}">Completed Engagements</a> </li>
+                            <li class="divider"></li>
+                            <li><a data-bind="click: function(){ viewEng(['All'])}">All Engagements</a> </li>
+                        </ul>
+                    </div>
+
+                    <!-- /.btn-group --> 
+                </div></div><!--/.panel-heading--> 
+            <div class="panel-body" data-bind="foreach: filteredEngagementList">
+
+                <h data-bind="visible: status === 'Active' || status === 'Scoped' ">
+                    <div class="col-md-6 col-lg-4 dashboard-panel"> <br> <div id="buttonId" data-bind="click: function(){ $parent.viewScoping($data)}" class="btn btn-warning btn-lg btn-block" role="button"><i id="iconId" class="fa fa-cogs fa-fw icon-40"></i> <br>
+                            <span>In Progress</span><br><span class="fs-sm"><span data-bind="text: description "></span></span></div>              
+                    </div></h>
+
+
+                <h data-bind="visible: status === 'New' ">
+                    <div class="col-md-6 col-lg-4 dashboard-panel"> <br> <div id="buttonId" data-bind="click: function(){ $parent.viewScoping($data)}" class="btn btn-default btn-lg btn-block" role="button"><i id="iconId" class="fa fa-cloud-upload fa-fw icon-40"></i> <br>
+                            <span>Setup</span><br><span class="fs-sm"><span data-bind="text: description "></span></span></div>              
+                    </div></h>
+
+                <h data-bind="visible: status === 'Closed' ">
+                    <div class="col-md-6 col-lg-4 dashboard-panel"> <br> <div id="buttonId" data-bind="click: function(){ $parent.viewScoping($data)}" class="btn btn-success btn-lg btn-block" role="button"><i id="iconId" class="fa fa-check-circle fa-fw icon-40"></i> <br>
+                            <span>Completed</span><br><span class="fs-sm"><span data-bind="text: description "></span></span></div>              
+                    </div></h>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--</div>-->

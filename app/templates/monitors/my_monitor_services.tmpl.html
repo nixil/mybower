@@ -1,0 +1,40 @@
+<div>
+    <h1>My Monitoring Services</h1>
+    <ul data-bind="foreach: services">
+        <li>
+            <a data-bind="attr: { href: link, title: name},text : name"></a>
+        </li>
+    </ul>
+
+    <div >
+        <!--
+            Select element with list of chart types. The select options and value data is retrieved from two 
+            knockout observable bindings "chartTypes" and "chartType" See app.js to see the knockout binding itself.
+        -->
+        <label for="selectChartType" class="oj-label-inline">Select Chart Type:</label>
+        <select id="selectChartType" class="oj-select" data-bind='options: chartTypes, value: chartType'> </select> 
+    </div>
+
+    <!--
+        The DVT chart component is bound using a custom knockout binding for jQueryUI. The "type" property of the chart component is being set via the same knockout 
+        observable that we used for the value of the select tag above. The "groupDataSeries" and "seriesData" values are being defined by knockout 
+        observableArrays in the app.js file.
+    --> 
+    <div id="barChart"
+         data-bind="ojComponent: 
+     {
+        component: 'ojChart',
+        type: chartType, 
+        animationOnDisplay:'auto', 
+        animationOnDataChange: 'auto', 
+        hideAndShowBehavior: 'withoutRescale',
+        selection: 'single',
+        legend: {rendered: false}, 
+        groups: groupDataSeries, 
+        series: seriesData,
+        select: mySelect
+     }" 
+         class="barChart">
+    </div> 
+    
+</div>

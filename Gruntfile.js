@@ -24,6 +24,29 @@ module.exports = function (grunt) {
   // Define the configuration for all the tasks
   grunt.initConfig({
 
+    //Express Server settings
+    express: {
+      options: {
+        // Override defaults here
+      },
+      dev: {
+        options: {
+          script: 'dev/server.js'
+        }
+      },
+      prod: {
+        options: {
+          script: 'path/to/prod/server.js',
+          node_env: 'production'
+        }
+      },
+      test: {
+        options: {
+          script: 'path/to/test/server.js'
+        }
+      }
+    },
+
     // Project settings
     yeoman: appConfig,
 
@@ -74,8 +97,19 @@ module.exports = function (grunt) {
       livereload: {
         options: {
           open: true,
-          middleware: function (connect) {
+          // onCreateServer:function(server, connect, options){
+          //   console.log("onCreateServer");
+          // },
+          middleware: function (connect, options, middlewares) {
             return [
+              //custom rest api
+              function (req, res, next) {
+                if(req.url !== '/hello/world') {
+                  next();
+                  return;
+                }
+                res.end('Hello from port ' + options.port);
+              },
               connect.static('.tmp'),
               connect().use(
                 '/bower_components',
@@ -378,6 +412,8 @@ module.exports = function (grunt) {
     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
     grunt.task.run(['serve:' + target]);
   });
+
+  grunt.registerTask('expressServer',['express:dev']);
 
   grunt.registerTask('test', [
     'clean:server',

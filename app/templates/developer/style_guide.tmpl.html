@@ -1,0 +1,2553 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header"><span>Single Page Style Guide</span></h1>
+    <!-- /.alert --> 
+  </div>
+  <!-- /.col-lg-12 --> 
+</div>
+<!-- /.row -->
+<div class="row">
+  <div class="col-lg-12">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#charts" data-toggle="tab">Charts</a></li>
+      <li><a href="#tables" data-toggle="tab">Tables</a></li>
+      <li><a href="#forms" data-toggle="tab">Forms</a></li>
+      <li><a href="#dates" data-toggle="tab">Date & Time</a></li>
+      <li><a href="#panels" data-toggle="tab">Panels </a></li>
+      <li><a href="#wells" data-toggle="tab">Wells</a></li>
+      <li><a href="#buttons" data-toggle="tab">Buttons</a></li>
+      <li><a href="#notifications" data-toggle="tab">Notifications</a></li>
+      <li><a href="#typography" data-toggle="tab">Typography</a></li>
+      <li><a href="#grid" data-toggle="tab">Grid</a></li>
+      <li><a href="#colours" data-toggle="tab">Colours &amp; Styles</a></li>
+    </ul>
+    <!-- /.nav-tabs -->
+    
+    <div class="tab-content">
+      <div class="tab-pane fade active in" id="charts">
+        <h4>Charts</h4>
+        <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business success.
+          Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support services to help you
+          maintain and maximize performance of all Oracle mission critical systems.</p>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="panel panel-default">
+              <div class="panel-heading"> Bar Chart Example</div>
+              <!-- /.panel-heading -->
+              <div class="panel-body"> <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#demo001" data-toggle="tab">Chart Demo</a></li>
+                  <li><a href="#embed001" data-toggle="tab">Embed Code</a></li>
+                </ul>
+                
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="demo001">
+                    <h4>Demo Chart</h4>
+                    <p>Below is an Example of a live chart created using the JET DVT library, click a tab above to view code and
+                      other API features.</p>
+                    <hr>
+                    <!-- Demo Chart -->
+                    <div style="width:100%; height:350px" data-bind="ojComponent: {
+                            component: 'ojChart', 
+							type: 'bar', animationOnDisplay:'auto', 
+                            styleDefaults: {colors: ['#ff1414', '#000000','#424545', '#a3a3a3'], threeDEffect: 'off', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                            animationOnDataChange: 'auto',
+                            seriesEffect: 'gradient',
+                            hideAndShowBehavior: 'withRescale',
+                            selection: 'single',
+                            legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:9px;'},
+                            overview: {rendered: 'on'},                            
+                            selection: 'multiple',
+                            series: [{name: 'Colour 01', items: [25]},
+                                     {name: 'Colour 02', items: [50]},
+                                     {name: 'Colour 03', items: [75]},
+                                     {name: 'Colour 04', items: [100]}
+                                     ], 
+                            groups: ['Bar Chart Colours Primary'], 
+                            animationOnDisplay: 'auto'
+                            }"></div>
+                    <!-- /.ojChart --> </div>
+                  <div class="tab-pane fade" id="embed001">
+                    <h4>Data Bind Code</h4>
+                    <p>HTML markup required to trigger knockuot.js bindings and allow the chart render.</p>
+                    <hr>
+                    <code>data-bind="ojComponent: {
+                    component: 'ojChart', 
+                    type: 'bar', animationOnDisplay:'auto', 
+                    styleDefaults: {colors: ['#ff1414', '#000000','#424545', '#a3a3a3'], threeDEffect: 'off', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                    animationOnDataChange: 'auto',
+                    seriesEffect: 'gradient',
+                    hideAndShowBehavior: 'withRescale',
+                    selection: 'single',
+                    legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:9px;'},
+                    overview: {rendered: 'on'},                            
+                    selection: 'multiple',
+                    series: [{name: '# Small Tables for Batch Jobs', items: [16750]},
+                    {name: '# Large Tables for Single Jobs', items: [209]},
+                    {name: '# Very Large Tables for Multi-Job ', items: [100]}
+                    ], 
+                    groups: ['Group A'], 
+                    animationOnDisplay: 'auto'
+                    }"</code></div>
+                  
+                  <!-- /.tab-pane --> 
+                </div>
+                <!-- /. Nav tabs--> </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-4 -->
+          
+          <div class="col-lg-4">
+            <div class="panel panel-default">
+              <div class="panel-heading"> Bar Chart Example</div>
+              <!-- /.panel-heading -->
+              <div class="panel-body"> <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#demo002" data-toggle="tab">Chart Demo</a></li>
+                  <li><a href="#embed002" data-toggle="tab">Embed Code</a></li>
+                </ul>
+                
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="demo002">
+                    <h4>Demo Chart</h4>
+                    <p>Below is an Example of a live chart created using the JET DVT library, click a tab above to view code and
+                      other API features.</p>
+                    <hr>
+                    <!-- Demo Chart -->
+                    <div style="width:100%; height:350px" data-bind="ojComponent: {
+                            component: 'ojChart', 
+							type: 'bar', animationOnDisplay:'auto', 
+                            styleDefaults: {colors: ['#e5e5e5', '#8baac3','#5b6981', '#7d7369','#786464'], threeDEffect: 'on', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                            animationOnDataChange: 'auto',
+                            seriesEffect: 'gradient',
+                            hideAndShowBehavior: 'withRescale',
+                            selection: 'single',
+                            legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:9px;'},
+                            overview: {rendered: 'on'},                            
+                            selection: 'multiple',
+                             series: [{name: 'Colour 05', items: [25]},
+                                     {name: 'Colour 06', items: [50]},
+                                     {name: 'Colour 07', items: [75]},
+                                     {name: 'Colour 08', items: [100]},
+                                     {name: 'Colour 09', items: [125]}
+                                     ],
+                            groups: ['Bar Chart Colours Secondary'], 
+                            animationOnDisplay: 'auto'
+                            }"></div>
+                    <!-- /.ojChart --> </div>
+                  <div class="tab-pane fade" id="embed002">
+                    <h4>Data Bind Code</h4>
+                    <p>HTML markup required to trigger knockuot.js bindings and allow the chart render.</p>
+                    <hr>
+                    <code>data-bind="ojComponent: {
+                    component: 'ojChart', 
+                    type: 'bar', animationOnDisplay:'auto', 
+                    styleDefaults: {colors: ['#ff1414', '#000000','#424545', '#a3a3a3'], threeDEffect: 'off', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                    animationOnDataChange: 'auto',
+                    seriesEffect: 'gradient',
+                    hideAndShowBehavior: 'withRescale',
+                    selection: 'single',
+                    legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:9px;'},
+                    overview: {rendered: 'on'},                            
+                    selection: 'multiple',
+                    series: [{name: '# Small Tables for Batch Jobs', items: [16750]},
+                    {name: '# Large Tables for Single Jobs', items: [209]},
+                    {name: '# Very Large Tables for Multi-Job ', items: [100]}
+                    ], 
+                    groups: ['Group A'], 
+                    animationOnDisplay: 'auto'
+                    }"</code></div>
+                  
+                  <!-- /.tab-pane --> 
+                </div>
+                <!-- /. Nav tabs--> </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-4 -->
+          
+          <div class="col-lg-4">
+            <div class="panel panel-default">
+              <div class="panel-heading"> Bar Chart Example</div>
+              <!-- /.panel-heading -->
+              <div class="panel-body"> <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#demo003" data-toggle="tab">Chart Demo</a></li>
+                  <li><a href="#embed003" data-toggle="tab">Embed Code</a></li>
+                </ul>
+                
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="demo003">
+                    <h4>Demo Chart</h4>
+                    <p>Below is an Example of a live chart created using the JET DVT library, click a tab above to view code and
+                      other API features.</p>
+                    <hr>
+                    <!-- Demo Chart -->
+                    <div style="width:100%; height:350px" data-bind="ojComponent: {
+                            component: 'ojChart', 
+							type: 'bar', animationOnDisplay:'auto', 
+                            styleDefaults: {colors: ['#ff1414', '#000000','#424545', '#a3a3a3','#e5e5e5', '#8baac3','#5b6981', '#7d7369','#786464'], threeDEffect: 'on', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                            animationOnDataChange: 'auto',
+                            seriesEffect: 'gradient',
+                            hideAndShowBehavior: 'withRescale',
+                            selection: 'single',
+                            legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:9px;'},
+                            overview: {rendered: 'on'},                            
+                            selection: 'multiple',
+                             series: [{name: 'Colour 01', items: [25]},
+                                     {name: 'Colour 02', items: [50]},
+                                     {name: 'Colour 03', items: [75]},
+                                     {name: 'Colour 04', items: [100]},
+                                     {name: 'Colour 05', items: [125]},
+                                     {name: 'Colour 06', items: [150]},
+                                     {name: 'Colour 07', items: [175]},
+                                     {name: 'Colour 08', items: [200]},
+                                     {name: 'Colour 09', items: [225]}
+                                     ],
+                            groups: ['Bar Chart Colours All'], 
+                            animationOnDisplay: 'auto'
+                            }"></div>
+                    <!-- /.ojChart --> </div>
+                  <div class="tab-pane fade" id="embed003">
+                    <h4>Data Bind Code</h4>
+                    <p>HTML markup required to trigger knockuot.js bindings and allow the chart render.</p>
+                    <hr>
+                    <code>data-bind="ojComponent: {
+                    component: 'ojChart', 
+                    type: 'bar', animationOnDisplay:'auto', 
+                    styleDefaults: {colors: ['#ff1414', '#000000','#424545', '#a3a3a3'], threeDEffect: 'on', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                    animationOnDataChange: 'auto',
+                    seriesEffect: 'gradient',
+                    hideAndShowBehavior: 'withRescale',
+                    selection: 'single',
+                    legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:9px;'},
+                    overview: {rendered: 'on'},                            
+                    selection: 'multiple',
+                    series: [{name: '# Small Tables for Batch Jobs', items: [16750]},
+                    {name: '# Large Tables for Single Jobs', items: [1209]},
+                    {name: '# Very Large Tables for Multi-Job ', items: [1100]}
+                    ], 
+                    groups: ['Group A'], 
+                    animationOnDisplay: 'auto'
+                    }"</code></div>
+                  
+                  <!-- /.tab-pane --> 
+                </div>
+                <!-- /. Nav tabs--> </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-4 --> 
+          
+        </div>
+        <!-- /.row --> 
+      </div>
+      <!-- /.tab-pane (Charts) -->
+      <div class="tab-pane fade in" id="tables">
+        <h4>DataTables</h4>
+        <p>For a common data table, we recommend using of <a
+    href="http://knockout-contrib.github.io/KoGrid/#/examples">Ko-Grid</a>, as it offers best integration with Knockout.
+          We've heavily customized the component to suit our use cases and style, not all functions in the original version are
+          supported and some new features are added. </p>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>Basic Usage</h3>
+            <p>To use Ko-grid, you can just need to add the html element in your html page.</p>
+            <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;div style="width: 100%; height:300px" data-bind="koGrid: gridOptions"&gt;&lt;/div&gt;</code></pre>
+            <p>Then define the "gridOptions" in your view model</p>
+            <pre data-bind="stopBinding: true" class="prettyprint"><code>self.gridOptions = {
+  data: self.userList,
+  columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'}]
+};</code></pre>
+            <p>Or you can just specify the options in the html:</p>
+            <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;div style="width: 100%; height:300px" data-bind="koGrid:  {
+  data: self.userList,
+  columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'}]
+}"&gt;&lt;/div&gt;</code></pre>
+            <p>"data": the javascript object that provides the datasource for the datagrid. Most often it should be
+              ko.observableArray, so any data change to the datasource will be reflected on the datagrid automatically.</p>
+            <p>"columnDefs": the javascript literal that used to define the columns of the datagrid</p>
+            <h3>Modes</h3>
+            There are 2 modes to use the customized datagrid in a web page, fixed length or variable length.
+            <div class="row">
+              <div class="col-lg-12">
+                <h4>Fixed Length</h4>
+              </div>
+              <div class="col-lg-12">
+                <p>Fixed-length datagrid will have the height of the component set to the height of the HTML element it is inside.
+                  The height will not change with the number of rows.</p>
+                <p>Vertical scrollbar will be enabled when the number of rows exceeds the fixed height. Set option
+                  "fixedViewPortHeight" to true (default) to enable this mode, and make sure the height of the div element is set
+                  with a value.</p>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;div style="width: 100%; height:300px" data-bind="koGrid: gridOptions"&gt;&lt;/div&gt;</code></pre>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>self.gridOptions = { data: self.userList,
+  showFilter: true,
+  enablePaging: true,
+  fixedViewPortHeight: true,
+  columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status'}]
+};</code></pre>
+              </div>
+              <div class="col-lg-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><i class="fa fa-keyboard-o fa-fw"></i> Fixed Length Example</div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="sampleGrid" style="width: 100%;height:350px" data-bind="koGrid: {
+                                    data: userList,
+                                    showFilter: true,
+                                    enablePaging: true,
+                                    fixedViewPortHeight: true,
+                                    columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status'}]}"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <h4>Variable Length</h4>
+              </div>
+              <div class="col-lg-12">
+                <p>Variable-length datagrid will have the height of the component change with the with the number of rows.</p>
+                <p>There is no Vertical scrollbar. Set option "fixedViewPortHeight" to false to enable this mode, and you don't need
+                  to set the height of the div element.</p>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;div style="width: 100%;" data-bind="koGrid: gridOptions"&gt;&lt;/div&gt;</code></pre>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>self.gridOptions = { data: self.userList,
+  showFilter: true,
+  enablePaging: true,
+  fixedViewPortHeight: false,
+  columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status'}]
+};</code></pre>
+              </div>
+              <div class="col-lg-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><i class="fa fa-keyboard-o fa-fw"></i> Variable Length Example</div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="sampleGrid" style="width: 100%" data-bind="koGrid: {
+                                    data: userList,
+                                    showFilter: true,
+                                    enablePaging: true,
+                                    fixedViewPortHeight: false,
+                                    columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status'}]}"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3>Paging</h3>
+            <p>Paging is not a must-have in our datagrid. When the number of row is large, developers have 3 options to handle the
+              data:</p>
+            <p>1. Use fixed-length datagrid without paging.</p>
+            <p>2. Use fixed-length datagrid with paging.</p>
+            <p>3. Use variable-length datagrid with paging.</p>
+            <div class="row">
+              <div class="col-lg-12">
+                <h4>Fixed-length datagrid without paging</h4>
+              </div>
+              <div class="col-lg-12">
+                <p>In this configuration all the data will be shown in the grid, vertical scrollbar will be enabled if needed. Since
+                  ko-grid is not HTML Table based, it can handle tens of thousands of row in the grid.</p>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;div style="width: 100%; height:300px" data-bind="koGrid: gridOptions"&gt;&lt;/div&gt;</code></pre>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>self.gridOptions = { data: self.userList,
+  showFilter: true,
+  enablePaging: false,
+  fixedViewPortHeight: true,
+  columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status'}]
+};</code></pre>
+              </div>
+              <div class="col-lg-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><i class="fa fa-keyboard-o fa-fw"></i> Fixed-length datagrid without paging Example </div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div style="width: 650px;height:300px" data-bind="koGrid: {
+                                    data: userList,
+                                    showFilter: true,
+                                    enablePaging: false,
+                                    fixedViewPortHeight: true,
+                                    columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status'}]}"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <h4>Fixed-length datagrid with paging</h4>
+              </div>
+              <div class="col-lg-12">
+                <p>In this fixed-length configuration, paging is enabled, the number of rows in each page can be customized. They
+                  can be very big number, such as 100 or even 500/1000. </p>
+                <p>To customize the pagesize selection, developer can set the "pagingOption" option like in below.</p>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;div style="width: 100%; height:300px" data-bind="koGrid: gridOptions"&gt;&lt;/div&gt;</code></pre>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>self.gridOptions = { data: self.userList,
+  showFilter: true,
+  enablePaging: true,
+  fixedViewPortHeight: true,
+  pagingOptions: {
+      pageSizes: ko.observableArray([10, 100, 500, 1000]),
+      pageSize: ko.observable(10),
+      totalServerItems: ko.observable(0),
+      currentPage: ko.observable(1)
+  },
+  columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status'}]
+};</code></pre>
+              </div>
+              <div class="col-lg-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><i class="fa fa-keyboard-o fa-fw"></i> Fixed-length datagrid with paging</div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div style="width: 650px;height:300px" data-bind="koGrid: {
+                                    data: userList,
+                                    showFilter: true,
+                                    enablePaging: true,
+                                    fixedViewPortHeight: true,
+                                    pagingOptions: {
+                                        pageSizes: ko.observableArray([10, 100, 500, 1000]),
+                                        pageSize: ko.observable(10),
+                                        totalServerItems: ko.observable(0),
+                                        currentPage: ko.observable(1)
+                                    },
+                                    columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status'}]}"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <h4>Variable-length datagrid with paging</h4>
+              </div>
+              <div class="col-lg-12">
+                <p>This is probably most common setup in all kinds of datagrid. The grid's height will grow as the number of rows
+                  grow. You can also customize the pageSize as needed.</p>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;div style="width: 100%;" data-bind="koGrid: gridOptions"&gt;&lt;/div&gt;</code></pre>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>self.gridOptions = { data: self.userList,
+  showFilter: true,
+  enablePaging: true,
+  fixedViewPortHeight: false,
+  pagingOptions: {
+      pageSizes: ko.observableArray([10, 100, 500, 1000]),
+      pageSize: ko.observable(10),
+      totalServerItems: ko.observable(0),
+      currentPage: ko.observable(1)
+  },
+  columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status'}]
+};</code></pre>
+              </div>
+              <div class="col-lg-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><i class="fa fa-keyboard-o fa-fw"></i> Variable-length datagrid with paging Example </div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div style="width: 650px" data-bind="koGrid: {
+                                    data: userList,
+                                    showFilter: true,
+                                    enablePaging: true,
+                                    fixedViewPortHeight: false,
+                                    pagingOptions: {
+                                        pageSizes: ko.observableArray([10, 100, 500, 1000]),
+                                        pageSize: ko.observable(10),
+                                        totalServerItems: ko.observable(0),
+                                        currentPage: ko.observable(1)
+                                    },
+                                    columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status'}]}"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3>Row Action</h3>
+            <p>Row action such as "delete", "edit" can be achieved by using custom Celltemplate.</p>
+            <div class="row">
+              <div class="col-lg-12">
+                <h4>Row Action</h4>
+              </div>
+              <div class="col-lg-12">
+                <p>We added a "Delete" button for each row in this datagrid.</p>
+                <p>Notice how the "click" handler is specified and also how the data of clicked row is fetched:</p>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;div style="width: 100%; height:300px" data-bind="koGrid: gridOptionsAction"&gt;&lt;/div&gt;</code></pre>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>self.gridOptionsAction = {
+    data: self.userList,
+    showFilter: true,
+    enablePaging: false,
+    fixedViewPortHeight: true,
+    columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Action', cellTemplate:'&lt;div style="text-align:center"&gt;&lt;button data-bind='click: $parent.$grid.$userViewModel.delete.bind($data, $parent.entity.id)'&gt;Delete&lt;/button&gt;&lt;/div&gt;'}]};
+
+self.delete = function(rowid, event) {
+    alert('deleting... ' + rowid);
+    event.stopPropagation();
+}</code></pre>
+              </div>
+              <div class="col-lg-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><i class="fa fa-keyboard-o fa-fw"></i> Row Action Example</div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div style="width: 650px;height:300px" data-bind="koGrid: gridOptionsAction"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3>Format Column Data</h3>
+            <p>There are 3 ways to format column data for display needs. The simplest way is to add computed property to your data
+              object and use that property for display in datagrid.
+            <p>If adding new property is not possible, you can define a cellFormatter function when defining the column. A
+              limitation of cellFormatter is it will only be provided current cell data to format. Sometimes you may need other
+              data from other columns to do the formatting.</p>
+            <p>In these cases, you can use "cellTemplate" option in "columnDefs". We will demonstrate here the cellFormatter and
+              cellTemplate usage in following examples.</p>
+            <div class="row">
+              <div class="col-lg-12">
+                <h4>Format Column Data Using cellFormatter</h4>
+              </div>
+              <div class="col-lg-12">
+                <p>In this example, we format the Status column from numeric 0 or 1 to text "Disabled" or "Enabled" using a
+                  cellFormatter function</p>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;div style="width: 100%; height:300px" data-bind="koGrid: gridOptionsFormat"&gt;&lt;/div&gt;</code></pre>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>self.gridOptionsFormat = {
+  data: self.userList,
+  showFilter: true,
+  enablePaging: false,
+  fixedViewPortHeight: true,
+  columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status', cellFormatter:function(data){return data == 1 ? 'Enabled' : 'Disabled'}}]
+};</code></pre>
+              </div>
+              <div class="col-lg-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><i class="fa fa-keyboard-o fa-fw"></i> Format Column Data Example</div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div style="width: 650px;height:300px" data-bind="koGrid: {
+                data: userList,
+                showFilter: true,
+                enablePaging: false,
+                fixedViewPortHeight: true,
+                columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status', cellFormatter: function(data){return data == 1 ? 'Enabled' : 'Disabled'}}]}"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <h4>Format Column Data Using cellTemplate</h4>
+              </div>
+              <div class="col-lg-12">
+                <p>The cellTemplate technique for adding row action can be also use for formating column data. See <a
+        href="https://github.com/Knockout-Contrib/KoGrid/wiki/Cell-Template-Library">this document</a> for more example
+                  of Celltemplate.</p>
+                <p>In this example, we format the Status column from numeric 0 or 1 to text "Disabled" or "Enabled".</p>
+                <p>Notice "getProperty($parent)" is used to get the current data of this cell. An Alternative way is
+                  "$parent.entity[$data.field]". </p>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;div style="width: 100%; height:300px" data-bind="koGrid: gridOptionsFormat"&gt;&lt;/div&gt;</code></pre>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>self.gridOptionsFormat = {
+  data: self.userList,
+  showFilter: true,
+  enablePaging: false,
+  fixedViewPortHeight: true,
+  columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status', cellTemplate:'&lt;span data-bind=\"text: getProperty($parent) != 1 ? \'Disabled\' : \'Enabled\' \"&gt;&lt;/span&gt;'}]
+};
+</code></pre>
+              </div>
+              <div class="col-lg-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><i class="fa fa-keyboard-o fa-fw"></i> Format Column Data Example</div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div style="width: 650px;height:300px" data-bind="koGrid: gridOptionsFormat"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3>Row Selection</h3>
+            <p>Ko-grid supports single-row selection or multiple-row selection, also developer can choose to let user select row by
+              ticking checkbox or clicking on the row data.</p>
+            <div class="row">
+              <div class="col-lg-12">
+                <h4>Row Selection</h4>
+              </div>
+              <div class="col-lg-12">
+                <p>This example demonstrate multiple selection (default) with checkbox. And the selected item will be added into the
+                  observableArray specified by "selectedItems". We use the observableArray to get the selected row data when the
+                  button is clicked.</p>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>
+&lt;div&gt;&lt;button data-bind="click: function() {alert('number of selected row: ' + selected().length)}"&gt;Click to see the selection!&lt;/button&gt;&lt;/div&gt;
+&lt;div style="width: 100%;" data-bind="koGrid: gridOptions"&gt;&lt;/div&gt;
+</code></pre>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>
+self.selected = ko.observableArray([]);
+
+self.gridOptions = { data: self.userList,
+    showFilter: true,
+    enablePaging: true,
+    fixedViewPortHeight: false,
+    selectedItems: selected,
+    selectWithCheckboxOnly: true,
+    displaySelectionCheckbox: true,
+    columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status'}]
+};
+</code></pre>
+              </div>
+              <div class="col-lg-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><i class="fa fa-keyboard-o fa-fw"></i> Row Selection Example</div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div>
+                          <button data-bind="click: function() {alert('number of selected row: ' + selected().length)}">Click to see
+                          the
+                          selection! </button>
+                        </div>
+                        <div style="width: 650px" data-bind="koGrid: {
+                                    data: userList,
+                                    showFilter: true,
+                                    enablePaging: true,
+                                    fixedViewPortHeight: false,
+                                    selectedItems: selected,
+                                    selectWithCheckboxOnly: true,
+                                    displaySelectionCheckbox: true,
+                                    columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status'}]}"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3>Toolbar</h3>
+            <p>Toolbar is useful for placing buttons or other input controls on the top of the grid. By default, toolbar is hidden, set showToolbar property to true to enable it.
+              To add content to the toolbar, use toolbarTemplate property to customize the html. </p>
+            <div class="row">
+              <div class="col-lg-12">
+                <p>This example demonstrate deleting multiple rows using a toolbar button.</p>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>
+    &lt;div style="width: 100%;" data-bind="koGrid: gridOptions"&gt;&lt;/div&gt;
+</code></pre>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>
+    self.selected = ko.observableArray([]);
+    
+    self.selected = ko.observableArray([]);
+
+    self.deleteSelect = function() {
+        alert("Deleting " + self.selected().length + " rows");
+    };
+
+    self.addNew = function() {
+        alert("Add new row");
+    };    
+
+    self.gridOptions = { data: self.userList,
+    showFilter: true,
+    enablePaging: true,
+    fixedViewPortHeight: false,
+    selectedItems: selected,
+    selectWithCheckboxOnly: true,
+    displaySelectionCheckbox: true,
+    showToolbar: true,
+    leftToolbarTemplate: '&lt;div class="btn-group"&gt;\
+    &lt;button type="button" class="disabled btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown"&gt;\
+    Action &lt;span class="caret"&gt;&lt;/span&gt;\
+    &lt;/button&gt;\
+    &lt;ul class="dropdown-menu" role="menu"&gt;\
+    &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;\
+    &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;\
+    &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;\
+    &lt;li class="divider"&gt;&lt;/li&gt;\
+    &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;\
+    &lt;/ul&gt;\
+    &lt;/div&gt;',
+    rightToolbarTemplate: '&lt;button type="button" class="btn btn-xs btn-default"&gt;&lt;i class="fa fa-plus"&gt;&lt;/i&gt; Create New Record&lt;/span&gt;&lt;/button&gt;',
+    columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status'}]
+    };
+</code></pre>
+              </div>
+              <div class="col-lg-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><i class="fa fa-keyboard-o fa-fw"></i> Row Selection Example</div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div style="width: 650px" data-bind="koGrid: {
+                                    data: userList,
+                                    showFilter: true,
+                                    enablePaging: true,
+                                    fixedViewPortHeight: false,
+                                    selectedItems: selected,
+                                    selectWithCheckboxOnly: true,
+                                    displaySelectionCheckbox: true,
+                                    showToolbar: true,
+                                    leftToolbarTemplate: '<div class=\'btn-group\'><button type=\'button\' class=\'btn btn-xs btn-default dropdown-toggle\' data-toggle=\'dropdown\'>Action <span class=\'caret\'></span></button><ul class=\'dropdown-menu\' role=\'menu\'><li><a href=\'#\'>Action</a></li><li><a href=\'#\'>Another action</a></li><li><a href=\'#\'>Something else here</a></li><li class=\'divider\'></li><li><a href=\'#\'>Separated link</a></li></ul></div>',
+                                    rightToolbarTemplate: '<button type=\'button\' class=\'btn btn-xs btn-default\'><i class=\'fa fa-plus\'></i> Create New Record</span></button>',
+                                    columnDefs: [{field: 'userID', displayName: 'User ID'},{field: 'firstName', displayName: 'Name'},{field: 'lastName', displayName: 'Last Name'},{field: 'status', displayName: 'Status'}]}"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p><br/>
+              <br/>
+              <br/>
+            </p>
+            <h3>Configuration</h3>
+            <div class="row">
+              <div class="col-lg-12">
+                <h4>Grid Options</h4>
+              </div>
+              <div class="col-lg-12">
+                <table border="1">
+                  <tbody>
+                    <tr>
+                      <th>id</th>
+                      <th>default value</th>
+                      <th>definition</th>
+                      <th>plunker</th>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">afterSelectionChange</td>
+                      <td style="padding: 5px" class="ng-binding">function (rowItem, event) {}</td>
+                      <td style="padding: 5px" class="ng-binding">Callback for when you want to validate something after selection. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">beforeSelectionChange</td>
+                      <td style="padding: 5px" class="ng-binding">function (rowItem, event) { return true; }</td>
+                      <td style="padding: 5px" class="ng-binding">Callback if you want to inspect something before selection, return false
+                        if you want to cancel the selection. return true otherwise. If you need to
+                        wait for an async call to proceed with selection you can use
+                        rowItem.continueSelection(event) method after returning false initially.
+                        Note: when shift+ Selecting multiple items in the grid this will only get
+                        called once and the rowItem will be an array of items that are queued to
+                        be selected. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">canSelectRows</td>
+                      <td style="padding: 5px" class="ng-binding">true</td>
+                      <td style="padding: 5px" class="ng-binding">To be able to have selectable rows in grid.</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">columnDefs</td>
+                      <td style="padding: 5px" class="ng-binding">undefined</td>
+                      <td style="padding: 5px" class="ng-binding">definitions of columns as an array [], if not defines columns are
+                        auto-generated. See github wiki for more details. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">columnWidth</td>
+                      <td style="padding: 5px" class="ng-binding">100</td>
+                      <td style="padding: 5px" class="ng-binding">Column width of columns in grid.</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">data</td>
+                      <td style="padding: 5px" class="ng-binding">ko.observableArray([]) or simple array[] if you don't need databinding. </td>
+                      <td style="padding: 5px" class="ng-binding">Data being displayed in the grid. Each item in the array is mapped to a
+                        row being displayed. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">displaySelectionCheckbox</td>
+                      <td style="padding: 5px" class="ng-binding">true</td>
+                      <td style="padding: 5px" class="ng-binding">Row selection check boxes appear as the first column.</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">enableColumnResize</td>
+                      <td style="padding: 5px" class="ng-binding">true</td>
+                      <td style="padding: 5px" class="ng-binding">Enable or disable resizing of columns</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">enablePaging</td>
+                      <td style="padding: 5px" class="ng-binding">false</td>
+                      <td style="padding: 5px" class="ng-binding">Enables the server-side paging feature</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">enableRowReordering</td>
+                      <td style="padding: 5px" class="ng-binding">false</td>
+                      <td style="padding: 5px" class="ng-binding">Enable drag and drop row reordering. Only works in HTML5 compliant
+                        browsers. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">enableSorting</td>
+                      <td style="padding: 5px" class="ng-binding">true</td>
+                      <td style="padding: 5px" class="ng-binding">Enables or disables sorting in grid.</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">footerRowHeight</td>
+                      <td style="padding: 5px" class="ng-binding">55</td>
+                      <td style="padding: 5px" class="ng-binding">Defining the height of the footer in pixels.</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">footerVisible</td>
+                      <td style="padding: 5px" class="ng-binding">true</td>
+                      <td style="padding: 5px" class="ng-binding">Show or hide the footer alltogether the footer is enabled by default </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">headerRowHeight</td>
+                      <td style="padding: 5px" class="ng-binding">32</td>
+                      <td style="padding: 5px" class="ng-binding">The height of the header row in pixels.</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">headerRowTemplate</td>
+                      <td style="padding: 5px" class="ng-binding">undefined</td>
+                      <td style="padding: 5px" class="ng-binding">Define a header row template for further customization. See github wiki
+                        for more details. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">jqueryUIDraggable</td>
+                      <td style="padding: 5px" class="ng-binding">false</td>
+                      <td style="padding: 5px" class="ng-binding">Enables the use of jquery UI reaggable/droppable plugin. requires jqueryUI
+                        to work if enabled. Useful if you want drag + drop but your users insist
+                        on crappy browsers. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">jqueryUITheme</td>
+                      <td style="padding: 5px" class="ng-binding">false</td>
+                      <td style="padding: 5px" class="ng-binding">Enable the use jqueryUIThemes</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">keepLastSelected</td>
+                      <td style="padding: 5px" class="ng-binding">true</td>
+                      <td style="padding: 5px" class="ng-binding">prevent unselections when ini single selection mode.</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">maintainColumnRatios</td>
+                      <td style="padding: 5px" class="ng-binding">undefined</td>
+                      <td style="padding: 5px" class="ng-binding">Maintains the column widths while resizing. Defaults to true when using
+                        *'s or undefined widths. Can be ovverriden by setting to false. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">multiSelect</td>
+                      <td style="padding: 5px" class="ng-binding">true</td>
+                      <td style="padding: 5px" class="ng-binding">Set this to false if you only want one item selected at a time</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">pagingOptions</td>
+                      <td style="padding: 5px" class="ng-binding">{ pageSizes: ko.observableArray([250, 500, 1000]), pageSize:
+                        ko.observable(250), totalServerItems: ko.observable(0), currentPage:
+                        ko.observable(1) } </td>
+                      <td style="padding: 5px" class="ng-binding"> pageSizes: list of available page sizes. pageSize: currently selected
+                        page size. totalServerItems: Total items are on the server. currentPage:
+                        the uhm... current page. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">plugins</td>
+                      <td style="padding: 5px" class="ng-binding">[]</td>
+                      <td style="padding: 5px" class="ng-binding">Array of plugin functions to register in koGrid</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">rowHeight</td>
+                      <td style="padding: 5px" class="ng-binding">30</td>
+                      <td style="padding: 5px" class="ng-binding">Row height of rows in grid.</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">rowTemplate</td>
+                      <td style="padding: 5px" class="ng-binding">undefined</td>
+                      <td style="padding: 5px" class="ng-binding">Define a row Template to customize output. See github wiki for more
+                        details. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">selectedItems</td>
+                      <td style="padding: 5px" class="ng-binding">ko.observableArray([])</td>
+                      <td style="padding: 5px" class="ng-binding">all of the items selected in the grid. In single select mode there will
+                        only be one item in the array. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">selectWithCheckboxOnly</td>
+                      <td style="padding: 5px" class="ng-binding">false</td>
+                      <td style="padding: 5px" class="ng-binding">Disable row selections by clicking on the row and only when the checkbox
+                        is clicked. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">showFilter</td>
+                      <td style="padding: 5px" class="ng-binding">true</td>
+                      <td style="padding: 5px" class="ng-binding">Enables display of the filterbox in the column menu. If both
+                        showColumnMenu and showFilter are false the menu button will not display. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">sortInfo</td>
+                      <td style="padding: 5px" class="ng-binding">undefined</td>
+                      <td style="padding: 5px" class="ng-binding">Define a sortInfo object to specify a default sorting state. You can also
+                        observe this variable to utilize server-side sorting (see
+                        useExternalSorting). Syntax is sortinfo: { field: 'fieldName', direction:
+                        'ASC'/'asc' || 'desc'/'DESC'} </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in gridOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">tabIndex</td>
+                      <td style="padding: 5px" class="ng-binding">0</td>
+                      <td style="padding: 5px" class="ng-binding">Set the tab index of the Vieport.</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <P><br/>
+              <br/>
+            </P>
+            <div class="row">
+              <div class="col-lg-12">
+                <h4>ColumnDefs Options</h4>
+              </div>
+              <div class="col-lg-12">
+                <table border="1">
+                  <tbody>
+                    <tr>
+                      <th>id</th>
+                      <th>default value</th>
+                      <th>definition</th>
+                      <th>plunker</th>
+                    </tr>
+                    <!-- ngRepeat: data in columnDefsOptionsData -->
+                    <tr ng-repeat="data in columnDefsOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">cellClass</td>
+                      <td style="padding: 5px" class="ng-binding">''</td>
+                      <td style="padding: 5px" class="ng-binding">Appends a css class for the column cells</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in columnDefsOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">cellFormatter</td>
+                      <td style="padding: 5px" class="ng-binding">undefined</td>
+                      <td style="padding: 5px" class="ng-binding">A function which takes the value of the cell and returns the display
+                        value. Useful when your data model has an underlying value which you
+                        need to convert to a human readable format. Example
+                        function(unixTimeTicks) { return new Date(unixTimeTicks); } </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in columnDefsOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">cellTemplate</td>
+                      <td style="padding: 5px" class="ng-binding">''</td>
+                      <td style="padding: 5px" class="ng-binding">Sets the cell template for the column. See github wiki for more
+                        details. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in columnDefsOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">displayName</td>
+                      <td style="padding: 5px" class="ng-binding">field</td>
+                      <td style="padding: 5px" class="ng-binding">Sets the pretty display name of the column. default is the field
+                        given </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in columnDefsOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">field</td>
+                      <td style="padding: 5px" class="ng-binding">''</td>
+                      <td style="padding: 5px" class="ng-binding">The string name of the property in your data model you want that
+                        column to represent. Can also be a property path on your data model.
+                        'foo.bar.myField', 'Name.First', etc.. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in columnDefsOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">headerCellTemplate</td>
+                      <td style="padding: 5px" class="ng-binding">''</td>
+                      <td style="padding: 5px" class="ng-binding">Sets the template for the column header cell. See github wiki for
+                        more details. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in columnDefsOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">headerClass</td>
+                      <td style="padding: 5px" class="ng-binding">''</td>
+                      <td style="padding: 5px" class="ng-binding">Appends a css class for the column header.</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in columnDefsOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">maxWidth</td>
+                      <td style="padding: 5px" class="ng-binding">9000</td>
+                      <td style="padding: 5px" class="ng-binding">Sets the maximum width of the column.</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in columnDefsOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">minWidth</td>
+                      <td style="padding: 5px" class="ng-binding">50</td>
+                      <td style="padding: 5px" class="ng-binding">Sets the minimum width of the column.</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in columnDefsOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">resizable</td>
+                      <td style="padding: 5px" class="ng-binding">true</td>
+                      <td style="padding: 5px" class="ng-binding">Whether or not column is resizable.</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in columnDefsOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">sortable</td>
+                      <td style="padding: 5px" class="ng-binding">true</td>
+                      <td style="padding: 5px" class="ng-binding">Whether or not column is sortable.</td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in columnDefsOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">sortFn</td>
+                      <td style="padding: 5px" class="ng-binding">Based on the detected data type</td>
+                      <td style="padding: 5px" class="ng-binding">Sets the sort function for the column. Useful when you have data
+                        that is formatted in an unusal way or if you want to sort on an
+                        underlying data type. Example: function(a,b){return a &gt; b} </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                    <tr ng-repeat="data in columnDefsOptionsData" class="ng-scope">
+                      <td style="padding: 5px" class="ng-binding">width</td>
+                      <td style="padding: 5px" class="ng-binding">'*'</td>
+                      <td style="padding: 5px" class="ng-binding">Sets the width of the column. Can be a fixed width in pixels as an
+                        int (42), string px('42px'), percentage string ('42%'), weighted
+                        asterisks (width divided by total number of *'s is all column
+                        definition widths) See github wiki for more details. </td>
+                      <td style="padding: 5px" class="ng-binding">Link</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.tab-pane (Tables) -->
+      
+      <div class="tab-pane fade in" id="forms">
+        <h4>Forms</h4>
+        <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business success.
+          Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support services to help you
+          maintain and maximize performance of all Oracle mission critical systems.</p>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="panel panel-default">
+              <div class="panel-heading"><i class="fa fa-keyboard-o fa-fw"></i> Text Inputs</div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <form role="form">
+                      <div class="form-group">
+                        <label>Text Input</label>
+                        <input class="form-control">
+                        <p class="help-block">Help text here.</p>
+                      </div>
+                      <div class="form-group">
+                        <label>Text Input Placeholder</label>
+                        <input class="form-control" placeholder="Enter text">
+                        <p class="help-block">Help text here.</p>
+                      </div>
+                      <div class="form-group">
+                        <label>Text area</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- /.col-lg-6 (nested) -->
+                  <div class="col-lg-6">
+                    <fieldset disabled>
+                      <div class="form-group">
+                        <label for="disabledInput">Text Input</label>
+                        <input class="form-control" id="disabledInput"
+                                                                   placeholder="Disabled" disabled="" type="text">
+                        <p class="help-block">Help text here.</p>
+                      </div>
+                      <div class="form-group">
+                        <label>Text Input Placeholder</label>
+                        <input class="form-control" placeholder="Disabled">
+                        <p class="help-block">Help text here.</p>
+                      </div>
+                      <div class="form-group">
+                        <label>Text area</label>
+                        <textarea class="form-control" rows="3" placeholder="Disabled"></textarea>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <!-- /.col-lg-6 (nested) --> 
+                </div>
+                <!-- /.row (nested) --> 
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-3 -->
+          <div class="col-lg-3">
+            <div class="panel panel-default">
+              <div class="panel-heading"><i class="fa fa-check-square fa-fw"></i> Checkboxes &amp; Radio Buttons</div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <form role="form">
+                      <div class="form-group">
+                        <label>Checkboxes</label>
+                        <div class="checkbox">
+                          <label>
+                            <input value="" type="checkbox">
+                            Checkbox 1 </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input value="" type="checkbox">
+                            Checkbox 2 </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input value="" type="checkbox">
+                            Checkbox 3 </label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Inline Checkboxes</label>
+                        <br>
+                        <label class="checkbox-inline">
+                          <input type="checkbox">
+                          1 </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox">
+                          2 </label>
+                        <label class="checkbox-inline">
+                          <input
+                type="checkbox">
+                          3 </label>
+                      </div>
+                      <div class="form-group">
+                        <label>Radio Buttons</label>
+                        <div class="radio">
+                          <label>
+                            <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+                            Radio 1 </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
+                            Radio 2 </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input name="optionsRadios" id="optionsRadios3" value="option3" type="radio">
+                            Radio 3 </label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Inline Radio Buttons</label>
+                        <br>
+                        <label class="radio-inline">
+                          <input name="optionsRadiosInline"
+                                                                                           id="optionsRadiosInline1"
+                                                                                           value="option1" checked=""
+                                                                                           type="radio">
+                          1 </label>
+                        <label class="radio-inline">
+                          <input name="optionsRadiosInline" id="optionsRadiosInline2" value="option2"
+                                                  type="radio">
+                          2 </label>
+                        <label class="radio-inline">
+                          <input
+                name="optionsRadiosInline" id="optionsRadiosInline3" value="option3" type="radio">
+                          3 </label>
+                      </div>
+                      <div class="form-group">
+                        <label>Selects</label>
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>Multiple Selects</label>
+                        <select multiple="" class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- /.col-lg-6 (nested) -->
+                  <div class="col-lg-6">
+                    <form role="form">
+                      <fieldset disabled>
+                        <div class="form-group">
+                          <label>Checkboxes</label>
+                          <div class="checkbox">
+                            <label>
+                              <input value="" type="checkbox">
+                              Checkbox 1 </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input value="" type="checkbox">
+                              Checkbox 2 </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input value="" type="checkbox">
+                              Checkbox 3 </label>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label>Inline Checkboxes</label>
+                          <br>
+                          <label class="checkbox-inline">
+                            <input type="checkbox">
+                            1 </label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox">
+                            2 </label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox">
+                            3 </label>
+                        </div>
+                        <div class="form-group">
+                          <label>Radio Buttons</label>
+                          <div class="radio">
+                            <label>
+                              <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+                              Radio
+                              1 </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
+                              Radio 2 </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input name="optionsRadios" id="optionsRadios3" value="option3" type="radio">
+                              Radio 3 </label>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label>Inline Radio Buttons</label>
+                          <br>
+                          <label class="radio-inline">
+                            <input name="optionsRadiosInline"
+                                                                                             id="optionsRadiosInline1"
+                                                                                             value="option1" checked=""
+                                                                                             type="radio">
+                            1 </label>
+                          <label class="radio-inline">
+                            <input name="optionsRadiosInline" id="optionsRadiosInline2" value="option2"
+                                                    type="radio">
+                            2 </label>
+                          <label class="radio-inline">
+                            <input
+                  name="optionsRadiosInline" id="optionsRadiosInline3" value="option3" type="radio">
+                            3 </label>
+                        </div>
+                        <div class="form-group">
+                          <label>Selects</label>
+                          <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>Multiple Selects</label>
+                          <select multiple="" class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </div>
+                  <!-- /.col-lg-6 (nested) --> 
+                </div>
+                <!-- /.row (nested) --> 
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <div class="col-lg-3">
+            <div class="panel panel-default">
+              <div class="panel-heading"><i class="fa fa-bolt fa-fw"></i> Form Validation</div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h4> Popover Error Messages</h4>
+                    <form role="form">
+                      <label class="control-label" for="inputErrorHoverPopOverTop">Input with error top (Select to view)</label>
+                      <div class="form-group has-error">
+                        <input title="" data-original-title="" class="form-control" data-toggle="popover" data-trigger="active"
+                     data-placement="top"
+                     data-content="<span style='color:#e40000 !important'>&nbsp;<i class='fa fa-exclamation-triangle fa-fw'></i>&nbsp;Error Message</span>"
+                     id="inputErrorHoverPopOverTop" type="text">
+                      </div>
+                      <label class="control-label" for="inputErrorHoverPopOverRight">Input with error right (Select to
+                        view)</label>
+                      <div class="form-group has-error">
+                        <input title="" data-original-title="" class="form-control" data-toggle="popover" data-trigger="active"
+                     data-placement="right"
+                     data-content="<span style='color:#e40000 !important'>&nbsp;<i class='fa fa-exclamation-triangle fa-fw'></i>&nbsp;Error Message</span>"
+                     id="inputErrorHoverPopOverRight" type="text">
+                      </div>
+                      <label class="control-label" for="inputErrorHoverPopOverRight">Input with error bottom (Select to
+                        view)</label>
+                      <div class="form-group has-error">
+                        <input title="" data-original-title="" class="form-control" data-toggle="popover" data-trigger="active"
+                     data-placement="bottom"
+                     data-content="<span style='color:#e40000 !important'>&nbsp;<i class='fa fa-exclamation-triangle fa-fw'></i>&nbsp;Error Message</span>"
+                     id="inputErrorHoverPopOverBottom" type="text">
+                      </div>
+                      <label class="control-label" for="inputErrorHoverPopOverRight">Input with error left (Select to
+                        view)</label>
+                      <div class="form-group has-error">
+                        <input title="" data-original-title="" class="form-control" data-toggle="popover" data-trigger="active"
+                     data-placement="left"
+                     data-content="<span style='color:#e40000 !important'>&nbsp;<i class='fa fa-exclamation-triangle fa-fw'></i>&nbsp;Error Message</span>"
+                     id="inputErrorHoverPopOverLeft" type="text">
+                      </div>
+                    </form>
+                    <h4>Input Highlighted Only</h4>
+                    <form role="form">
+                      <label class="control-label" for="inputSuccess">Input with success</label>
+                      <div class="form-group has-success">
+                        <input class="form-control" id="inputSuccess" type="text">
+                      </div>
+                      <label class="control-label" for="inputWarning">Input with warning</label>
+                      <div class="form-group has-warning">
+                        <input class="form-control" id="inputWarning" type="text">
+                      </div>
+                      <label class="control-label" for="inputError">Input with error</label>
+                      <div class="form-group has-error">
+                        <input class="form-control" id="inputError" type="text">
+                      </div>
+                    </form>
+                  </div>
+                  <!-- /.col-lg-12(nested) --> 
+                </div>
+                <!-- /.row (nested) --> 
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-3 -->
+          <div class="col-lg-3">
+            <div class="panel panel-default">
+              <div class="panel-heading"><i class="fa fa-rocket fa-fw"></i> Custom Forms</div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <form role="form">
+                      <div class="form-group input-group"><span class="input-group-addon">Gb</span>
+                        <input class="form-control"
+                                                                                                 placeholder="Enter Size in Gb"
+                                                                                                 type="number">
+                      </div>
+                      <div class="form-group input-group">
+                        <input class="form-control" type="text">
+                        <span class="input-group-addon">.00</span></div>
+                      <div class="form-group input-group"><span class="input-group-addon"><i class="fa fa-user"></i> </span>
+                        <input class="form-control" placeholder="" type="text">
+                      </div>
+                      <div class="form-group input-group"><span class="input-group-addon"><i class="fa fa-question"></i> </span>
+                        <input class="form-control" placeholder="" type="password">
+                      </div>
+                      <div class="form-group input-group">
+                        <input class="form-control" type="text">
+                        <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        </span></div>
+                      <button type="submit" class="btn btn-default">Submit Button</button>
+                      <button type="reset" class="btn btn-default">Reset Button</button>
+                    </form>
+                  </div>
+                  <!-- /.col-lg-12 (nested) --> 
+                </div>
+                <!-- /.row (nested) --> 
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-3 --> 
+          
+        </div>
+      </div>
+      <div class="tab-pane fade in" id="dates">
+        <h2>Dates and Time</h2>
+        <p>This page will outline a set of standards that govern the use of date and time information within the browser. The
+          goals for data and time handling are outlined below:
+        <ol>
+          <li>Dates will be formatted for display according to the date format specified in the user's profile.</li>
+          <li>Times will be formatted for display according to the time format specified in the user's profile.</li>
+          <li>Time (Date + Time and Time Only) values will be input by the user in the time zone specified in their profile
+            and converted to UTC time for persistence. </li>
+          <li>Time (Date + Time and Time Only) values will be converted from UTC to the time zone specified in the user's
+            profile before displaying in the browser. </li>
+          <li>We will provide a Date Picker UI control on any date and/or time input field.</li>
+        </ol>
+        </p>
+        <p>There are three different use cases for which these standards can apply:
+        <ol>
+          <li>Date + Time: The most common use cases includes both a date (year, month, day) and time portion. This is
+            sometimes also represented as a timestamp.
+          <li>Date Only: Used to record only date information without any notion of time. Examples of this type of date
+            include a person's birthday or an employees start date with the company. Because this data does not have time
+            precision, it MUST NOT be localized.
+          <li>Time Only: Used to record a particular time of day without a corresponding date element. This is most often used
+            when referring to some recurring time, such as "this employee gets off work at 5:00 every day".
+        </ol>
+        </p>
+        <p>Javascript provides a standard <a
+    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">Date type</a> that can
+          be used to represent a date and time value. The Date object's internal representation is epoch time
+          (milliseconds since January 1, 1970 UTC), and can provide a formatted date string in UTC or the local time of
+          the browser. The Date object does not provide a mechanism to convert or display time in any other time zone. </p>
+        <p>Our project bundles the <a href="http://momentjs.com/">moment.js</a> and <a href="http://momentjs.com/timezone/">moment-timezone.js</a> libraries to provide additional date/time handling capabilities. See their documentation for a detailed explanation
+          about the capabilities they provide. We have utilized the moment libraries during the implementation of the features
+          below.</p>
+        <h4>Date/Time Input</h4>
+        <div class="row">
+          <div class="col-xs-12">
+            <p>This section covers the standards for collecting date/time input on your page. There are three different
+              versions of the date picker that correspond to the 3 different use cases outlined above. Your view model MUST
+              declare a dependency on the date-util module in order to use any of these components on your page.</p>
+            <p>These components are built from the open source <a href="https://github.com/Eonasdan/bootstrap-datetimepicker">bootstrap-datetimepicker</a> project. Custom knockout bindings have been created to simplify the process of using the date picker components.
+              Each of the bindings take 2 parameters:
+            <ol>
+              <li>Main parameter: The name of an observable in your view model. The value of the observable must be a <code>Date</code> or <code>Moment</code> object. </li>
+              <li><code>dateOptions</code> (optional): An object whose properties must correspond to one or more of the options
+                described in the <a
+            href="http://eonasdan.github.io/bootstrap-datetimepicker/#options">bootstrap-datetimepicker
+                documentation</a>.For an example of this, see the Date Picker example below. </li>
+            </ol>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">Date Picker</div>
+              <div class="panel-body">
+                <p>The <code>datePicker</code> binding should be used whenever you have a date only input field.</p>
+                <div class="form-group">
+                  <label>Date Input Example</label>
+                  <div class='input-group date'
+               data-bind="datePicker: exampleDate1, dateOptions: {daysOfWeekDisabled: [0,6]}">
+                    <input class="form-control" placeholder="Choose a Date">
+                    <span class="input-group-addon"><span
+              class="glyphicon glyphicon-calendar"></span></span> </div>
+                </div>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label&gt;Date Input Example&lt;/label&gt;
+
+  &lt;div class='input-group date' data-bind=&quot;datePicker: exampleDate1, dateOptions: {daysOfWeekDisabled: [0,6]}&quot;&gt;
+    &lt;input class=&quot;form-control&quot; placeholder=&quot;Choose a Date&quot;&gt; &lt;span class=&quot;input-group-addon&quot;&gt;&lt;span
+      class=&quot;glyphicon glyphicon-calendar&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-3 --> 
+          
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">Time Picker</div>
+              <div class="panel-body">
+                <p>The <code>timePicker</code> binding should be used whenever you have a time only input field.</p>
+                <div class="form-group">
+                  <label>Time Input Example</label>
+                  <div class='input-group date' data-bind="timePicker: exampleDate2">
+                    <input class="form-control" placeholder="Choose a Time">
+                    <span class="input-group-addon"><span
+              class="glyphicon glyphicon-calendar"></span></span> </div>
+                </div>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label&gt;Time Input Example&lt;/label&gt;
+
+  &lt;div class='input-group date' data-bind=&quot;timePicker: exampleDate2&quot;&gt;
+    &lt;input class=&quot;form-control&quot; placeholder=&quot;Choose a Time&quot;&gt; &lt;span class=&quot;input-group-addon&quot;&gt;&lt;span
+      class=&quot;glyphicon glyphicon-calendar&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-3 --> 
+          
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">Date + Time Picker</div>
+              <div class="panel-body">
+                <p>The <code>dateTimePicker</code> binding should be used whenever you have a single input field for both date
+                  and time values.</p>
+                <div class="form-group">
+                  <label>Date + Time Input Example</label>
+                  <div class='input-group date' data-bind="dateTimePicker: exampleDate3">
+                    <input class="form-control" placeholder="Choose a Date and Time">
+                    <span class="input-group-addon"><span
+              class="glyphicon glyphicon-calendar"></span></span> </div>
+                </div>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label&gt;Date + Time Input Example&lt;/label&gt;
+
+  &lt;div class='input-group date' data-bind=&quot;dateTimePicker: exampleDate3&quot;&gt;
+    &lt;input class=&quot;form-control&quot; placeholder=&quot;Choose a Date and Time&quot;&gt; &lt;span class=&quot;input-group-addon&quot;&gt;&lt;span
+      class=&quot;glyphicon glyphicon-calendar&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-3 --> 
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h4>Date/Time Text Formatting</h4>
+            <p>This section covers the standards for outputting date and time values as text on your page. The goal is to
+              display the content according to the user's preferred format (as specified in their profile). A knockout binding
+              handler, <code>dateText</code>, has been created to simplify the process for a developer. This binding handler
+              takes two parameters:
+            <ol>
+              <li>Main parameter: The name of an observable in your view model. The value of the observable must be a <code>Date</code> or <code>Moment</code> object. </li>
+              <li><code>include</code> (optional): One of the literal values: <code>date</code> (default), <code>time</code>, or <code>both</code> to determine whether to display the date only, the time only, or the date and time. For an
+                example of this, see the sample code below. </li>
+            </ol>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">Formatted Date Text</div>
+              <div class="panel-body">
+                <p>The value of exampleDate1 is: <span data-bind="dateText: exampleDate1"></span></p>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;p&gt;The value of exampleDate1 is: &lt;span data-bind=&quot;dateText: exampleDate1&quot;&gt;&lt;/span&gt;&lt;/p&gt;</code></pre>
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-3 --> 
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">Formatted Time Text</div>
+              <div class="panel-body">
+                <p>The value of exampleDate2 is: <span data-bind="dateText: exampleDate2, include: 'time'"></span></p>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;p&gt;The value of exampleDate2 is: &lt;span data-bind=&quot;dateText: exampleDate2, include: 'time'&quot;&gt;&lt;/span&gt;&lt;/p&gt;</code></pre>
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-3 --> 
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">Formatted Date and Time Text</div>
+              <div class="panel-body">
+                <p>The value of exampleDate3 is: <span data-bind="dateText: exampleDate3, include: 'both'"></span></p>
+                <pre data-bind="stopBinding: true" class="prettyprint"><code>&lt;p&gt;The value of exampleDate3 is: &lt;span data-bind=&quot;dateText: exampleDate3, include: 'both'&quot;&gt;&lt;/span&gt;&lt;/p&gt;</code></pre>
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-3 --> 
+        </div>
+      </div>
+      <!-- /.tab-pane (Forms) -->
+      <div class="tab-pane fade in" id="panels">
+        <h4>Panels</h4>
+        <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business success.
+          Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support services to help you
+          maintain and maximize performance of all Oracle mission critical systems.</p>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="panel panel-default">
+              <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i> Default Panel 6 cols</div>
+              <div class="panel-body min-height-200">
+                <h4> Why Choose ACS? </h4>
+                <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business
+                  success. Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support
+                  services to help you maintain and maximize performance of all Oracle mission critical systems.</p>
+              </div>
+              <div class="panel-footer"> Panel Footer (Optional)</div>
+            </div>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="panel panel-default">
+              <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i> Default Panel 4 Cols</div>
+              <div class="panel-body min-height-200">
+                <h4> Why Choose ACS? </h4>
+                <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business
+                  success. Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support
+                  services to help you maintain and maximize performance of all Oracle mission critical systems.</p>
+              </div>
+              <div class="panel-footer"> Panel Footer (Optional)</div>
+            </div>
+          </div>
+          <!-- /.col-lg-3 -->
+          <div class="col-lg-2">
+            <div class="panel panel-default">
+              <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i> Default Panel 2 Cols</div>
+              <div class="panel-body min-height-200">
+                <h4> Why Choose ACS? </h4>
+                <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business
+                  success. </p>
+              </div>
+              <div class="panel-footer"> Panel Footer (Optional)</div>
+            </div>
+          </div>
+          <!-- /.col-lg-4 --> 
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="panel panel-warning">
+              <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i> Warning Panel 4 col</div>
+              <div class="panel-body">
+                <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business
+                  success. Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support
+                  services to help you maintain and maximize performance of all Oracle mission critical systems.</p>
+              </div>
+              <div class="panel-footer"> Panel Footer (Optional)</div>
+            </div>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="panel panel-info">
+              <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i> Info Panel 4 col</div>
+              <div class="panel-body">
+                <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business
+                  success. Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support
+                  services to help you maintain and maximize performance of all Oracle mission critical systems.</p>
+              </div>
+              <div class="panel-footer"> Panel Footer (Optional)</div>
+            </div>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="panel panel-danger">
+              <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i> Danger Panel 4 col</div>
+              <div class="panel-body">
+                <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business
+                  success. Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support
+                  services to help you maintain and maximize performance of all Oracle mission critical systems.</p>
+              </div>
+              <div class="panel-footer"> Panel Footer (Optional)</div>
+            </div>
+          </div>
+          <!-- /.col-lg-4 --> 
+        </div>
+      </div>
+      <!-- /.tab-pane (Panels) -->
+      <div class="tab-pane fade in" id="wells">
+        <h4>Wells</h4>
+        <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business success.
+          Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support services to help you
+          maintain and maximize performance of all Oracle mission critical systems.</p>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="well">
+              <h4>Normal Well</h4>
+              <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business
+                success. Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support services
+                to help you maintain and maximize performance of all Oracle mission critical systems.</p>
+            </div>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="well well-lg">
+              <h4>Large Well</h4>
+              <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business
+                success. Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support services
+                to help you maintain and maximize performance of all Oracle mission critical systems.</p>
+            </div>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="well well-sm">
+              <h4>Small Well</h4>
+              <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business
+                success. Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support services
+                to help you maintain and maximize performance of all Oracle mission critical systems.</p>
+            </div>
+          </div>
+          <!-- /.col-lg-4 --> 
+        </div>
+      </div>
+      <!-- /.tab-pane (Wells) -->
+      <div class="tab-pane fade in" id="buttons">
+        <h4>Buttons</h4>
+        <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business success.
+          Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support services to help you
+          maintain and maximize performance of all Oracle mission critical systems.</p>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="panel panel-default">
+              <div class="panel-heading"><i class="fa fa-square-o fa-fw"></i> Generic Buttons</div>
+              <!-- /.panel-heading -->
+              <div class="panel-body">
+                <h4>Grey/Red Cross-hatched Buttons</h4>
+                <button type="button" class="btn btn-block red-btn">Block Level (No border-radius - Padding Top &amp; Bottom 10px)</button>
+                <br />
+                <p><button type="button" class="btn btn-primary btn-lg red-btn">Large button</button>
+                <button type="button" class="btn btn-primary red-btn">Default button</button>
+                <button type="button" class="btn btn-primary btn-sm red-btn">Small button</button>
+                <button type="button" class="btn btn-primary btn-xs red-btn">Mini button</button></p>
+                <hr>
+                <h4>Red/Grey Cross-hatched Buttons</h4>
+                <button type="button" class="btn btn-block grey-btn">Block Level (No border-radius - Padding Top &amp; Bottom 10px)</button>
+                <br />
+                <p><button type="button" class="btn btn-primary btn-lg grey-btn">Large button</button>
+                <button type="button" class="btn btn-primary grey-btn">Default button</button>
+                <button type="button" class="btn btn-primary btn-sm grey-btn">Small button</button>
+                <button type="button" class="btn btn-primary btn-xs grey-btn">Mini button</button></p>
+                <hr>
+                <h4>Bootstrap 3 Active Buttons</h4>
+                <p>
+                  <button type="button" class="btn btn-default">Default</button>
+                  <button type="button" class="btn btn-primary">Primary</button>
+                  <button type="button" class="btn btn-success">Success</button>
+                  <button type="button" class="btn btn-info">Info</button>
+                  <button type="button" class="btn btn-warning">Warning</button>
+                  <button type="button" class="btn btn-danger">Danger</button>
+                  <button type="button" class="btn btn-link">Link</button>
+                </p>
+                <hr>
+                <h4>Bootstrap 3 Disabled Buttons</h4>
+                <p>
+                  <button type="button" class="btn btn-default disabled">Default</button>
+                  <button type="button" class="btn btn-primary disabled">Primary</button>
+                  <button type="button" class="btn btn-success disabled">Success</button>
+                  <button type="button" class="btn btn-info disabled">Info</button>
+                  <button type="button" class="btn btn-warning disabled">Warning</button>
+                  <button type="button" class="btn btn-danger disabled">Danger</button>
+                  <button type="button" class="btn btn-link disabled">Link</button>
+                </p>
+                <hr>
+                <h4>Button Sizes</h4>
+                <p>
+                  <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                  <button type="button" class="btn btn-primary">Default button</button>
+                  <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                  <button type="button" class="btn btn-primary btn-xs">Mini button</button>
+                  <br>
+                  <br>
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                </p>
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+            
+          </div>
+          <!-- /.col-lg-6 -->
+          <div class="col-lg-6">
+            <div class="panel panel-default">
+              <div class="panel-heading"><i class="fa fa-square-o fa-fw"></i> Custom Block Level FontAwesome Buttons</div>
+              <!-- /.panel-heading -->
+              <div class="panel-body">
+                <div class="col-lg-3 col-xs-6"><a href="#" class="btn btn-success btn-lg btn-block" role="button"><i
+              class="fa fa-check-circle fa-fw icon-40"></i> <br>
+                  3 Col Status<br>
+                  99.07%</a> 
+                  <!-- /.btn --> 
+                </div>
+                <!-- /.col-lg-3 -->
+                
+                <div class="col-lg-3 col-xs-6"><a href="#" class="btn btn-warning btn-lg btn-block" role="button"><i
+              class="fa fa-exclamation-circle fa-fw icon-40"></i> <br>
+                  3 Col Warning<br>
+                  00.03%</a> 
+                  <!-- /.btn --> 
+                </div>
+                <!-- /.col-lg-3 -->
+                
+                <div class="col-lg-3 col-xs-6"><a href="#" class="btn btn-info btn-lg btn-block" role="button"><i
+              class="fa fa-question-circle fa-fw icon-40"></i> <br>
+                  3 Col Info<br>
+                  18,897</a> 
+                  <!-- /.btn --> 
+                </div>
+                <!-- /.col-lg-3 -->
+                
+                <div class="col-lg-3 col-xs-6"><a href="#" class="btn btn-danger btn-lg btn-block" role="button"><i
+              class="fa fa-times-circle fa-fw icon-40"></i> <br>
+                  3 Col Danger<br>
+                  123</a> 
+                  <!-- /.btn --> 
+                </div>
+                <!-- /.col-lg-3 -->
+                <div class="clearfix">&nbsp;</div>
+                <div class="col-lg-12 col-xs-12"><a href="#" class="btn btn-default btn-lg btn-block" role="button"><i
+              class="fa fa-times-circle fa-fw icon-40"></i> <br>
+                  12 Col Default<br>
+                  123</a> 
+                  <!-- /.btn --> 
+                </div>
+                <!-- /.col-lg-12 -->
+                <div class="clearfix">&nbsp;</div>
+                <div class="col-lg-12 col-xs-12"><a href="#" class="btn btn-primary btn-lg btn-block" role="button"><i
+              class="fa fa-times-circle fa-fw icon-20"></i> 12 Col Primary</a> 
+                  <!-- /.btn --> 
+                </div>
+                <!-- /.col-lg-12 -->
+                <div class="clearfix">&nbsp;</div>
+                <div class="col-lg-1 col-xs-1"><a href="#" class="btn btn-default  btn-block" role="button"><i
+              class="fa fa-cloud fa-fw icon-10"></i></a> 
+                  <!-- /.btn --> 
+                </div>
+                <!-- /.col-lg-1 -->
+                <div class="col-lg-2 col-xs-2"><a href="#" class="btn btn-default btn-md btn-block" role="button"><i
+              class="fa fa-cloud fa-fw icon-20"></i></a> 
+                  <!-- /.btn --> 
+                </div>
+                <!-- /.col-lg-2 -->
+                <div class="col-lg-3 col-xs-3"><a href="#" class="btn btn-default btn-md btn-block" role="button"><i
+              class="fa fa-cloud fa-fw icon-20"></i></a> 
+                  <!-- /.btn --> 
+                </div>
+                <!-- /.col-lg-3 -->
+                <div class="col-lg-4 col-xs-4"><a href="#" class="btn btn-default btn-md btn-block" role="button"><i
+              class="fa fa-cloud fa-fw icon-30"></i></a> 
+                  <!-- /.btn --> 
+                </div>
+                <!-- /.col-lg-4 --> 
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+            
+          </div>
+          <!-- /.col-lg-6 --> 
+        </div>
+      </div>
+      <!-- /.tab-pane (Buttons) -->
+      
+      <div class="tab-pane fade in" id="notifications">
+        <h2>Modal Alert</h2>
+        Module "modules/common/dialog-utils" provides functions for displaying various modal alert boxes. 
+        To use these functions, just require "modules/common/dialog-utils" in you ViewModel.
+        <div>
+          <h3>alertInfo(message)</h3>
+          <pre>dialog.alertInfo('This is a test!');</pre>
+          <div>
+            <button data-bind="click: alertInfo">Click me</button>
+          </div>
+        </div>
+        <div>
+          <h3>alertSuccess(message)</h3>
+          <pre>dialog.alertSuccess('This is a test!');</pre>
+          <div>
+            <button data-bind="click: alertSuccess">Click me</button>
+          </div>
+        </div>
+        <div>
+          <h3>alertWarning(message)</h3>
+          <pre>dialog.alertWarning('This is a test!');</pre>
+          <div>
+            <button data-bind="click: alertWarning">Click me</button>
+          </div>
+        </div>
+        <div>
+          <h3>alertError(message)</h3>
+          <pre>dialog.alertError('This is a test!');</pre>
+          <div>
+            <button data-bind="click: alertError">Click me</button>
+          </div>
+        </div>
+        <div>
+          <h3>confirmationDialog(text, callback, cancelCallback, buttons)</h3>
+          <pre>dialog.confirmationDialog('This is a confirmation box, you should say something here.',
+                                                                        function(){console.log('OK clicked')},
+                                                                        function(){console.log('Cancel clicked')},
+                                                                        'Yes|No')</pre>
+          <div>
+            <button data-bind="click: confirmationDialog">Click me</button>
+          </div>
+        </div>
+        <div>
+          <h3>showModalDialog(heading, bodyText, cancelButtonTxt, okButtonTxt, callback, cancelCallback, iconType)</h3>
+          <p>This is a general purpose dialog box, all the above functions are based on this function.</p>
+          <pre>dialog.dialog.showModalDialog('Validation Error',
+            'Data validation failed, please see the error message besides the failed input field.',
+            null, 'OK', null, null)</pre>
+          <div>
+            <button data-bind="click: showModalDialog">Click me</button>
+          </div>
+        </div>
+        <p><br/>
+          <br/>
+          <br/>
+        </p>
+        <h2>Flash Notification</h2>
+        We also provides flash notification functions based on PNotify. This kind of notification is very useful for notifying user certain operation is completed, such as saving editing data.
+        To use these functions, just require "modules/common/dialog-utils" in you ViewModel.
+        <div>
+          <h3>notify(title, message)</h3>
+          <pre>dialog.notify('Here goes the title', 'Here goes the message');</pre>
+          <div>
+            <button data-bind="click: notify">Click me</button>
+          </div>
+        </div>
+        <div>
+          <h3>notifySuccess(title, message)</h3>
+          <pre>dialog.notifySuccess('Here goes the title', 'Here goes the message');</pre>
+          <div>
+            <button data-bind="click: notifySuccess">Click me</button>
+          </div>
+        </div>
+        <div>
+          <h3>notifyInfo(title, message)</h3>
+          <pre>dialog.notifyInfo('Here goes the title', 'Here goes the message');</pre>
+          <div>
+            <button data-bind="click: notifyInfo">Click me</button>
+          </div>
+        </div>
+        <div>
+          <h3>notifyError(title, message)</h3>
+          <pre>dialognotifyError('Here goes the title', 'Here goes the message');</pre>
+          <div>
+            <button data-bind="click: notifyError">Click me</button>
+          </div>
+        </div>
+        <p><br/>
+          <br/>
+          <br/>
+        </p>
+          <h2>Preloader</h2>
+          <p>Page/data preloader provides an indication for user that some task is running in the background.</p>
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">Modal Preloader</div>
+                      <!-- /.panel-heading -->
+                      <div class="panel-body">
+                          <button class="btn btn-primary btn-lg" onclick="$('#modalPreloader').modal('show')"> Launch Modal Preloader </button>                          
+                          <pre><code>
+    &lt;button class="btn btn-primary btn-lg" onclick="$('#modalPreloader').modal('show')"&gt; Launch Modal Preloader &lt;/button&gt;                          
+                          </code></pre>
+
+                      </div>
+                      <!-- .panel-body -->
+                  </div>
+                  <!-- /.panel -->
+              </div>
+              <!-- /.col-lg-8 -->
+              <div class="col-lg-12">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">Header Preloader</div>
+                      <!-- /.panel-heading -->
+                      <div class="panel-body">
+                          <p>Header preloader is added to any ajax call by default, there is no need to individually use it in your ajax call.</p>
+                          
+                          <button class="btn btn-primary btn-lg" onclick="$('#loading').show()"> Show Header Preloader </button>
+                          <button class="btn btn-primary btn-lg" onclick="$('#loading').hide()"> Hide Header Preloader </button>                          
+                          <pre><code>
+    &lt;button class="btn btn-primary btn-lg" onclick="$('#loading').show()"&gt; Show Header Preloader &lt;/button&gt;
+    &lt;button class="btn btn-primary btn-lg" onclick="$('#loading').hide()"&gt; Hide Header Preloader &lt;/button&gt;                           
+                          </code></pre>                          
+                      </div>
+                      <!-- .panel-body -->
+                  </div>
+                  <!-- /.panel -->
+              </div>
+              <!-- /.col-lg-8 -->              
+          </div>
+
+          <h2>HTML Notifications</h2>
+        <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business success.
+          Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support services to help you
+          maintain and maximize performance of all Oracle mission critical systems.</p>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="panel panel-default">
+              <div class="panel-heading"> Alert Styles</div>
+              <!-- /.panel-heading -->
+              <div class="panel-body">
+                <div class="alert alert-success"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#"
+                                                                                                         class="alert-link">Alert
+                  Link</a>. </div>
+                <div class="alert alert-info"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#"
+                                                                                                      class="alert-link">Alert
+                  Link</a>. </div>
+                <div class="alert alert-warning"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#"
+                                                                                                         class="alert-link">Alert
+                  Link</a>. </div>
+                <div class="alert alert-danger"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#"
+                                                                                                        class="alert-link">Alert
+                  Link</a>. </div>
+              </div>
+              <!-- .panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-6 -->
+          <div class="col-lg-6">
+            <div class="panel panel-default">
+              <div class="panel-heading"> Dismissable Alerts</div>
+              <!-- /.panel-heading -->
+              <div class="panel-body">
+                <div class="alert alert-success alert-dismissable">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>. </div>
+                <div class="alert alert-info alert-dismissable">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>. </div>
+                <div class="alert alert-warning alert-dismissable">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>. </div>
+                <div class="alert alert-danger alert-dismissable">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>. </div>
+              </div>
+              <!-- .panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-6 --> 
+        </div>
+      </div>
+      <!-- /.tab-pane (Notifications) -->
+      
+      <div class="tab-pane fade in" id="typography">
+        <h4>Typography</h4>
+        <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business success.
+          Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support services to help you
+          maintain and maximize performance of all Oracle mission critical systems.</p>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="panel panel-default min-height-400">
+              <div class="panel-heading"><i class="fa fa-bold fa-fw"></i> Headings</div>
+              <div class="panel-body">
+                <h1 style="margin-top:0px !important">Heading 1 <small>Sub-heading</small> </h1>
+                <h2>Heading 2 <small>Sub-heading</small> </h2>
+                <h3>Heading 3 <small>Sub-heading</small> </h3>
+                <h4>Heading 4 <small>Sub-heading</small> </h4>
+                <h5>Heading 5 <small>Sub-heading</small> </h5>
+                <h6>Heading 6 <small>Sub-heading</small> </h6>
+                <h4 class="text-left">Left aligned text.</h4>
+                <h5 class="text-center">Center aligned text.</h5>
+                <h6 class="text-right">Right aligned text.</h6>
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="panel panel-default min-height-400">
+              <div class="panel-heading"><i class="fa fa-align-justify fa-fw"></i> Paragraphs</div>
+              <div class="panel-body">
+                <p class="lead">This is an example of lead body copy.</p>
+                <p>This is an example of standard paragraph text. This is an example of <a href="#">link anchor text</a> within body copy.</p>
+                <p> <small>This is an example of small, fine print text.</small> </p>
+                <p><strong>This is an example of strong, bold text.</strong></p>
+                <p><em>This is an example of emphasized, italic text.</em></p>
+                <p class="text-left">Left aligned text.</p>
+                <p class="text-center">Center aligned text.</p>
+                <p class="text-right">Right aligned text.</p>
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="panel panel-default min-height-400">
+              <div class="panel-heading"><i class="fa fa-bolt fa-fw"></i> Emphasis Classes</div>
+              <div class="panel-body">
+                <h3 class="text-muted">Muted Text <code>text-muted</code></h3>
+                <h3 class="text-primary">Primary Text <code>text-primary</code></h3>
+                <h3 class="text-success">Success Text <code>text-success</code></h3>
+                <h3 class="text-info">Info Text <code>text-info</code></h3>
+                <h3 class="text-warning">Warning Text <code>text-warning</code></h3>
+                <h3 class="text-danger">Danger Text <code>text-danger</code></h3>
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-4 --> 
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="panel panel-default min-height-450">
+              <div class="panel-heading"><i class="fa fa-scissors fa-fw"></i> Abbreviations</div>
+              <div class="panel-body">
+                <p>The abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+                <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is an abbreviation for a HyperText
+                  Markup Language.</p>
+                <hr>
+                <h4>Addresses</h4>
+                <address>
+                <strong>Oracle, Inc.</strong> <br>
+                100 Oracle Pkwy, <br>
+                Redwood City, CA 94065, <br>
+                United States.<br>
+                <abbr title="Phone">P:</abbr>(650) 506-7000
+                </address>
+                <address>
+                <strong>Full Name</strong> <br>
+                <a href="mailto:#">first.last@oracle.com</a>
+                </address>
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="panel panel-default min-height-450">
+              <div class="panel-heading"><i class="fa fa-comment fa-fw"></i> Blockquotes</div>
+              <div class="panel-body">
+                <h4>Default Blockquote</h4>
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                </blockquote>
+                <h4>Blockquote with Citation</h4>
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                  <small>Someone famous in <cite title="Source Title">Source Title</cite></small> </blockquote>
+                <blockquote class="pull-right">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                </blockquote>
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="panel panel-default min-height-450">
+              <div class="panel-heading"><i class="fa  fa-th-list fa-fw"></i> Lists</div>
+              <div class="panel-body">
+                <div class="col-lg-6">
+                  <h4>Unordered List</h4>
+                  <ul>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>
+                      <ul>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                      </ul>
+                    </li>
+                    <li>List Item</li>
+                  </ul>
+                  <h4>Ordered List</h4>
+                  <ol>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                  </ol>
+                </div>
+                <!-- /.col-lg-6 (inline) -->
+                <div class="col-lg-6">
+                  <h4>Unstyled List</h4>
+                  <ul class="list-unstyled">
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                  </ul>
+                  <h4>Inline List</h4>
+                  <ul class="list-inline">
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                  </ul>
+                </div>
+                <!-- /.col-lg-6 (inline) --> 
+                
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-4 --> 
+          
+        </div>
+      </div>
+      <!-- /.tab-pane (Typography) -->
+      
+      <div class="tab-pane fade in" id="grid">
+        <h4>Grid</h4>
+        <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business success.
+          Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support services to help you
+          maintain and maximize performance of all Oracle mission critical systems.</p>
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered table-hover" style="background:rgba(255,255,255,1)">
+            <thead>
+              <tr>
+                <th></th>
+                <th> Extra small devices <small>Phones (&lt;768px)</small> </th>
+                <th> Small devices <small>Tablets (≥768px)</small> </th>
+                <th> Medium devices <small>Desktops (≥992px)</small> </th>
+                <th> Large devices <small>Desktops (≥1200px)</small> </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Grid behavior</th>
+                <td>Horizontal at all times</td>
+                <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+              </tr>
+              <tr>
+                <th>Max container width</th>
+                <td>None (auto)</td>
+                <td>750px</td>
+                <td>970px</td>
+                <td>1170px</td>
+              </tr>
+              <tr>
+                <th>Class prefix</th>
+                <td><code>.col-xs-</code></td>
+                <td><code>.col-sm-</code></td>
+                <td><code>.col-md-</code></td>
+                <td><code>.col-lg-</code></td>
+              </tr>
+              <tr>
+                <th># of columns</th>
+                <td colspan="4">12</td>
+              </tr>
+              <tr>
+                <th>Max column width</th>
+                <td class="text-muted">Auto</td>
+                <td>60px</td>
+                <td>78px</td>
+                <td>95px</td>
+              </tr>
+              <tr>
+                <th>Gutter width</th>
+                <td colspan="4">30px (15px on each side of a column)</td>
+              </tr>
+              <tr>
+                <th>Nestable</th>
+                <td colspan="4">Yes</td>
+              </tr>
+              <tr>
+                <th>Offsets</th>
+                <td colspan="4">Yes</td>
+              </tr>
+              <tr>
+                <th>Column ordering</th>
+                <td colspan="4">Yes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid
+          classes targeted at smaller devices. Therefore, applying any <code>.col-md-</code> class to an element will not
+          only affect its styling on medium devices but also on large devices if a <code>.col-lg-</code> class is not
+          present.</p>
+      </div>
+      <!-- /.tab-pane (Grid) -->
+      
+      <div class="tab-pane fade in" id="colours">
+        <h4>Colours</h4>
+        <p>Seamless data availability, optimal applications performance, and reduced IT risk are critical to business success.
+          Oracle Advanced Customer Support (ACS) Services delivers tailored mission-critical support services to help you
+          maintain and maximize performance of all Oracle mission critical systems.</p>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="panel panel-default">
+              <div class="panel-heading"><i class="fa fa-magic fa-fw"></i> Chart Colour Scheme - Primary Oracle Styles</div>
+              <!-- /.panel-heading -->
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-3 text-center">
+                    <h5>Solid Colour 01</h5>
+                    <div class="trans-bg">
+                      <div class="colour-solid-01 swatch-pane swatch-border"></div>
+                    </div>
+                    <p> #ff1414</p>
+                  </div>
+                  <!-- /.col-lg-3 (nested) -->
+                  <div class="col-lg-3 text-center">
+                    <h5>Solid Colour 02</h5>
+                    <div class="trans-bg">
+                      <div class="colour-solid-02 swatch-pane swatch-border"></div>
+                    </div>
+                    <p> #000000</p>
+                  </div>
+                  <!-- /.col-lg-3 (nested) -->
+                  <div class="col-lg-3 text-center">
+                    <h5>Solid Colour 03</h5>
+                    <div class="trans-bg">
+                      <div class="colour-solid-03 swatch-pane swatch-border"></div>
+                    </div>
+                    <p> #424545</p>
+                  </div>
+                  <!-- /.col-lg-3 (nested) -->
+                  <div class="col-lg-3 text-center">
+                    <h5>Solid Colour 04</h5>
+                    <div class="trans-bg">
+                      <div class="colour-solid-04 swatch-pane swatch-border"></div>
+                    </div>
+                    <p> #a3a3a3 </p>
+                  </div>
+                  <!-- /.col-lg-3 (nested) --> 
+                  
+                </div>
+                <!-- /.row (nested) --> 
+                
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-8 -->
+          <div class="col-lg-4">
+            <div class="panel panel-default">
+              <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Primary Chart Colours</div>
+              <!-- /.panel-heading -->
+              <div class="panel-body"> 
+                <!--<div style="width:100%; height:218px" data-bind="ojComponent: {--><!--component: 'ojChart', --> 
+                <!--type: 'pie', animationOnDisplay:'auto', --> 
+                <!--styleDefaults: {colors: ['#ff1414', '#000000','#424545', '#a3a3a3'], threeDEffect: 'off', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},--> 
+                <!--animationOnDataChange: 'auto',--><!--seriesEffect: 'gradient',--><!--hideAndShowBehavior: 'withRescale',--> 
+                <!--selection: 'single',--> 
+                <!--legend: {rendered: 'on', position: 'right', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:9px;'},--> 
+                <!--overview: {rendered: 'on'},                            --><!--selection: 'multiple',--> 
+                <!--series: [{name: 'Colour 01', items: [25]},--> 
+                <!--{name: 'Colour 02', items: [25]},                                     --> 
+                <!--{name: 'Colour 03', items: [25]},--><!--{name: 'Colour 04', items: [25]}--><!--], --> 
+                <!--groups: ['Group A'], --><!--animationOnDisplay: 'auto'--><!--}"></div>--><!-- /.ojChart --> 
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-4 --> 
+        </div>
+        <!-- /.row -->
+        
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="panel panel-default">
+              <div class="panel-heading"><i class="fa fa-magic fa-fw"></i> Chart Colour Scheme - Secondary Oracle Styles</div>
+              <!-- /.panel-heading -->
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-2 text-center">
+                    <h5>Solid Colour 05</h5>
+                    <div class="trans-bg">
+                      <div class="colour-solid-05 swatch-pane swatch-border"></div>
+                    </div>
+                    <p> #e5e5e5 </p>
+                  </div>
+                  <!-- /.col-lg-2 (nested) -->
+                  <div class="col-lg-2 text-center">
+                    <h5>Solid Colour 06</h5>
+                    <div class="trans-bg">
+                      <div class="colour-solid-06 swatch-pane swatch-border"></div>
+                    </div>
+                    <p> #8baac3 </p>
+                  </div>
+                  <!-- /.col-lg-2 (nested) -->
+                  <div class="col-lg-2 text-center">
+                    <h5>Solid Colour 07</h5>
+                    <div class="trans-bg">
+                      <div class="colour-solid-07 swatch-pane swatch-border"></div>
+                    </div>
+                    <p> #5b6981 </p>
+                  </div>
+                  <!-- /.col-lg-2 (nested) -->
+                  <div class="col-lg-2 text-center">
+                    <h5>Solid Colour 08</h5>
+                    <div class="trans-bg">
+                      <div class="colour-solid-08 swatch-pane swatch-border"></div>
+                    </div>
+                    <p> #7d7369 </p>
+                  </div>
+                  <!-- /.col-lg-2 (nested) -->
+                  <div class="col-lg-2 text-center">
+                    <h5>Solid Colour 09</h5>
+                    <div class="trans-bg">
+                      <div class="colour-solid-09 swatch-pane swatch-border"></div>
+                    </div>
+                    <p> #786464 </p>
+                  </div>
+                  <!-- /.col-lg-2 (nested) --> 
+                  
+                </div>
+                <!-- /.row (nested) --> 
+                
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-8 -->
+          <div class="col-lg-4">
+            <div class="panel panel-default">
+              <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Secondary Chart Colours</div>
+              <!-- /.panel-heading -->
+              <div class="panel-body"> 
+                <!--<div style="width:100%; height:218px" data-bind="ojComponent: {--><!--component: 'ojChart', --> 
+                <!--type: 'pie', animationOnDisplay:'auto', --> 
+                <!--styleDefaults: {colors: ['#e5e5e5', '#8baac3','#5b6981', '#7d7369', '#786464'], threeDEffect: 'off', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},--> 
+                <!--animationOnDataChange: 'auto',--><!--seriesEffect: 'gradient',--><!--hideAndShowBehavior: 'withRescale',--> 
+                <!--selection: 'single',--> 
+                <!--legend: {rendered: 'on', position: 'right', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:9px;'},--> 
+                <!--overview: {rendered: 'on'},                            --><!--selection: 'multiple',--> 
+                <!--series: [{name: 'Colour 05', items: [25]},--> 
+                <!--{name: 'Colour 06', items: [25]},                                     --> 
+                <!--{name: 'Colour 07', items: [25]},                                     --> 
+                <!--{name: 'Colour 08', items: [25]},--><!--{name: 'Colour 09', items: [25]}--><!--], --> 
+                <!--groups: ['Group A'], --><!--animationOnDisplay: 'auto'--><!--}"></div>--><!-- /.ojChart --> 
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-6 --> 
+        </div>
+        <!-- /.row --><!-- /.colour-scheme1 --><!-- colour-scheme2 -->
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="panel panel-default">
+              <div class="panel-heading"><i class="fa fa-magic fa-fw"></i> UI Colour Scheme - Gradient Colour Scheme</div>
+              <!-- /.panel-heading -->
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-3 text-center">
+                    <h5>Gradient 01</h5>
+                    <div class="trans-bg">
+                      <div class="colour-gradient-01 swatch-pane swatch-border"></div>
+                    </div>
+                    <p> top, #e40000 0%, #cf0404 100%</p>
+                  </div>
+                  <!-- /.col-lg-3 (nested) -->
+                  <div class="col-lg-3 text-center">
+                    <h5>Gradient 02</h5>
+                    <div class="trans-bg">
+                      <div class="colour-gradient-02 swatch-pane swatch-border"></div>
+                    </div>
+                    <p> top, #ff0000 0%, #cf0404 100%</p>
+                  </div>
+                  <!-- /.col-lg-3 (nested) -->
+                  <div class="col-lg-3 text-center">
+                    <h5>Gradient 03</h5>
+                    <div class="trans-bg">
+                      <div class="colour-gradient-03 swatch-pane swatch-border"></div>
+                    </div>
+                    <p> top, #4c4c4c 0%, #2c2c2c 25%, #2b2b2b 64%, #1c1c1c 83%, #131313 100%</p>
+                  </div>
+                  <!-- /.col-lg-3 (nested) -->
+                  <div class="col-lg-3 text-center">
+                    <h5>Gradient 04</h5>
+                    <div class="trans-bg">
+                      <div class="colour-gradient-04 swatch-pane swatch-border"></div>
+                    </div>
+                    <p> top, rgba(255,255,255,1) 50%, rgba(255,255,255,0.62) 85%, rgba(255,255,255,0) 100% </p>
+                  </div>
+                  <!-- /.col-lg-3 (nested) --> 
+                  
+                </div>
+                <!-- /.row (nested) --> 
+                
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-6 -->
+          <div class="col-lg-6">
+            <div class="panel panel-default">
+              <div class="panel-heading"><i class="fa fa-magic fa-fw"></i> UI Colour Scheme</div>
+              <!-- /.panel-heading -->
+              <div class="panel-body">
+                <div class="well">
+                  <h4>Normal Well</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan.
+                    Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+                  <p>
+                    <button type="button" class="btn btn-primary btn-lg disabled colour-scheme2-01 colour-scheme2">Disabled
+                    button </button>
+                    <button type="button" class="btn btn-primary btn-lg colour-scheme2-01 colour-scheme2">Large button</button>
+                    <button type="button" class="btn btn-primary colour-scheme2-01 colour-scheme2">Default button</button>
+                    <button type="button" class="btn btn-primary btn-sm colour-scheme2-01 colour-scheme2">Small button</button>
+                    <button type="button" class="btn btn-primary btn-xs colour-scheme2-01 colour-scheme2">Mini button</button>
+                    <br>
+                    <br>
+                    <button type="button" class="btn btn-primary btn-lg btn-block colour-scheme2-01 colour-scheme2">Block level
+                    button </button>
+                  </p>
+                </div>
+                <!-- /.well --> 
+              </div>
+              <!-- /.panel-body --> 
+            </div>
+            <!-- /.panel --> 
+          </div>
+          <!-- /.col-lg-6 --> 
+        </div>
+        <!-- /.row --> 
+      </div>
+      <!-- /.tab-pane (Colours) --> 
+    </div>
+    <!-- /.tab-content --> 
+  </div>
+  <!-- /.col-lg-12 --> 
+</div>
+<!-- /.row -->

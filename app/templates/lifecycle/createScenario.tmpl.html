@@ -1,0 +1,58 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header">Create Scenario</h1>
+    </div>
+    <!-- /.col-md-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"> <i class="fa fa-cloud-upload fa-fw"></i> Scenario Detail </span>   </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form role="form">
+                            <div class="form-group">
+                                <label>Engagement ID *</label>
+                                <select data-bind="options: engagementIDList, value:currentScenario.engagementId, optionsText: 'value',optionsValue:'id',optionsCaption: 'Choose Engagement ID...'" class="form-control dropdown" ></select>
+                            </div>
+                            <!-- /.form-group -->
+
+                            <div class="form-group">
+                                <label>Scenario Name *</label>
+                                <input id ="eng_name" class="form-control"  name="scenarioName" type="text" required data-bind="value:currentScenario.description">
+                            </div>
+                            <!-- /.form-group -->
+                        </form>
+                    </div>
+                    <!--/.col-md-6--> 
+
+                    <div class="col-md-6">
+                        <form role="form">
+                            <div class="form-group">
+                                <label>Scenario ID *</label>
+                                <input class="form-control"  required id="scenario_id"  name="scenario_id"  data-bind="value:currentScenario.scenarioId">
+                            </div>
+                            <!-- /.form-group -->
+
+                        </form>
+                        <!-- /.form --> 
+                    </div>
+                    <!--/.col-md-6--> 
+                </div>
+                <!-- /.row -->
+                <div class="text-right">
+                    <button type="button" class="btn btn-primary" data-bind="click:function(){addScenario()}">Save</button>
+                    <button  type="button" class="btn btn-warning"  onclick="location.hash = '#/lifecycle/tam-admin'">Cancel</button>
+                </div>
+                <!-- /.text-right --> 
+            </div>
+            <!--/.panel-body--> 
+        </div>
+        <!--/.panel--> 
+    </div>
+    <!--/.col-md-12-->  
+</div>
+<!-- /.row -->

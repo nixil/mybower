@@ -1,0 +1,1366 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header"><span>Chart Builder v1</span></h1>
+
+    <p>This tool allows you to experiment and create new DVT charts, in 5 easy steps. The Chart Builder will output the
+      code needed to create this chart. </p>
+    <hr/>
+  </div>
+  <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+
+<div class="row">
+<div class="col-md-12">
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#general" data-toggle="tab" title="Chart Builder General Settings"><i
+      class="fa fa-cogs fa-fw"></i> General</a></li>
+  <li><a href="#data" data-toggle="tab" title="Chart Builder Data"><i class="fa fa-bar-chart-o fa-fw"></i> Data</a></li>
+  <li><a href="#x_axis" data-toggle="tab" title="Chart Builder X Axis"><i class="fa fa-arrows-h fa-fw"></i> X Axis</a>
+  </li>
+  <li><a href="#y_axis" data-toggle="tab" title="Chart Builder Y Axis"><i class="fa fa-arrows-v fa-fw"></i> Y Axis</a>
+  </li>
+  <li><a href="#y2_axis" data-toggle="tab" title="Chart Builder Y2 Axis"><i class="fa fa-arrows-v fa-fw"></i> Y2
+    Axis</a></li>
+  <li><a href="#legend" data-toggle="tab" title="Chart Builder Legend"><i class="fa fa-wrench fa-fw"></i> Legend</a>
+  </li>
+</ul>
+<!-- /.nav-tabs -->
+<div class="tab-content">
+<div class="tab-pane active" id="general">
+<div class="row">
+  <div class="col-lg-12">
+    <h4>Chart Builder General Settings</h4>
+
+    <p>Please select the Chart Type and other relevant Settings below.</p>
+    <hr/>
+  </div>
+  <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+
+<div class="row">
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Chart Type</div>
+    <!-- /.panel-heading -->
+    <div class="panel-body">
+      <div class="form-group">
+        <label>Chart Type</label>
+
+        <p>Select a chart type</p>
+
+        <div class="well well-sm">
+          <label class="radio-inline">
+            <input type="radio" value="line" data-bind="checked: chartType.value"/>
+            Line </label>
+          <label class="radio-inline">
+            <input type="radio" value="pie" data-bind="checked: chartType.value"/>
+            Pie </label>
+          <label class="radio-inline">
+            <input type="radio" value="bar" data-bind="checked: chartType.value"/>
+            Bar </label>
+          <label class="radio-inline">
+            <input type="radio" value="area" data-bind="checked: chartType.value"/>
+            Area </label>
+        </div>
+        <!-- /.well -->
+      </div>
+      <!-- /.form-group -->
+      <div class="form-group" data-bind="visible: chartType.value() != 'pie'">
+        <label>Stack Data</label>
+
+        <p>Would you like to stack your data set?</p>
+
+        <div class="well well-sm">
+          <label class="radio-inline">
+            <input type="radio" value="on" data-bind="checked: stack.value"/>
+            On </label>
+          <label class="radio-inline">
+            <input type="radio" value="off" data-bind="checked: stack.value"/>
+            Off </label>
+        </div>
+        <!-- /.well -->
+      </div>
+      <!-- /.form-group -->
+      <div class="form-group" data-bind="visible: chartType.value() != 'pie'">
+        <label>Orientation</label>
+
+        <p>Select a chart orientation</p>
+
+        <div class="well well-sm">
+          <label class="radio-inline">
+            <input type="radio" value="vertical" data-bind="checked: orientation.value"/>
+            Vertical </label>
+          <label class="radio-inline">
+            <input type="radio" value="horizontal" data-bind="checked: orientation.value"/>
+            Horizontal </label>
+        </div>
+        <!-- /.well -->
+      </div>
+      <!-- /.form-group -->
+    </div>
+    <!-- /.panel-body -->
+  </div>
+  <!-- /.row -->
+</div>
+<!-- /.col-lg-4 -->
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Title, Subtitle &amp; Footnote</div>
+    <!-- /.panel-heading -->
+    <div class="panel-body">
+      <div class="form-group">
+        <label>Title</label>
+        <input class="form-control" data-bind="value: title, valueUpdate: 'afterkeydown'"
+               placeholder="Leave blank to omit the title">
+      </div>
+      <div class="form-group" data-bind="visible: title()">
+        <label class="sr-only">Title Alignment</label>
+
+        <p>How would you like the title aligned?</p>
+
+        <div class="well well-sm">
+          <label class="radio-inline">
+            <input type="radio" value="start" data-bind="checked: titleAlign.value"/>
+            Left </label>
+          <label class="radio-inline">
+            <input type="radio" value="center" data-bind="checked: titleAlign.value"/>
+            Center </label>
+          <label class="radio-inline">
+            <input type="radio" value="end" data-bind="checked: titleAlign.value"/>
+            Right </label>
+        </div>
+        <!-- /.well -->
+      </div>
+      <!-- /.form-group -->
+      <div class="form-group">
+        <label>Subtitle</label>
+        <input class="form-control" data-bind="value: subtitle, enable: title()"
+               placeholder="Leave blank to omit the subtitle">
+
+        <p class="help-block" data-bind="visible: !title()">A title is required in order to display a
+          subtitle</p>
+      </div>
+      <!-- /.form-group -->
+      <div class="form-group">
+        <label>Footnote</label>
+        <input class="form-control" data-bind="value: footnoteText, valueUpdate: 'afterkeydown'"
+               placeholder="Leave blank to omit the footnote">
+      </div>
+      <div class="form-group" data-bind="visible: footnoteText()">
+        <label class="sr-only">Footnote Alignment</label>
+
+        <p>How would you like the footnote aligned?</p>
+
+        <div class="well well-sm">
+          <label class="radio-inline">
+            <input type="radio" value="start" data-bind="checked: footnoteAlign.value"/>
+            Left </label>
+          <label class="radio-inline">
+            <input type="radio" value="center" data-bind="checked: footnoteAlign.value"/>
+            Center </label>
+          <label class="radio-inline">
+            <input type="radio" value="end" data-bind="checked: footnoteAlign.value"/>
+            Right </label>
+        </div>
+        <!-- /.well -->
+
+      </div>
+      <!-- /.form-group -->
+
+    </div>
+    <!-- /.panel-body -->
+  </div>
+  <!-- /.panel-default -->
+</div>
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Chart Colour Scheme</div>
+    <!-- /.panel-heading -->
+    <div class="panel-body">
+      <div class="form-group">
+        <label>Color Scheme</label>
+        <select class="form-control" data-bind="value: colorScheme">
+          <!-- This is the concept of giveing the option of the first 4 colours, the reamaining 5 colours or both -->
+          <option>Oracle Default Primary</option>
+          <option>Oracle Default Secondary</option>
+          <option>Oracle Default Combined</option>
+        </select>
+      </div>
+      <hr/>
+      <div data-bind="visible: colorScheme() === 'Oracle Default Primary'">
+        <label>Oracle Default Primary Colours</label>
+
+        <p>Oracle brand guideline approved color set for charts.</p>
+
+        <div class="row">
+          <div class="col-lg-3 text-center">
+            <div class="trans-bg">
+              <div class="colour-solid-01 swatch-pane swatch-border"></div>
+            </div>
+            <p> #ff1414</p>
+          </div>
+          <!-- /.col-lg-3 (nested) -->
+          <div class="col-lg-3 text-center">
+            <div class="trans-bg">
+              <div class="colour-solid-02 swatch-pane swatch-border"></div>
+            </div>
+            <p> #000000</p>
+          </div>
+          <!-- /.col-lg-3 (nested) -->
+          <div class="col-lg-3 text-center">
+            <div class="trans-bg">
+              <div class="colour-solid-03 swatch-pane swatch-border"></div>
+            </div>
+            <p> #424545</p>
+          </div>
+          <!-- /.col-lg-3 (nested) -->
+          <div class="col-lg-3 text-center">
+            <div class="trans-bg">
+              <div class="colour-solid-04 swatch-pane swatch-border"></div>
+            </div>
+            <p> #a3a3a3 </p>
+          </div>
+          <!-- /.col-lg-3 (nested) -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <div data-bind="visible: colorScheme() === 'Oracle Default Secondary'">
+        <label>Oracle Default Secondary Colours</label>
+
+        <p>These colors act as a secondary color scheme.</p>
+
+        <div class="row">
+          <div class="col-lg-3 text-center">
+            <div class="trans-bg">
+              <div class="colour-solid-05 swatch-pane swatch-border"></div>
+            </div>
+            <p> #e5e5e5 </p>
+          </div>
+          <!-- /.col-lg-2 (nested) -->
+          <div class="col-lg-3 text-center">
+            <div class="trans-bg">
+              <div class="colour-solid-06 swatch-pane swatch-border"></div>
+            </div>
+            <p> #8baac3 </p>
+          </div>
+          <!-- /.col-lg-2 (nested) -->
+          <div class="col-lg-3 text-center">
+            <div class="trans-bg">
+              <div class="colour-solid-07 swatch-pane swatch-border"></div>
+            </div>
+            <p> #5b6981 </p>
+          </div>
+          <!-- /.col-lg-2 (nested) -->
+          <div class="col-lg-3 text-center">
+            <div class="trans-bg">
+              <div class="colour-solid-08 swatch-pane swatch-border"></div>
+            </div>
+            <p> #7d7369 </p>
+          </div>
+          <!-- /.col-lg-2 (nested) -->
+          <div class="col-lg-3 text-center">
+            <div class="trans-bg">
+              <div class="colour-solid-09 swatch-pane swatch-border"></div>
+            </div>
+            <p> #786464 </p>
+          </div>
+          <!-- /.col-lg-2 (nested) -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.panel-body -->
+</div>
+</div>
+</div>
+<div class="tab-pane" id="data">
+<div class="row">
+  <div class="col-lg-12">
+    <h4>Data Settings</h4>
+
+    <p>Add data to your chart and customize the behavior and appearance of that data.</p>
+    <hr/>
+  </div>
+  <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Data Source</div>
+    <!-- /.panel-heading -->
+    <div class="panel-body">
+      <div class="form-group">
+        <label>Data Source Type</label>
+
+        <div class="well well-sm">
+          <label class="radio-inline">
+            <input type="radio" value="sample" data-bind="checked: dataSourceType"/>
+            Sample </label>
+          <label class="radio-inline">
+            <input type="radio" value="sql" data-bind="checked: dataSourceType, click: loadNameSqlList"/>
+            SQL </label>
+          <label class="radio-inline">
+            <input type="radio" value="json_file" data-bind="checked: dataSourceType"/>
+            File </label>
+          <label class="radio-inline">
+            <input type="radio" value="json_data" data-bind="checked: dataSourceType"/>
+            Data Entry </label>
+        </div>
+      </div>
+
+      <!-- /.form-group -->
+      <div class="form-group" data-bind="visible: dataSourceType() === 'sample'">
+        <label>Choose Sample JSON Data</label>
+        <select class="form-control" data-bind="value: jsonSample">
+          <option value="cpu_mem.json">CPU and Memory Time Series</option>
+          <option value="dualY.json">Dual Y Sample Data</option>
+        </select>
+      </div>
+
+      <!-- /.form-group -->
+      <div class="form-group" data-bind="visible: dataSourceType() === 'sql'">
+        <label>Input Named SQL chart URI </label>
+          <div class="input-group">
+              <span class="input-group-addon">rest/data/sql/</span>
+              <input type="text" data-bind="value: namedSqlUri"/>
+          </div>
+      </div>
+
+      <!-- /.form-group -->
+      <div class="form-group" data-bind="visible: dataSourceType() === 'json_file'">
+        <label>Choose JSON File to Upload</label>
+        <input type="file" data-bind="event: { change: function() { jsonDataFile($element.files[0]); } }">
+      </div>
+
+      <!-- /.form-group -->
+      <div class="form-group" data-bind="visible: dataSourceType() === 'json_data'">
+        <label>Paste JSON Data Below</label>
+        <textarea class="form-control" rows="5" data-bind="value: jsonData"></textarea>
+      </div>
+
+      <!-- /.form-group -->
+      <div class="form-group">
+        <button type="submit" class="btn btn-default" data-bind="click: loadChartData">Load Data</button>
+      </div>
+      <!-- /.form-group -->
+
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Animation and Cursor</div>
+    <!-- /.panel-heading -->
+    <div class="panel-body">
+      <div class="form-group">
+        <label>Animation On Display</label>
+
+        <div class="well well-sm">
+          <label class="radio-inline">
+            <input type="radio" value="none" data-bind="checked: animationOnDisplay.value"/>
+            None </label>
+          <label class="radio-inline">
+            <input type="radio" value="auto" data-bind="checked: animationOnDisplay.value"/>
+            Auto </label>
+        </div>
+      </div>
+
+      <!-- /.form-group -->
+      <div class="form-group">
+        <label>Animation On Data Change</label>
+
+        <div class="well well-sm">
+          <label class="radio-inline">
+            <input type="radio" value="none" data-bind="checked: animationOnDataChange.value"/>
+            None </label>
+          <label class="radio-inline">
+            <input type="radio" value="auto" data-bind="checked: animationOnDataChange.value"/>
+            Auto </label>
+        </div>
+      </div>
+      <!-- /.form-group -->
+
+      <div class="form-group">
+        <label>Data Cursor</label>
+
+        <div class="well well-sm">
+          <label class="radio-inline">
+            <input type="radio" value="auto" data-bind="checked: dataCursor.value"/>
+            Auto </label>
+          <label class="radio-inline">
+            <input type="radio" value="on" data-bind="checked: dataCursor.value"/>
+            On </label>
+          <label class="radio-inline">
+            <input type="radio" value="off" data-bind="checked: dataCursor.value"/>
+            Off </label>
+        </div>
+      </div>
+      <!-- /.form-group -->
+
+      <div class="form-group">
+        <label>Data Cursor Behavior</label>
+
+        <div class="well well-sm">
+          <label class="radio-inline">
+            <input type="radio" value="auto" data-bind="checked: dataCursorBehavior.value"/>
+            Auto </label>
+          <label class="radio-inline">
+            <input type="radio" value="smooth" data-bind="checked: dataCursorBehavior.value"/>
+            Smooth </label>
+          <label class="radio-inline">
+            <input type="radio" value="snap" data-bind="checked: dataCursorBehavior.value"/>
+            Snap </label>
+        </div>
+      </div>
+      <!-- /.form-group -->
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Hide, Zoom, and Scroll</div>
+    <!-- /.panel-heading -->
+    <div class="panel-body">
+      <div class="form-group">
+        <label>Hide and Show Behavior</label>
+
+        <div class="well well-sm">
+          <label class="radio-inline">
+            <input type="radio" value="none" data-bind="checked: hideShow.value"/>
+            None </label>
+          <label class="radio-inline">
+            <input type="radio" value="withRescale" data-bind="checked: hideShow.value"/>
+            With Rescale </label>
+          <label class="radio-inline">
+            <input type="radio" value="withoutRescale" data-bind="checked: hideShow.value"/>
+            Without Rescale </label>
+        </div>
+        <!-- /.form-group -->
+      </div>
+      <div class="form-group">
+        <label>Hover Behavior</label>
+
+        <div class="well well-sm">
+          <label class="radio-inline">
+            <input type="radio" value="none" data-bind="checked: hover.value"/>
+            None </label>
+          <label class="radio-inline">
+            <input type="radio" value="dim" data-bind="checked: hover.value"/>
+            Dim </label>
+        </div>
+      </div>
+      <!-- /.form-group -->
+
+      <div class="form-group">
+        <label>Zoom and Scroll</label>
+
+        <div class="well well-sm">
+          <label class="radio-inline">
+            <input type="radio" value="off" data-bind="checked: zoomAndScroll.value"/>
+            Off </label>
+          <label class="radio-inline">
+            <input type="radio" value="delayedScrollOnly" data-bind="checked: zoomAndScroll.value"/>
+            Delayed Scroll Only </label>
+          <label class="radio-inline">
+            <input type="radio" value="liveScrollOnly" data-bind="checked: zoomAndScroll.value"/>
+            Live Scroll Only </label>
+          <label class="radio-inline">
+            <input type="radio" value="delayed" data-bind="checked: zoomAndScroll.value"/>
+            Delayed </label>
+          <label class="radio-inline">
+            <input type="radio" value="live" data-bind="checked: zoomAndScroll.value"/>
+            Live </label>
+        </div>
+      </div>
+      <!-- /.form-group -->
+
+      <div class="form-group">
+        <label>Overview Scrollbar</label>
+
+        <div class="well well-sm">
+          <label class="radio-inline">
+            <input type="radio" value="off" data-bind="checked: overviewScrollbar.value"/>
+            Off </label>
+          <label class="radio-inline">
+            <input type="radio" value="on" data-bind="checked: overviewScrollbar.value"/>
+            On </label>
+        </div>
+      </div>
+      <!-- /.form-group -->
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- /#data -->
+<div class="tab-pane" id="x_axis">
+  <div class="row">
+    <div class="col-lg-12">
+      <h4>X Axis</h4>
+
+      <p>Features of the X Axis can be modified below, including scaling and ticks.</p>
+      <hr/>
+    </div>
+    <!-- /.col-lg-12 -->
+  </div>
+  <!-- /.row -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Title, Axis Line &amp; Min/Max Values
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+          <div class="form-group">
+            <label>Title</label>
+            <input class="form-control" data-bind="value: x.title" placeholder="">
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Axis Line Rendered</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="on" data-bind="checked: x.lineRendered.value"/>
+                On </label>
+              <label class="radio-inline">
+                <input type="radio" value="off" data-bind="checked: x.lineRendered.value"/>
+                Off </label>
+            </div>
+            <!-- /.well -->
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Min</label>
+            <input class="form-control" data-bind="value: x.min" placeholder="Enter a number">
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Max</label>
+            <input class="form-control" data-bind="value: x.max" placeholder="Enter a number">
+          </div>
+          <!-- /.form-group --> </div>
+        <!-- /.panel-body -->
+      </div>
+      <!-- /.panel-default -->
+
+    </div>
+    <!-- /.col-md-4 -->
+
+    <!--<div class="form-group">-->
+    <!--<label>Data Min</label>-->
+    <!--<input class="form-control" data-bind="value: x.dataMin" placeholder="Enter a number">-->
+    <!--</div>-->
+    <!--&lt;!&ndash; /.form-group &ndash;&gt;-->
+
+    <!--<div class="form-group">-->
+    <!--<label>Data Max</label>-->
+    <!--<input class="form-control" data-bind="value: x.dataMax" placeholder="Enter a number">-->
+    <!--</div>-->
+    <!--&lt;!&ndash; /.form-group &ndash;&gt;-->
+
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Major Steps &amp; Ticks</div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+          <div class="form-group">
+            <label>Major Tick Rendered</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="on" data-bind="checked: x.majorRendered.value"/>
+                On </label>
+              <label class="radio-inline">
+                <input type="radio" value="off" data-bind="checked: x.majorRendered.value"/>
+                Off </label>
+            </div>
+            <!-- /.well -->
+
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Major Step</label>
+            <input class="form-control" data-bind="value: x.majorStep" placeholder="Enter a number">
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Major Min Step</label>
+            <input class="form-control" data-bind="value: x.majorMinStep" placeholder="Enter a number">
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Major Style</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="solid" data-bind="checked: x.majorStyle.value"/>
+                Solid </label>
+              <label class="radio-inline">
+                <input type="radio" value="dotted" data-bind="checked: x.majorStyle.value"/>
+                Dotted </label>
+              <label class="radio-inline">
+                <input type="radio" value="dashed" data-bind="checked: x.majorStyle.value"/>
+                Dashed </label>
+            </div>
+            <!-- /.well -->
+          </div>
+          <!-- /.form-group --> </div>
+        <!-- /.panel-body -->
+      </div>
+      <!-- /.panel-default -->
+
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Minor Steps &amp; Ticks</div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+          <div class="form-group">
+            <label>Minor Tick Rendered</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="on" data-bind="checked: x.minorRendered.value"/>
+                On </label>
+              <label class="radio-inline">
+                <input type="radio" value="off" data-bind="checked: x.minorRendered.value"/>
+                Off </label>
+            </div>
+            <!-- /.well -->
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Minor Step</label>
+            <input class="form-control" data-bind="value: x.minorStep" placeholder="Enter a number">
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Minor Style</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="solid" data-bind="checked: x.minorStyle.value"/>
+                Solid </label>
+              <label class="radio-inline">
+                <input type="radio" value="dotted" data-bind="checked: x.minorStyle.value"/>
+                Dotted </label>
+              <label class="radio-inline">
+                <input type="radio" value="dashed" data-bind="checked: x.minorStyle.value"/>
+                Dashed </label>
+            </div>
+            <!-- /.well -->
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Baseline Scaling</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="zero" data-bind="checked: x.baselineScaling.value"/>
+                Zero </label>
+              <label class="radio-inline">
+                <input type="radio" value="min" data-bind="checked: x.baselineScaling.value"/>
+                Minimum </label>
+            </div>
+            <!-- /.well -->
+          </div>
+          <!-- /.form-group -->
+        </div>
+        <!-- /.panel-body -->
+      </div>
+      <!-- /.panel-default -->
+    </div>
+  </div>
+</div>
+<!-- /#x_axis -->
+
+<div class="tab-pane" id="y_axis">
+  <div class="row">
+    <div class="col-lg-12">
+      <h4>Y Axis</h4>
+
+      <p>Features of the Y Axis can be modified below, including scaling and ticks.</p>
+      <hr/>
+    </div>
+    <!-- /.col-lg-12 -->
+  </div>
+  <!-- /.row -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Title, Axis Line &amp; Min/Max Values
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+          <div class="form-group">
+            <label>Title</label>
+            <input class="form-control" data-bind="value: y.title" placeholder="">
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Axis Line Rendered</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="on" data-bind="checked: y.lineRendered.value"/>
+                On </label>
+              <label class="radio-inline">
+                <input type="radio" value="off" data-bind="checked: y.lineRendered.value"/>
+                Off </label>
+            </div>
+            <!-- /.well -->
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Min</label>
+            <input class="form-control" data-bind="value: y.min" placeholder="Enter a number">
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Max</label>
+            <input class="form-control" data-bind="value: y.max" placeholder="Enter a number">
+          </div>
+        </div>
+        <!-- /.panel-body -->
+      </div>
+      <!-- /.panel-default -->
+    </div>
+
+    <!--<div class="form-group">-->
+    <!--<label>Data Min</label>-->
+    <!--<input class="form-control" data-bind="value: y.dataMin" placeholder="Enter a number">-->
+    <!--</div>-->
+    <!-- /.form-group -->
+
+    <!--<div class="form-group">-->
+    <!--<label>Data Max</label>-->
+    <!--<input class="form-control" data-bind="value: y.dataMax" placeholder="Enter a number">-->
+    <!--</div>-->
+    <!-- /.form-group -->
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Major Steps &amp; Ticks</div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+          <div class="form-group">
+            <label>Major Tick Rendered</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="on" data-bind="checked: y.majorRendered.value"/>
+                On </label>
+              <label class="radio-inline">
+                <input type="radio" value="off" data-bind="checked: y.majorRendered.value"/>
+                Off </label>
+            </div>
+            <!-- /.well -->
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Major Step</label>
+            <input class="form-control" data-bind="value: y.majorStep" placeholder="Enter a number">
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Major Min Step</label>
+            <input class="form-control" data-bind="value: y.majorMinStep" placeholder="Enter a number">
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Major Style</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="solid" data-bind="checked: y.majorStyle.value"/>
+                Solid </label>
+              <label class="radio-inline">
+                <input type="radio" value="dotted" data-bind="checked: y.majorStyle.value"/>
+                Dotted </label>
+              <label class="radio-inline">
+                <input type="radio" value="dashed" data-bind="checked: y.majorStyle.value"/>
+                Dashed </label>
+            </div>
+            <!-- /.well -->
+          </div>
+          <!-- /.form-group -->
+        </div>
+        <!-- /.panel-body -->
+      </div>
+      <!-- /.panel-default -->
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Minor Steps &amp; Ticks</div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+          <div class="form-group">
+            <label>Minor Tick Rendered</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="on" data-bind="checked: y.minorRendered.value"/>
+                On </label>
+              <label class="radio-inline">
+                <input type="radio" value="off" data-bind="checked: y.minorRendered.value"/>
+                Off </label>
+            </div>
+            <!-- /.well -->
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Minor Step</label>
+            <input class="form-control" data-bind="value: y.minorStep" placeholder="Enter a number">
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Minor Style</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="solid" data-bind="checked: y.minorStyle.value"/>
+                Solid </label>
+              <label class="radio-inline">
+                <input type="radio" value="dotted" data-bind="checked: y.minorStyle.value"/>
+                Dotted </label>
+              <label class="radio-inline">
+                <input type="radio" value="dashed" data-bind="checked: y.minorStyle.value"/>
+                Dashed </label>
+            </div>
+            <!-- /.well -->
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Baseline Scaling</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="zero" data-bind="checked: y.baselineScaling.value"/>
+                Zero </label>
+              <label class="radio-inline">
+                <input type="radio" value="min" data-bind="checked: y.baselineScaling.value"/>
+                Minimum </label>
+            </div>
+            <!-- /.well -->
+          </div>
+          <!-- /.form-group -->
+
+        </div>
+        <!-- /.panel-body -->
+      </div>
+      <!-- /.panel-default -->
+    </div>
+  </div>
+</div>
+<!-- /#y_axis -->
+
+<div class="tab-pane" id="y2_axis">
+<div class="row">
+  <div class="col-lg-12">
+    <h4>Y Axis</h4>
+
+    <p>If required a second Y Axis can be added and modified below, including scaling and ticks.</p>
+    <hr/>
+  </div>
+  <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Title, Axis Line &amp; Min/Max Values
+      </div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+        <div class="form-group">
+          <label>Title</label>
+          <input class="form-control" data-bind="value: y2.title" placeholder="">
+        </div>
+        <!-- /.form-group -->
+
+        <div class="form-group">
+          <label>Axis Line Rendered</label>
+
+          <div class="well well-sm">
+            <label class="radio-inline">
+              <input type="radio" value="on" data-bind="checked: y2.lineRendered.value"/>
+              On </label>
+            <label class="radio-inline">
+              <input type="radio" value="off" data-bind="checked: y2.lineRendered.value"/>
+              Off </label>
+          </div>
+          <!-- /.well -->
+        </div>
+        <!-- /.form-group -->
+
+        <div class="form-group">
+          <label>Align to Y Axis Tick Marks</label>
+
+          <div class="well well-sm">
+            <label class="radio-inline">
+              <input type="radio" value="on" data-bind="checked: y2.alignTickMarks.value"/>
+              On </label>
+            <label class="radio-inline">
+              <input type="radio" value="off" data-bind="checked: y2.alignTickMarks.value"/>
+              Off </label>
+          </div>
+          <!-- /.well -->
+        </div>
+        <!-- /.form-group -->
+
+        <div class="form-group">
+          <label>Min</label>
+          <input class="form-control" data-bind="value: y2.min" placeholder="Enter a number">
+        </div>
+        <!-- /.form-group -->
+
+        <div class="form-group">
+          <label>Max</label>
+          <input class="form-control" data-bind="value: y2.max" placeholder="Enter a number">
+        </div>
+        <!-- /.form-group -->
+      </div>
+      <!-- /.panel-body -->
+    </div>
+    <!-- /.panel-default -->
+  </div>
+  <!--<div class="form-group">-->
+  <!--<label>Data Min</label>-->
+  <!--<input class="form-control" data-bind="value: y2.dataMin" placeholder="Enter a number">-->
+  <!--</div>-->
+  <!-- /.form-group -->
+
+  <!--<div class="form-group">-->
+  <!--<label>Data Max</label>-->
+  <!--<input class="form-control" data-bind="value: y2.dataMax" placeholder="Enter a number">-->
+  <!--</div>-->
+  <!-- /.form-group -->
+
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Major Steps &amp; Ticks</div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+        <div class="form-group">
+          <label>Major Tick Rendered</label>
+
+          <div class="well well-sm">
+            <label class="radio-inline">
+              <input type="radio" value="on" data-bind="checked: y2.majorRendered.value"/>
+              On </label>
+            <label class="radio-inline">
+              <input type="radio" value="off" data-bind="checked: y2.majorRendered.value"/>
+              Off </label>
+          </div>
+          <!-- /.well -->
+        </div>
+        <!-- /.form-group -->
+
+        <div class="form-group">
+          <label>Major Step</label>
+          <input class="form-control" data-bind="value: y2.majorStep" placeholder="Enter a number">
+        </div>
+        <!-- /.form-group -->
+
+        <div class="form-group">
+          <label>Major Min Step</label>
+          <input class="form-control" data-bind="value: y2.majorMinStep" placeholder="Enter a number">
+        </div>
+        <!-- /.form-group -->
+
+        <div class="form-group">
+          <label>Major Style</label>
+
+          <div class="well well-sm">
+
+            <label class="radio-inline">
+              <input type="radio" value="solid" data-bind="checked: y2.majorStyle.value"/>
+              Solid </label>
+            <label class="radio-inline">
+              <input type="radio" value="dotted" data-bind="checked: y2.majorStyle.value"/>
+              Dotted </label>
+            <label class="radio-inline">
+              <input type="radio" value="dashed" data-bind="checked: y2.majorStyle.value"/>
+              Dashed </label>
+          </div>
+          <!-- /.well -->
+        </div>
+        <!-- /.form-group -->
+      </div>
+      <!-- /.panel-body -->
+    </div>
+    <!-- /.panel-default -->
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Minor Steps &amp; Ticks</div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+        <div class="form-group">
+          <label>Minor Tick Rendered</label>
+
+          <div class="well well-sm">
+            <label class="radio-inline">
+              <input type="radio" value="on" data-bind="checked: y2.minorRendered.value"/>
+              On </label>
+            <label class="radio-inline">
+              <input type="radio" value="off" data-bind="checked: y2.minorRendered.value"/>
+              Off </label>
+          </div>
+          <!-- /.well -->
+        </div>
+        <!-- /.form-group -->
+
+        <div class="form-group">
+          <label>Minor Step</label>
+          <input class="form-control" data-bind="value: y2.minorStep" placeholder="Enter a number">
+        </div>
+        <!-- /.form-group -->
+
+        <div class="form-group">
+          <label>Minor Style</label>
+
+          <div class="well well-sm">
+            <label class="radio-inline">
+              <input type="radio" value="solid" data-bind="checked: y2.minorStyle.value"/>
+              Solid </label>
+            <label class="radio-inline">
+              <input type="radio" value="dotted" data-bind="checked: y2.minorStyle.value"/>
+              Dotted </label>
+            <label class="radio-inline">
+              <input type="radio" value="dashed" data-bind="checked: y2.minorStyle.value"/>
+              Dashed </label>
+          </div>
+          <!-- /.well -->
+        </div>
+        <!-- /.form-group -->
+
+        <div class="form-group">
+          <label>Baseline Scaling</label>
+
+          <div class="well well-sm">
+            <label class="radio-inline">
+              <input type="radio" value="zero" data-bind="checked: y2.baselineScaling.value"/>
+              Zero </label>
+            <label class="radio-inline">
+              <input type="radio" value="min" data-bind="checked: y2.baselineScaling.value"/>
+              Minimum </label>
+          </div>
+          <!-- /.well -->
+        </div>
+        <!-- /.form-group -->
+      </div>
+      <!-- /.panel-body -->
+    </div>
+    <!-- /.panel-default -->
+  </div>
+</div>
+</div>
+<!-- /#y2_axis -->
+<div class="tab-pane" id="legend">
+  <div class="row">
+    <div class="col-lg-12">
+      <h4>Chart Legend</h4>
+
+      <p>If required a second Y Axis can be added and modified below, including scaling and ticks.</p>
+      <hr/>
+    </div>
+    <!-- /.col-lg-12 -->
+  </div>
+  <!-- /.row -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Title &amp; Alignment</div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+          <div class="form-group">
+            <label>Title</label>
+            <input class="form-control" data-bind="value: legendTitle" placeholder="">
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Title Alignment</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="start" data-bind="checked: legendTitleAlign.value"/>
+                Left </label>
+              <label class="radio-inline">
+                <input type="radio" value="center" data-bind="checked: legendTitleAlign.value"/>
+                Center </label>
+              <label class="radio-inline">
+                <input type="radio" value="end" data-bind="checked: legendTitleAlign.value"/>
+                Right </label>
+            </div>
+            <!-- /.well -->
+          </div>
+          <!-- /.form-group -->
+        </div>
+        <!-- /.panel-body -->
+      </div>
+      <!-- /.panel-default -->
+
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Rendering &amp; Position</div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+          <div class="form-group">
+            <label>Rendered</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="on" data-bind="checked: legendRendered.value"/>
+                On </label>
+              <label class="radio-inline">
+                <input type="radio" value="off" data-bind="checked: legendRendered.value"/>
+                Off </label>
+            </div>
+            <!-- /.well -->
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label>Position</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="auto" data-bind="checked: legendPosition.value"/>
+                Auto </label>
+              <label class="radio-inline">
+                <input type="radio" value="start" data-bind="checked: legendPosition.value"/>
+                Left </label>
+              <label class="radio-inline">
+                <input type="radio" value="end" data-bind="checked: legendPosition.value"/>
+                Right </label>
+              <label class="radio-inline">
+                <input type="radio" value="bottom" data-bind="checked: legendPosition.value"/>
+                Bottom </label>
+              <label class="radio-inline">
+                <input type="radio" value="top" data-bind="checked: legendPosition.value"/>
+                Top </label>
+            </div>
+            <!-- /.well -->
+          </div>
+          <!-- /.form-group -->
+        </div>
+        <!-- /.panel-body -->
+      </div>
+      <!-- /.panel-default -->
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Scrolling</div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+          <div class="form-group">
+            <label>Scrolling</label>
+
+            <div class="well well-sm">
+              <label class="radio-inline">
+                <input type="radio" value="asNeeded" data-bind="checked: legendScrolling.value"/>
+                As Needed </label>
+              <label class="radio-inline">
+                <input type="radio" value="off" data-bind="checked: legendScrolling.value"/>
+                Off </label>
+            </div>
+            <!-- /.well -->
+          </div>
+          <!-- /.form-group -->
+        </div>
+        <!-- /.panel-body -->
+      </div>
+      <!-- /.panel-default -->
+    </div>
+  </div>
+</div>
+<!-- /#legend -->
+
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#chart" data-toggle="tab" title="Chart Builder General Settings"><i
+          class="fa fa-bar-chart-o fa-fw"></i> Live Demo</a></li>
+      <li><a href="#code" data-toggle="tab" title="Chart Builder Data"><i class="fa fa-code fa-fw"></i> Code</a>
+      </li>
+    </ul>
+    <!-- /.nav-tabs -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="chart">
+        <h4>Live Demo</h4>
+
+        <p>Below is a live view of your chart, use the tabs above to edit the chart options.</p>
+
+
+        <!-- /.btn-group -->
+        <div class="panel panel-default">
+          <div class="panel-heading"><i class="fa fa-bar-chart-o fa-fw"></i> Rendered Chart
+            <div class="pull-right">
+              <a data-toggle="modal" data-target="#zoomChart">
+                <i class="fa fa-expand fa-fw"></i> Enlarge
+              </a>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div data-bind="template: {name: 'chart_template'}"></div>
+          </div>
+          <!-- /.panel-body -->
+        </div>
+        <!-- /.panel-default -->
+
+      </div>
+      <!-- /.#chart -->
+      <div class="tab-pane" id="code">
+        <h4> Source Code</h4>
+
+        <p>The code below is the generated mark-up for this chart, including its styles.</p>
+
+        <hr/>
+        <div class="panel panel-default">
+          <div class="panel-heading"><i class="fa fa-code fa-fw"></i> Chart Source Code</div>
+          <div class="panel-body">
+            <pre>
+          <div id="chartMarkup" data-bind="text: chartMarkup" class="pre-scroll-sm"></div>
+          </pre>
+            <!-- /pre -->
+            <div class="col-lg-12">
+              <div class="btn-group pull-right">
+                <button id="clip" type="button" class="btn btn-default btn-sm"><i class="fa fa-files-o fa-fw"></i>
+                  Copy to
+                  Clipboard
+                </button>
+              </div>
+              <!-- /.btn-group -->
+            </div>
+            <!-- /.col-lg-12 -->
+          </div>
+          <!-- /.panel-body -->
+        </div>
+        <!-- /.panel-default -->
+      </div>
+      <!-- /.#code -->
+    </div>
+    <!-- /.tab-content -->
+  </div>
+</div>
+<!-- Modal Chart Zoom -->
+<div class="modal fade" id="zoomChart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog chart-view-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Zoomed Chart View</h4>
+      </div>
+      <div class="modal-body">
+        <div data-bind="template: {name: 'chart_template'}"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<script type="text/html" id="chart_template">
+  <div id="ojChart" data-bind="ojComponent: {
+            component: 'ojChart',
+            type: chartType.value,
+            styleDefaults: {colors: ['#ff1414', '#000000','#424545', '#a3a3a3'], threeDEffect: 'off', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+            groups: groupData,
+            series: seriesData,
+            stack: stack.value,
+            orientation: orientation.value,
+            zoomAndScroll: zoomAndScroll.value,
+            selection: 'multiple',
+            title: {text: title(), hAlign: titleAlign.value()},
+            subtitle: {text: subtitle()},
+            footnote: {text: footnoteText(), hAlign: footnoteAlign.value()},
+            hideAndShowBehavior: hideShow.value(),
+            hoverBehavior: hover.value(),
+            overview: {rendered: overviewScrollbar.value()},
+            animationOnDisplay: animationOnDisplay.value,
+            animationOnDataChange: animationOnDataChange.value,
+            dataCursor: dataCursor.value,
+            dataCursorBehavior: dataCursorBehavior.value,
+            legend: {
+              title: legendTitle(),
+              titleHalign: legendTitleAlign.value(),
+              rendered: legendRendered.value(),
+              position: legendPosition.value(),
+              scrolling: legendScrolling.value()
+            },
+            xAxis: {
+                title: x.title(),
+                baselineScaling: x.baselineScaling.value(),
+                axisLine: {rendered: x.lineRendered.value()},
+                min: x.min(),
+                max: x.max(),
+                dataMin: x.dataMin(),
+                dataMax: x.dataMax(),
+                majorTick: {rendered: x.majorRendered.value(), lineStyle: x.majorStyle.value()},
+                step: x.majorStep(),
+                minStep: x.majorMinStep(),
+                minorTick: {rendered: x.minorRendered.value(), lineStyle: x.minorStyle.value()},
+                minorStep: x.minorStep()
+            },
+            yAxis: {
+                title: y.title(),
+                baselineScaling: y.baselineScaling.value(),
+                axisLine: {rendered: y.lineRendered.value()},
+                min: y.min(),
+                max: y.max(),
+                dataMin: y.dataMin(),
+                dataMax: y.dataMax(),
+                majorTick: {rendered: y.majorRendered.value(), lineStyle: y.majorStyle.value()},
+                step: y.majorStep(),
+                minStep: y.majorMinStep(),
+                minorTick: {rendered: y.minorRendered.value(), lineStyle: y.minorStyle.value()},
+                minorStep: y.minorStep()
+            },
+            y2Axis: {
+                title: y2.title(),
+                baselineScaling: y2.baselineScaling.value(),
+                axisLine: {rendered: y2.lineRendered.value()},
+                min: y2.min(),
+                max: y2.max(),
+                dataMin: y2.dataMin(),
+                dataMax: y2.dataMax(),
+                majorTick: {rendered: y2.majorRendered.value(), lineStyle: y2.majorStyle.value()},
+                step: y2.majorStep(),
+                minStep: y2.majorMinStep(),
+                minorTick: {rendered: y2.minorRendered.value(), lineStyle: y2.minorStyle.value()},
+                minorStep: y2.minorStep(),
+                alignTickMarks: y2.alignTickMarks.value()
+            }
+          }" style="width:100%;height:320px;"></div>
+</script>

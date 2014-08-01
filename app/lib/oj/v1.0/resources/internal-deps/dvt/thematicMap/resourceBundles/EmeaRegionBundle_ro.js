@@ -1,0 +1,1 @@
+var l={"EMEA":["EMEA","Europa, Orientul Mijlociu \u015Fi Africa"]};var DvtBaseMapManager=this.DvtBaseMapManager;if (!DvtBaseMapManager) DvtBaseMapManager={};if (!DvtBaseMapManager._UNPROCESSED_MAPS) DvtBaseMapManager._UNPROCESSED_MAPS=[[],[],[]];DvtBaseMapManager._UNPROCESSED_MAPS[2].push(["emea","region",l]);

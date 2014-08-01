@@ -1,0 +1,1 @@
+var l={"NA":["USA, CAN","\u0397.\u03A0.\u0391. \u03BA\u03B1\u03B9 \u039A\u03B1\u03BD\u03B1\u03B4\u03AC\u03C2"]};var DvtBaseMapManager=this.DvtBaseMapManager;if (!DvtBaseMapManager) DvtBaseMapManager={};if (!DvtBaseMapManager._UNPROCESSED_MAPS) DvtBaseMapManager._UNPROCESSED_MAPS=[[],[],[]];DvtBaseMapManager._UNPROCESSED_MAPS[2].push(["usaAndCanada","region",l]);

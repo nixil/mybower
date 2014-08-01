@@ -1,0 +1,295 @@
+<div class="row">
+
+    <div class="col-lg-12">
+        <h2 class="page-header"><span>Analysis Page2</span></h2>
+    </div>
+
+    <!--    
+    <div class="col-md-12" >
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>24Hour Redo Log Summary</div>
+                <div class="panel-body min-height-200">
+                    <h6>New Requirement - Redo Log Switch Rate Analysis of all instances in the database being migrated - this is specifically for migrations which require Online Migration using Goldenagate...</h6>
+                    <div style="width:100%" data-bind="ojComponent: {
+                            component: 'ojChart', 
+			    type: 'bar',
+                            yAxis: {title: 'Switches', axisLine: {lineColor:'#2f7ed8', lineWidth: '3'}},
+                            styleDefaults: {colors: ['#146aba', '#8bbc21','#0d233a', '#910000', '#1aadce', '#492970', '#f28f43', '#77a1e5', '#c42525', '#a6c96a'], 
+                                            threeDEffect: 'on', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                            animationOnDisplay:'auto',
+                            animationOnDataChange: 'auto',
+                            hoverBehavior: 'dim',
+                            seriesEffect: 'gradient',
+                            zoomAndScroll: 'live',
+                            hideAndShowBehavior: 'withRescale',
+                            selection: 'single',
+                            legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:11px;'},
+                            overview: {rendered: 'on'},                            
+                            series: redoLogSumm24Hr,
+                            groups: pieGrp24Hr 
+                            }"
+                    > </div>
+                </div>
+        </div>
+    </div>
+    -->
+    
+    <!--
+    <div class="col-md-12" >
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>24Hour Redo Log Summary</div>
+                <div class="panel-body min-height-200">
+                    <h6>New Requirement - Redo Log Switch Rate Analysis of all instances in the database being migrated - this is specifically for migrations which require Online Migration using Goldenagate...</h6>
+                    <table style="width:100%" data-bind="ojComponent: 
+                    {
+                        component: 'ojTable', 
+                        data: redoLogSumm24Hr, 
+                        columns: [{headerText: 'Day', field: 'Day', headerStyle: 'text-align: left; white-space:nowrap;'},
+                                  {headerText: 'Hour_01', field: 'Hour_01', headerStyle: 'text-align: right;'},
+                                  {headerText: 'Hour_02', field: 'Hour_02'},
+                                  {headerText: 'Hour_03', field: 'Hour_03'},
+                                  {headerText: 'Hour_04', field: 'Hour_04'},
+                                  {headerText: 'Hour_05', field: 'Hour_05'},
+                                  {headerText: 'Hour_06', field: 'Hour_06'},
+                                  {headerText: 'Hour_07', field: 'Hour_07'},
+                                  {headerText: 'Hour_08', field: 'Hour_08'},
+                                  {headerText: 'Hour_09', field: 'Hour_09'},
+                                  {headerText: 'Hour_10', field: 'Hour_10'},
+                                  {headerText: 'Hour_11', field: 'Hour_11'},
+                                  {headerText: 'Hour_12', field: 'Hour_12'},
+                                  {headerText: 'Hour_13', field: 'Hour_13'},
+                                  {headerText: 'Hour_14', field: 'Hour_14'},
+                                  {headerText: 'Hour_15', field: 'Hour_15'},
+                                  {headerText: 'Hour_16', field: 'Hour_16'},
+                                  {headerText: 'Hour_17', field: 'Hour_17'},
+                                  {headerText: 'Hour_18', field: 'Hour_18'},
+                                  {headerText: 'Hour_19', field: 'Hour_19'},
+                                  {headerText: 'Hour_20', field: 'Hour_20'},
+                                  {headerText: 'Hour_21', field: 'Hour_21'},
+                                  {headerText: 'Hour_22', field: 'Hour_22'},
+                                  {headerText: 'Hour_23', field: 'Hour_23'},
+                                  {headerText: 'Hour_24', field: 'Hour_24'}
+                                 ]
+                    }">
+                    </table>
+                </div>
+        </div>
+    </div>
+    -->
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>24Hour Redo Log Summary (Data Grid Example)</div>
+                <div class="panel-body min-height-400">
+                    <h6>Summary: New Requirement - Redo Log Switch Rate Analysis of all instances in the database being migrated - this is specifically for migrations which require Online Migration using Goldenagate...</h6>
+                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 300px" data-bind="koGrid: gOpt24Hr"></div> 
+                </div>
+        </div>
+    </div> 
+    
+    
+    <div class="col-md-12" >
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Daily Redo Log Summary</div>
+                <div class="panel-body min-height-200">
+                    <h6>This would give a summary of the number of switches and the amount of churn on a daily basis</h6>
+                    <div style="width:100%" data-bind="ojComponent: {
+                            component: 'ojChart', 
+			    type: 'combo',
+                            yAxis: {title: 'Daily Switches', axisLine: {lineColor:'#2f7ed8', lineWidth: '3'}},
+                            y2Axis: {title: 'Daily Churn GB', alignTickMarks: 'on', minorTick: '10', axisLine: {lineColor:'#8bbc21', lineWidth: '3'}},
+                            animationOnDisplay:'auto',
+                            zoomAndScroll: 'live',
+                            animationOnDataChange: 'auto',
+                            seriesEffect: 'gradient',
+                            hideAndShowBehavior: 'withRescale',
+                            selection: 'multiple',
+                            legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:11px;'},
+                            overview: {rendered: 'on'},
+                            series: dredoLogSeries,                            
+                            groups: dRedoLogGrp
+                            }"
+                    > </div>
+                </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="col-md-12" >
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Weekly Redo Log Summary</div>
+                <div class="panel-body min-height-200">
+                    <h6>This would look at the switch rate per Instance and summarise it on a weekly basis</h6>
+                    <div style="width:100%" data-bind="ojComponent: {
+                            component: 'ojChart', 
+			    type: 'combo',
+                            yAxis: {title: 'Weekly Switches', axisLine: {lineColor:'#2f7ed8', lineWidth: '3'}},
+                            y2Axis: {title: 'Weekly Churn GB', alignTickMarks: 'on', minorTick: '10', axisLine: {lineColor:'#8bbc21', lineWidth: '3'}},
+                            animationOnDisplay:'auto', 
+                            zoomAndScroll: 'live',
+                            animationOnDataChange: 'auto',
+                            seriesEffect: 'gradient',
+                            hideAndShowBehavior: 'withRescale',
+                            selection: 'multiple',
+                            legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:11px;'},
+                            overview: {rendered: 'on'},
+                            series: wklyRedoLogSeries,                            
+                            groups: wklyRedoLogDGrp
+                            }"
+                    > </div>
+                </div>
+        </div>
+    </div>
+    
+    
+
+    <div class="col-md-12">
+        <h2 class="page-header"><span>Database Object Sizes</span></h2>
+    </div>
+    
+    
+    
+    
+    <div class="col-md-6" >
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Space Allocation of different Objects</div>
+                <div class="panel-body min-height-200">
+                    <h6>Type of objects held within the database</h6>
+                    <div data-bind="ojComponent: {
+                            component: 'ojChart', 
+			    type: 'pie', 
+                            animationOnDisplay:'auto', 
+                            styleDefaults: {colors: ['#146aba', '#8bbc21','#0d233a', '#910000', '#1aadce', '#492970', '#f28f43', '#77a1e5', '#c42525', '#a6c96a'], 
+                                            threeDEffect: 'on', 
+                                            sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                            animationOnDataChange: 'auto',
+                            seriesEffect: 'gradient',
+                            hideAndShowBehavior: 'withRescale',
+                            selection: 'single',
+                            legend: {rendered: 'on', position: 'right', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:11px;'},
+                            overview: {rendered: 'on'},                            
+                            series: dtSizesdb,
+                            groups: pieGroup
+                            }"
+                    > </div>
+                </div>
+        </div>
+    </div>
+    
+    
+
+    <div class="col-md-6" >
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Type of Objects by Schema</div>
+                <div class="panel-body min-height-200">
+                    <h6>Type of Objects held by Schema Owner</h6>
+                    <div data-bind="ojComponent: {
+                            component: 'ojChart', 
+			    type: 'bar', 
+                            animationOnDisplay:'auto', 
+                            styleDefaults: {colors: ['#146aba', '#8bbc21','#0d233a', '#910000', '#1aadce', '#492970', '#f28f43', '#77a1e5', '#c42525', '#a6c96a'], 
+                                            threeDEffect: 'on', 
+                                            sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                            animationOnDataChange: 'auto',
+                            seriesEffect: 'gradient',
+                            hideAndShowBehavior: 'withRescale',
+                            selection: 'single',
+                            legend: {rendered: 'on', position: 'right', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:11px;'},
+                            overview: {rendered: 'on'},                            
+                            series: dtSizesOwner,
+                            groups: pieGroupForDtSizeO
+                            }"
+                    > </div>
+                </div>
+        </div>
+    </div>
+
+    
+    <!--  Table Unsupported Data Type Golden Gate
+    <div class="col-md-12" >
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Unsupported Data Types for Goldengate</div>
+                <div class="panel-body min-height-200">
+                <h6>Unsupported GG Data</h6>
+
+                    <table style="width:100%" data-bind="ojComponent: 
+                    {
+                        component: 'ojTable', 
+                        data: UnsupportedDtGg, 
+                        columns: [{headerText: 'Owner', field: 'owner'},
+                                  {headerText: 'Table Name', field: 'table_name'},
+                                  {headerText: 'Column Name', field: 'column_name'},
+                                  {headerText: 'Data Type', field: 'data_type'}
+                                 ]
+                    }">
+                    </table>
+                </div>
+        </div>
+    </div>
+    -->
+  
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Unsupported Data Types for Goldengate (Data Grid Example)</div>
+                <div class="panel-body min-height-400">
+                    <h6>Summary: </h6>
+                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 300px" class="gridStyle" data-bind="koGrid: gridOptUnSupDtGg"></div> 
+                </div> 
+        </div>
+    </div>
+    
+    
+     
+    <!--  Source System TableSpace  Stats-->
+    <div class="col-md-6" >
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Source System Tablespace Usage Statistics</div>
+                <div class="panel-body min-height-200">
+                    <table style="width: 100%" data-bind="ojComponent:
+                    {
+                        component: 'ojTable', 
+                        data: sourceTblSpcStats, 
+                        columns: [{headerText: 'Tablespace Name', field: 'tablespace_name'},
+                                  {headerText: 'Curr Size(MB)', field: 'cur_sz_mb'},
+                                  {headerText: 'Curr Use(MB)', field: 'cur_use_mb'},
+                                  {headerText: '% Full', field: 'cur_pct_full'},
+                                  {headerText: 'Max Size(MB)', field: 'max_sz_mb'},
+                                  {headerText: 'Free Space(MB)', field: 'free_space_mb'},
+                                  {headerText: '% Full', field: 'pct_full'}
+                                 ]
+                    }">
+                    </table>
+                </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- source system database size stats -->
+    <div class="col-md-4" >
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Source System Database Usage Statistics</div>
+                <div class="panel-body min-height-200">
+                    <div data-bind="ojComponent: {
+                            component: 'ojChart', 
+			    type: 'pie', 
+                            animationOnDisplay:'auto', 
+                            styleDefaults: {colors: ['#146aba', '#8bbc21','#0d233a', '#910000', '#1aadce', '#492970', '#f28f43', '#77a1e5', '#c42525', '#a6c96a'], 
+                                            threeDEffect: 'on', 
+                                            sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                            animationOnDataChange: 'auto',
+                            seriesEffect: 'gradient',
+                            hideAndShowBehavior: 'withRescale',
+                            selection: 'single',
+                            legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:11px;'},
+                            overview: {rendered: 'on'},                            
+                            series: dbSizeStats,
+                            groups: pieGroup
+                            }"
+                    > </div>
+                </div>
+        </div>
+    </div>    
+    
+
+</div>

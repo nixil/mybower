@@ -1,0 +1,326 @@
+<div class="row">
+    
+    <div class="col-lg-12">
+        <h2 class="page-header"><span>Analysis</span></h2>
+    </div>
+
+    <div class="col-md-12">
+      <div class="col-md-2">
+        <label for="pkgRunId" class="oj-label-inline">Select Pkg Run Id:</label>
+        <select id="pkgRunId" class="form-control" data-bind="options: pRunIds, value: pRunId"></select>
+      </div>
+      <div class="col-md-2">
+        <label for="selectChartType" class="oj-label-inline">Chart Type:</label>
+        <select id="selectChartType" class="form-control" data-bind='options: cTypes, value: cType'> </select> 
+      </div>
+      <div class="col-md-2">
+        <label for="Orientation" class="oj-label-inline">Orientation:</label>
+        <select id="Orientation" class="form-control" data-bind='options: orientationOptions, value: orientationValue'> </select> 
+      </div>
+      <div class="col-md-2">
+        <label for="Stack" class="oj-label-inline">Stack</label>
+        <select id="Stack" class="form-control" data-bind='options: stackOptions, value: stackValue'> </select> 
+      </div>
+      <div class="col-md-12">
+          <h6></h6>
+      </div>
+    </div>    
+    
+    <div class="col-md-4" >
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Table Transfer Method</div>
+                <div class="panel-body min-height-200">
+                    <h6>Summary: Chart showing how tables will be migrated</h6>
+                    <div width="100%" data-bind="ojComponent: {
+                            component: 'ojChart', 
+			    type: cType, 
+                            orientation: orientationValue,
+                            stack: stackValue,
+                            animationOnDisplay:'auto',
+                            styleDefaults: {threeDEffect: 'on'},
+                            animationOnDataChange: 'auto',
+                            seriesEffect: 'gradient',
+                            hideAndShowBehavior: 'withRescale',
+                            selection: 'single',
+                            legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:11px;'},
+                            overview: {rendered: 'on'},                            
+                            series: pieData,
+                            groups: pieGroup
+                            }"
+                    > </div>
+                </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Data Transfer Volume</div>
+                <div class="panel-body min-height-200">
+                    <h6>Summary: Pie chart showing %age of data being transferred in a particular method</h6>
+		    <div width="100%" data-bind="ojComponent: {
+                            component: 'ojChart',
+			    type: cType, 
+                            orientation: orientationValue,
+                            stack: stackValue,
+                            animationOnDisplay:'auto', 
+                            styleDefaults: {threeDEffect: 'on'},
+                            animationOnDataChange: 'auto',
+                            seriesEffect: 'gradient',
+                            hideAndShowBehavior: 'withRescale',
+                            legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:11px;'},
+                            overview: {rendered: 'on'},                            
+                            selection: 'single',
+                            series: dataTrfVol, 
+                            groups: pieGroup
+                            }" 
+                     > </div>
+                </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Data Compression(%)</div>
+                <div class="panel-body min-height-200">
+                    <h6>Summary: Chart showing %age of data available for compression as part of the migration and different compression rates</h6>
+                    <div width="100%" data-bind="ojComponent: {
+                            component: 'ojChart',
+			    type: cType, 
+                            orientation: orientationValue,
+                            stack: stackValue,
+                            animationOnDisplay:'auto', 
+                            styleDefaults: {threeDEffect: 'on'},
+                            animationOnDataChange: 'auto',
+                            seriesEffect: 'gradient',
+                            hideAndShowBehavior: 'withRescale',
+                            legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:11px;'},
+                            overview: {rendered: 'on'},                            
+                            selection: 'single',
+                            series: dataCompPer, 
+                            groups: pieGroup
+                            }"
+                    > </div>
+                </div>
+        </div>
+    </div>
+
+    
+    <!--   Data Compression Projection as Table-->
+    <!--
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Data Compression Projection</div>
+            <div class="panel-body min-height-200">
+                <h6>Summary: It shows the percentage of data available for compression as part of the migration and different compression rates</h6>
+                    <table width="100%" data-bind="ojComponent: 
+                    {
+                        component: 'ojTable', 
+                        data: migCompProj, 
+                        columns: [{headerText: 'Label', field: 't1_label', headerStyle: 'text-align: left; white-space:nowrap;'},
+                                  {headerText: 'Size', field: 't1_size', headerStyle: 'text-align: left; white-space:nowrap;'},
+                                  {headerText: 'Projection Size 25%', field: 't1_projected_size_25pct', headerStyle: 'text-align: right; white-space:nowrap;'},
+                                  {headerText: 'Projection Size 50%', field: 't1_projected_size_50pct', headerStyle: 'text-align: right; white-space:nowrap;'},
+                                  {headerText: 'Space Gain', field: 't1_space_gain', headerStyle: 'text-align: left; white-space:nowrap;'}
+                                 ]
+                    }">
+                    </table>
+            </div>
+        </div>
+    </div>
+    -->
+    <div class="col-md-8">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Data Compression Projection</div>
+                <div class="panel-body min-height-200">
+                    <h6>Summary: It shows the percentage of data available for compression as part of the migration and different compression rates</h6>
+                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 200px" data-bind="koGrid: gOmigCompProj"></div> 
+                </div>
+        </div>
+    </div>
+    <!--   Data Compression Projection2 as Bar-->
+    <!--
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Data Compression Projection (shown as Bar Chart) </div>
+            <div class="panel-body min-height-200">
+                <h6>Summary: It shows the percentage of data available for compression as part of the migration and different compression rates</h6>
+                    <div width="100%" data-bind="ojComponent: {
+                            component: 'ojChart',
+			    type: 'bar', 
+                            orientation: orientationValue,
+                            stack: stackValue,
+                            animationOnDisplay:'auto', 
+                            styleDefaults: {colors: ['#146aba', '#8bbc21','#0d233a', '#910000', '#1aadce', '#492970', '#f28f43', '#77a1e5', '#c42525', '#a6c96a'], threeDEffect: 'on', sliceLabelStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:14px'},
+                            animationOnDataChange: 'auto',
+                            seriesEffect: 'gradient',
+                            hideAndShowBehavior: 'withRescale',
+                            legend: {rendered: 'on', position: 'bottom', scrolling: 'on', textStyle: 'font-family:Open Sans, sans serif; color:#737373; font-size:11px;'},
+                            overview: {rendered: 'on'},                            
+                            selection: 'single',
+                            series: migCompP, 
+                            groups: migCompPGrp 
+                            }"
+                    > </div>
+            </div>
+        </div>
+    </div>
+    -->
+    
+    <!--  Database options  show as Table
+    <div class="col-md-10">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Database Options</div>
+            <div class="panel-body min-height-200">
+                <h6>Summary: Database features switched on for the database.</h6>
+                    <table width="100%" data-bind="ojComponent: 
+                    {
+                        component: 'ojTable', 
+                        data: databaseOptions, 
+                        columns: [{headerText: 'Id', field: 'comp_id', headerStyle: 'text-align: left; white-space:nowrap;'},
+                                  {headerText: 'Option_Name', field: 'comp_name', headerStyle: 'text-align: left; white-space:nowrap;'},
+                                  {headerText: 'Version', field: 'version', headerStyle: 'text-align: left; white-space:nowrap;'},
+                                  {headerText: 'Status', field: 'status', headerStyle: 'text-align: left; white-space:nowrap;'},
+                                  {headerText: 'Modified', field: 'modified', headerStyle: 'text-align: left; white-space:nowrap;'}
+                                 ]
+                    }">
+                    </table>
+            </div>
+        </div>
+    </div>
+    -->
+    <!--
+    <div class="col-md-10">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Database Options (Data Grid Example)</div>
+                <div class="panel-body min-height-400">
+                    <h6>Summary: </h6>
+                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 300px" data-bind="koGrid: gridOptions"></div> 
+                </div>
+        </div>
+    </div>
+    -->
+    
+    <!--  Table Transfer Breakdown Method show as Table-->
+    <!-- Remove it as it is not required as per the requirements. 11-APR-2014 by AJAIN
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Table Transfer Method</div>
+            <div class="panel-body min-height-200">
+                <h6>Summary: </h6>
+                    <table width="100%" data-bind="ojComponent: 
+                    {
+                        component: 'ojTable', 
+                        data: databaseTrfBkd,
+                        columns: [{headerText: 'Text', field: 'c3_text'},
+                                  {headerText: 'Value', field: 'c3_value'},
+                                  {headerText: 'Percentage', field: 'val_pct'}]
+                    }">
+                    </table>
+            </div>
+        </div>
+    </div>
+    11-APR-2014 -->
+    
+    <div class="col-md-12">
+    <!--  Database Transfer Volume show as Table-->
+    <!--
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Database Transfer Volume</div>
+            <div class="panel-body min-height-200">
+                <h6>Summary: </h6>
+                    <table width="100%" data-bind="ojComponent: 
+                    {
+                        component: 'ojTable', 
+                        data: databaseTrfVol, 
+                        columns: [{headerText: 'Scenario Id', field: 'scenario_id', headerStyle: 'text-align: left; white-space:nowrap;'},
+                                  {headerText: 'Result', field: 'result_text', headerStyle: 'text-align: left; white-space:nowrap;'},
+                                  {headerText: 'Value', field: 'result_value', headerStyle: 'text-align: left; white-space:nowrap;'}
+                                 ]
+                    }">
+                    </table>
+            </div>
+        </div>
+    </div>
+    -->
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Database Transfer Volume</div>
+                <div class="panel-body min-height-200">
+                    <h6>Summary: </h6>
+                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 200px" data-bind="koGrid: gOdatabaseTrfVol"></div> 
+                </div>
+        </div>
+    </div>
+    
+    <!--  Index Compression -->
+    <!--
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Index Compression</div>
+            <div class="panel-body min-height-200">
+                <h6>Summary: Percentage of indexes available for compression during the migration and different compression rates</h6>
+                    <table width="100%" data-bind="ojComponent: 
+                    {
+                        component: 'ojTable', 
+                        data: indexComp, 
+                        columns: [{headerText: 'Scenario_Id', field: 'scenario_id', headerStyle: 'text-align: left; white-space:nowrap;'},
+                                  {headerText: 'Tbl Idx Compr Size', field: 'C1_TBLIDX_COMPR_SIZE', headerStyle: 'text-align: left; white-space:nowrap;'},
+                                  {headerText: 'Tbl Idx NoCompr Size', field: 'TBLIDX_NOCOMPR_SIZE', headerStyle: 'text-align: left; white-space:nowrap;'},
+                                  {headerText: 'Compression %', field: 'comp_sz_pc', headerStyle: 'text-align: left; white-space:nowrap;'},
+                                  {headerText: 'No Compression %', field: 'nocomp_sz_pc', headerStyle: 'text-align: left; white-space:nowrap;'}
+                                 ]
+                    }">
+                    </table> 
+            </div>
+        </div>
+    </div>
+    -->
+
+        
+    <!--  Big Table Transfer Details -->
+    <!-- Remove it as it is not required as per the requirements. 11-APR-2014 by AJAIN
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Big Table Transfer Details</div>
+            <div class="panel-body min-height-200">
+            <h6>Summary: </h6>
+            </div>
+        </div>
+    </div>
+    11-APR-2014 -->
+    
+    
+    <!--  Invalid Objects show as Table-->
+    <!--
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Invalid Objects Count by Type</div>
+            <div class="panel-body min-height-200">
+                <h6>Summary: </h6>
+                <table width="100%" data-bind="ojComponent: 
+                {
+                    component: 'ojTable', 
+                    data: invalidObjByType, 
+                    columns: [{headerText: 'Object Type', field: 'Object_Type', headerStyle: 'text-align: left; white-space:nowrap;'},
+                              {headerText: 'Count', field: 'Total', headerStyle: 'text-align: right; white-space:nowrap;'}
+                             ]
+                }">
+                </table> 
+            </div>
+        </div>
+    </div>
+    -->
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-html5 fa-fw"></i>Invalid Objects Count by Type</div>
+                <div class="panel-body min-height-200">
+                    <h6>Summary: </h6>
+                    <div style="border: 1px solid rgb(212,212,212); width: 100%; height: 200px" data-bind="koGrid: gOinvalidObjByType"></div> 
+                </div>
+        </div>
+    </div>
+    
+    </div> <!-- <div class="col-md-12" -->
+    
+</div>    

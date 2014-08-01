@@ -1,0 +1,97 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header"><span data-bind="text: isNewEngagment ? 'Create Engagement' : 'Edit Engagement' ">Engagement</span></h1>
+    </div>
+    <!-- /.col-md-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"> <i class="fa fa-cloud-upload fa-fw"></i> Engagement Detail </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form role="form">
+                            <div class="form-group">
+                                <label>Engagement ID *</label>
+                                <input class="form-control" required id="eng_id"  name="eng_id"   data-bind="value:currentEngagement.engagementId , enable: isNewEngagment">
+                            </div>
+                            <!-- /.form-group -->
+
+                            <div class="form-group">
+                                <label>Contract ID *</label>
+                                <input class="form-control" required id="contract_Id"  name="contract_id"  data-bind="value:(getEngProperty({scope:'ENGAGEMENT',name:'CONTRACT_ID'})).value">
+                            </div>
+                            <!-- /.form-group --> 
+
+                            <div class="form-group">
+                                <label>Status</label>
+                                <select id="status"  class="form-control" data-bind="options: statusList,
+                                                                        optionsText: 'name',
+                                                                        optionsValue: 'value',
+                                                                        value:currentEngagement.status, enable: !isNewEngagment">
+                                </select>
+                            </div>
+                            <!-- /.form-group -->
+                        </form>
+                        <!-- /.form --> 
+                    </div>
+                    <!-- /.col-md-6 (nested) -->
+                    
+                    <div class="col-md-6">
+                        <form role="form">
+                            <div class="form-group">
+                                <label>Customer Project Name *</label>
+                                <input id ="eng_name" class="form-control"  name="description" type="text" required data-bind="value:currentEngagement.description">
+                            </div>
+                            <!-- /.form-group -->
+
+                            <div class="form-group">
+                                <label>Service Type *</label>
+                                <select id="service"  onchange=" if ($('#service').val() == 1) {
+                                            $('#engTypediv').show();
+                                        } else {
+                                            $('#engTypediv').hide()
+                                        }" class="form-control" data-bind="options: serviceList,
+                                                                        optionsText: 'description',
+                                                                        optionsValue: 'serviceId',
+                                                                        optionsCaption: 'Choose Service Type...',
+                                                                        value:currentEngagement.serviceId">
+                                </select>
+                            </div>
+                            <!-- /.form-group -->
+                            <div class="form-group" id="engTypediv">
+                                <label>Engagement Type</label>
+                                <br>
+                                <label class="radio-inline">
+                                    <input name="engType" id="optionsRadiosInline1" value="PHANTOM"  type="radio" data-bind="checked:(getEngProperty({scope:'ENGAGEMENT',name:'ENG_TYPE'})).value">
+                                    Phantom </label>
+                                <label class="radio-inline">
+                                    <input name="engType" id="optionsRadiosInline2" value="REGULAR" type="radio" data-bind="checked:(getEngProperty({scope:'ENGAGEMENT',name:'ENG_TYPE'})).value">
+                                    Regular </label>
+                            </div> 
+                            <!-- /.form-group -->
+                        </form>
+                        <!-- /.form --> 
+                    </div>
+                    <!-- /.col-md-6 (nested) -->
+                </div>
+                <!-- /.row -->
+
+                <div class="text-right">
+                    <button type="button" class="btn btn-primary" data-bind="click:function(){addEngagement()}"  >Save</button>
+                    <button  type="button" class="btn btn-warning"  onclick="location.hash = '#/lifecycle/tam-admin'">Cancel</button>
+                </div>
+                <!-- /.text-right --> 
+
+            </div>
+            <!-- /.panel-body --> 
+        </div>
+        <!-- /.panel --> 
+    </div>
+    <!-- /.col-md-12 -->
+
+</div>
+<!-- /.row -->

@@ -1,0 +1,96 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1>Create Named SQL Statement</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">Named SQL Details</div>
+      <div class="panel-body">
+        <form id="named_sql_form" role="form">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>SQL Name</label>
+                <input name="name" class="form-control" data-bind="value: formNamedSQL.name">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Data Source</label>
+                <!--<input name="name" class="form-control" data-bind="value: formNamedSQL.dataSourceJNDI">-->
+                <select class="form-control" data-bind="options: availableDataSources, value: formNamedSQL.dataSourceJNDI,
+                    optionsText: 'name', optionsValue: 'value',
+                    optionsCaption: 'Select Data Source...'"></select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>SQL Statement</label> <textarea name="sql" class="form-control"
+                                                       data-bind="value: formNamedSQL.sql" rows="10"
+                                                       maxlength="4000"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" data-bind="if: formNamedSQL.paramList() && formNamedSQL.paramList().length > 0">
+            <div class="col-md-12">
+              <label>Parameters</label>
+
+              <div class="well well-sm">
+                <div data-bind="foreach: formNamedSQL.paramList">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="param_name">Name</label>
+                        <input id="param_name" class="form-control" data-bind="value: name">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="param_type">Data Type</label>
+                        <select id="param_type" class="form-control" data-bind="options: $parent.parameterTypes,
+                                                                        value: type"></select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--<a class="btn btn-group-xs" href="" data-bind="click:$parent.formNamedSQL.removeParam"> <i><span-->
+          <!--class="glyphicon glyphicon-minus"></span></i> </a>-->
+          <div class="row">
+            <div class="col-md-12">
+              <label>Privileges</label>
+
+              <div class="well well-sm">
+                <div class="row">
+                  <div data-bind="foreach: {data: availablePrivileges} ">
+                    <div class="col-sm-6 col-md-4">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" data-bind="checked: $parent.formNamedSQL.privileges, value: id"/>
+                          <span data-bind="text:name"></span> </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-right">
+            <!--button type="submit" class="btn btn-primary" data-bind="click: createNewUser">New User</button-->
+            <button type="button" class="btn btn-primary" data-bind="click: saveNamedSQL"><i class="fa fa-save"></i>&nbsp;&nbsp;Save
+            </button>
+            <button type="button" class="btn btn-default" data-bind="click: cancelEdit"><i class="fa fa-trash-o"></i>&nbsp;&nbsp;Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

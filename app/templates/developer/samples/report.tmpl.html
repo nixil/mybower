@@ -1,0 +1,73 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header"><span>Sample Report</span></h1>
+    </div>
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-users fa-fw"></i> Table Example </div>
+            <div class="panel-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>TIME</th>
+                            <th>CPU UTILIZATION</th>
+                            <th>MEMORY UTILIZATION</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="foreach: sampleTableData">
+                        <tr>
+                            <td data-bind="text: TIME"></td>
+                            <td data-bind="text: CPU_UTILIZATION"></td>
+                            <td data-bind="text: MEMORY_UTILIZATION"></td>
+                            <td>
+                                <div data-bind='ojComponent: {"component":"ojChart","type":"line",
+                "groups": sampleChartData().groups,
+                "series": sampleChartData().series,
+                "legend":{"title":"Hardware Usage"},"yAxis":{"min":"20","max":"80"}}'
+                                     style='width:100%;height:320px;'>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <!-- /.panel -->
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-users fa-fw"></i> Chart Example </div>
+            <div class="panel-body">
+                <div data-bind='ojComponent: {"component":"ojChart","type":"line",
+                "groups": sampleChartData().groups,
+                "series": sampleChartData().series,
+                "legend":{"title":"Hardware Usage"},"yAxis":{"min":"20","max":"80"}}'
+                     style='width:100%;height:320px;'>
+                </div>
+                Start time: <input type="text" data-bind="value: startTime"/><button type="button" data-bind="click: changeStartTime">Change</button>
+            </div>
+            <!-- /.panel -->
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-users fa-fw"></i> Datagrid Example </div>
+            <div class="panel-body">
+                <div style="width: 100%" data-bind="koGrid: dataGrid"></div>
+            </div>
+            <!-- /.panel -->
+        </div>
+    </div>
+
+</div>
+
+

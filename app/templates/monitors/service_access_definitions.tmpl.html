@@ -1,0 +1,10 @@
+<div>
+    <p><a data-bind="attr: { href: '#/myservices', title: name}">Back to My Monitoring Services</a></p>
+
+    <h1>Service Access Definitions</h1>
+    <ul data-bind="foreach: sads">
+        <li data-bind="text: name"></li>
+    </ul>
+
+    <button data-bind="click: unload">unload probe</button>
+</div>

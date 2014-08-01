@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html"><img src="images/oracle-logo.png" alt="Advanced Support Gateway"/><span class="header-text"> Advanced Support Gateway</span></a>
+    </div>
+
+    <div id="loading" style="display: none;width: 250px;height: 24px;float: left;margin-top: 15px;margin-left:100px;color: white;"><img src="images/preloader.gif"> loading...</div>
+
+    <!-- /.navbar-header -->
+    <ul class="nav navbar-top-links navbar-right">
+        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fa fa-cogs fa-fw"></i> <i class="fa fa-caret-down"></i> </a>
+            <ul class="dropdown-menu dropdown-user">
+                <li data-bind="visible: isLocalUser()"><a href="#/users/profile" title="User Profile"><i class="fa fa-user fa-fw"></i> User Profile</a> </li>
+                <li data-bind="visible: isLocalUser()"><a href="#/users/change_password" title="Change Password"><i class="fa fa-lock fa-fw"></i> Change Password</a> </li>
+                <li data-bind="visible: isLocalUser()" class="divider"></li>
+                <li><a title="Logout" data-bind="click: logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a> </li>
+            </ul>
+            <!-- /.dropdown-user -->
+    </ul>
+    <!-- /.navbar-top-links -->
+</nav>
+<!-- /.navbar-static-top -->

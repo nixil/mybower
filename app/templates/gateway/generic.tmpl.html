@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1>Generic Command</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Command
+                <div class="pull-right">
+                    <button type="button" class="btn btn-primary" data-bind="click: execute">Execute</button>
+                    <button type="button" class="btn btn-primary" data-bind="click: save">Save</button>
+                    <button type="button" class="btn btn-primary" data-bind="click: cancelEdit">Cancel</button>
+                </div>
+            </div>
+            <div class="panel-body">
+                <label>Name</label>&nbsp;<input type="text" id="name" class="form-control" data-bind="value: name" />
+
+                <label>Command</label>&nbsp;
+                <textarea name="command" class="form-control" maxlength="2000"
+                          data-bind="value: cmdString" rows="5">
+                </textarea>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Result</div>
+            <div class="panel-body" data-bind="foreach: output">
+                <text data-bind="text: $data"/><br/>
+            </div>                    
+        </div>
+    </div>
+</div>
