@@ -143,38 +143,6 @@ define(['jquery', 'knockout', 'acs-nav', 'modules/common/user',
                             icon:'fa-code'
                         }
                     ]
-                },
-                {
-                    url: '/monitors/probes',
-                    menuText: 'Other Monitors',
-                    icon:'fa-code',
-                    submenus: [
-                        {
-                            url: '/monitors/probes',
-                            menuText: 'Probes',
-                            submenus: [],
-                            icon:'fa-code'
-                        },
-                        {
-                            url: '/monitors/probes',
-                            menuText: 'Probes',
-                            icon:'fa-code',
-                            submenus: [
-                                {
-                                    url: '#/monitors/sads',
-                                    menuText: 'Service Access Definitions',
-                                    submenus: [],
-                                    icon:'fa-code'
-                                },
-                                {
-                                    url: '/monitors/probes',
-                                    menuText: 'Probes',
-                                    submenus: [],
-                                    icon:'fa-code'
-                                }
-                            ]
-                        }
-                    ]
                 }
             ]);
 
