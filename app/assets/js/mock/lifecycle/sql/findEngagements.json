@@ -1,0 +1,37 @@
+[ {
+  "properties" : [ {
+    "id" : 1,
+    "engagementId" : 1,
+    "scope" : "ENGAGEMENT",
+    "name" : "CONTRACT_ID",
+    "value" : "100",
+    "refId" : null
+  } ],
+  "engagementId" : 1,
+  "serviceId" : 1,
+  "description" : "Test Engagements1",
+  "title" : "Title1",
+  "status" : "New",
+  "createBy" : "admin",
+  "createDate" : 1388025600000,
+  "lastModifyBy" : null,
+  "lastModifyDate" : null
+}, {
+  "properties" : [ {
+    "id" : 2,
+    "engagementId" : 2,
+    "scope" : "ENGAGEMENT",
+    "name" : "CONTRACT_ID",
+    "value" : "101",
+    "refId" : null
+  } ],
+  "engagementId" : 2,
+  "serviceId" : 2,
+  "description" : "Test Engagements2",
+  "title" : "Title2",
+  "status" : "New",
+  "createBy" : "admin",
+  "createDate" : 1398169123000,
+  "lastModifyBy" : null,
+  "lastModifyDate" : null
+} ]

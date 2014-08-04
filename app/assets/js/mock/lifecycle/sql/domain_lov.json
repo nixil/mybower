@@ -1,0 +1,45 @@
+[ {
+  "LOV_CODE" : "LOV Code",
+  "DESCRIPTION" : "description",
+  "DOMAIN" : "domain"
+}, {
+  "LOV_CODE" : "Y",
+  "DESCRIPTION" : "Yes",
+  "DOMAIN" : "YES_NO"
+}, {
+  "LOV_CODE" : "N",
+  "DESCRIPTION" : "No",
+  "DOMAIN" : "YES_NO"
+}, {
+  "LOV_CODE" : "1",
+  "DESCRIPTION" : "Default",
+  "DOMAIN" : "DEBUG"
+}, {
+  "LOV_CODE" : "2",
+  "DESCRIPTION" : "Enable basic trace",
+  "DOMAIN" : "DEBUG"
+}, {
+  "LOV_CODE" : "3",
+  "DESCRIPTION" : "Enable detailed trace",
+  "DOMAIN" : "DEBUG"
+}, {
+  "LOV_CODE" : "4",
+  "DESCRIPTION" : "Event 10046 with binds",
+  "DOMAIN" : "DEBUG"
+}, {
+  "LOV_CODE" : "8",
+  "DESCRIPTION" : "Event 10046 with wait events",
+  "DOMAIN" : "DEBUG"
+}, {
+  "LOV_CODE" : "12",
+  "DESCRIPTION" : "Event 10046 with binds + wait events",
+  "DOMAIN" : "DEBUG"
+}, {
+  "LOV_CODE" : "CPU",
+  "DESCRIPTION" : "CPU",
+  "DOMAIN" : "LBAL"
+}, {
+  "LOV_CODE" : "MEM",
+  "DESCRIPTION" : "Memory",
+  "DOMAIN" : "LBAL"
+} ]

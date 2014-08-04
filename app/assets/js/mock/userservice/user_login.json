@@ -1,0 +1,59 @@
+{
+    "username" : "test",
+    "routes" : [
+        {
+            "path": "#/myservices",
+            "verb": "get",
+            "templateNamePath": "monitors/my_monitor_services",
+            "viewModelNamePath": "modules/monitors/my_monitor_services",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "View",
+            "menu": "My Services"
+        },
+        {
+            "path": "#/monitors/sads",
+            "verb": "get",
+            "templateNamePath": "monitors/service_access_definitions",
+            "viewModelNamePath": "modules/monitors/service_access_definitions",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "edit-sads",
+            "menu": "Monitoring | Service Access Definition"
+        },
+        {
+            "path": "#/monitors/probes",
+            "verb": "get",
+            "templateNamePath": "monitors/probes",
+            "viewModelNamePath": "modules/monitors/probes",
+            "beforeRoutingAction": "beforeRoutingAction",
+            "afterRoutingAction": null,
+            "privilege": "view-probes",
+            "menu": "Monitoring | Probes"
+        },
+        {
+            "path": "#/monitors/create_probes",
+            "verb": "get",
+            "templateNamePath": "monitors/edit_probe",
+            "viewModelNamePath": "modules/monitors/probes",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "edit-probes",
+            "menu": null
+        },
+        {
+            "path": "#/monitors/save_probes",
+            "verb": "get",
+            "templateNamePath": "monitors/probes",
+            "viewModelNamePath": "modules/monitors/probes",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "edit-probes",
+            "menu": null
+        }
+    ],
+    "userid" : "test@oracle.com",
+    "dateformat": "MM-DD-YYYY",
+    "timeformat": "hh:mm:ss a Z",
+    "isloggedin" : true
+}

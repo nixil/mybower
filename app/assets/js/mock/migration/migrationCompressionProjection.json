@@ -1,0 +1,18 @@
+[
+
+    {
+        "t1_label": "Indexes Compression",
+        "t1_size": 0,
+        "t1_projected_size_25pct": 0,
+        "t1_projected_size_50pct": 0,
+        "t1_space_gain": "0GB at 25% to 0GB at 50%"
+    },
+    {
+        "t1_label": "Tables and Indexes Compression",
+        "t1_size": 38834,
+        "t1_projected_size_25pct": 29125.5,
+        "t1_projected_size_50pct": 19417,
+        "t1_space_gain": "9.48GB at 25% to 18.96GB at 50%"
+    }
+
+]

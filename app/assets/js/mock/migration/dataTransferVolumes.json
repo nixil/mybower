@@ -1,0 +1,4 @@
+[{"engagement_id":1450,"scenario_id":1846,"package_run_id":"130925_135954","result_text":"Volume transferred by exp/imp:","result_value":1053},
+ {"engagement_id":1450,"scenario_id":1846,"package_run_id":"130925_135954","result_text":"Volume transferred in full user export and single table export:","result_value":5214},
+ {"engagement_id":1450,"scenario_id":1846,"package_run_id":"130925_135954","result_text":"Number of tables transfered with separate scripts:","result_value":209}
+]

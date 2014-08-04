@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "name": "Series 1",
+      "items": [42, 55, 36, 22]
+    },
+    {
+      "name": "Series 2",
+      "items": [32, 39, 36, 27]
+    },
+    {
+      "name": "Series 3",
+      "items": [34, 30, 50, 46],
+      "assignedToY2": "on"
+    }
+  ],
+  "groups": ["Group A", "Group B", "Group C", "Group D"]
+}

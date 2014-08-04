@@ -1,0 +1,1113 @@
+[ {
+  "TZNAME" : "Africa/Abidjan"
+}, {
+  "TZNAME" : "Africa/Accra"
+}, {
+  "TZNAME" : "Africa/Addis_Ababa"
+}, {
+  "TZNAME" : "Africa/Algiers"
+}, {
+  "TZNAME" : "Africa/Asmara"
+}, {
+  "TZNAME" : "Africa/Asmera"
+}, {
+  "TZNAME" : "Africa/Bamako"
+}, {
+  "TZNAME" : "Africa/Bangui"
+}, {
+  "TZNAME" : "Africa/Banjul"
+}, {
+  "TZNAME" : "Africa/Bissau"
+}, {
+  "TZNAME" : "Africa/Blantyre"
+}, {
+  "TZNAME" : "Africa/Brazzaville"
+}, {
+  "TZNAME" : "Africa/Bujumbura"
+}, {
+  "TZNAME" : "Africa/Cairo"
+}, {
+  "TZNAME" : "Africa/Casablanca"
+}, {
+  "TZNAME" : "Africa/Ceuta"
+}, {
+  "TZNAME" : "Africa/Conakry"
+}, {
+  "TZNAME" : "Africa/Dakar"
+}, {
+  "TZNAME" : "Africa/Dar_es_Salaam"
+}, {
+  "TZNAME" : "Africa/Djibouti"
+}, {
+  "TZNAME" : "Africa/Douala"
+}, {
+  "TZNAME" : "Africa/El_Aaiun"
+}, {
+  "TZNAME" : "Africa/Freetown"
+}, {
+  "TZNAME" : "Africa/Gaborone"
+}, {
+  "TZNAME" : "Africa/Harare"
+}, {
+  "TZNAME" : "Africa/Johannesburg"
+}, {
+  "TZNAME" : "Africa/Kampala"
+}, {
+  "TZNAME" : "Africa/Khartoum"
+}, {
+  "TZNAME" : "Africa/Kigali"
+}, {
+  "TZNAME" : "Africa/Kinshasa"
+}, {
+  "TZNAME" : "Africa/Lagos"
+}, {
+  "TZNAME" : "Africa/Libreville"
+}, {
+  "TZNAME" : "Africa/Lome"
+}, {
+  "TZNAME" : "Africa/Luanda"
+}, {
+  "TZNAME" : "Africa/Lubumbashi"
+}, {
+  "TZNAME" : "Africa/Lusaka"
+}, {
+  "TZNAME" : "Africa/Malabo"
+}, {
+  "TZNAME" : "Africa/Maputo"
+}, {
+  "TZNAME" : "Africa/Maseru"
+}, {
+  "TZNAME" : "Africa/Mbabane"
+}, {
+  "TZNAME" : "Africa/Mogadishu"
+}, {
+  "TZNAME" : "Africa/Monrovia"
+}, {
+  "TZNAME" : "Africa/Nairobi"
+}, {
+  "TZNAME" : "Africa/Ndjamena"
+}, {
+  "TZNAME" : "Africa/Niamey"
+}, {
+  "TZNAME" : "Africa/Nouakchott"
+}, {
+  "TZNAME" : "Africa/Ouagadougou"
+}, {
+  "TZNAME" : "Africa/Porto-Novo"
+}, {
+  "TZNAME" : "Africa/Sao_Tome"
+}, {
+  "TZNAME" : "Africa/Timbuktu"
+}, {
+  "TZNAME" : "Africa/Tripoli"
+}, {
+  "TZNAME" : "Africa/Tunis"
+}, {
+  "TZNAME" : "Africa/Windhoek"
+}, {
+  "TZNAME" : "America/Adak"
+}, {
+  "TZNAME" : "America/Anchorage"
+}, {
+  "TZNAME" : "America/Anguilla"
+}, {
+  "TZNAME" : "America/Antigua"
+}, {
+  "TZNAME" : "America/Araguaina"
+}, {
+  "TZNAME" : "America/Argentina/Buenos_Aires"
+}, {
+  "TZNAME" : "America/Argentina/Catamarca"
+}, {
+  "TZNAME" : "America/Argentina/ComodRivadavia"
+}, {
+  "TZNAME" : "America/Argentina/Cordoba"
+}, {
+  "TZNAME" : "America/Argentina/Jujuy"
+}, {
+  "TZNAME" : "America/Argentina/La_Rioja"
+}, {
+  "TZNAME" : "America/Argentina/Mendoza"
+}, {
+  "TZNAME" : "America/Argentina/Rio_Gallegos"
+}, {
+  "TZNAME" : "America/Argentina/Salta"
+}, {
+  "TZNAME" : "America/Argentina/San_Juan"
+}, {
+  "TZNAME" : "America/Argentina/San_Luis"
+}, {
+  "TZNAME" : "America/Argentina/Tucuman"
+}, {
+  "TZNAME" : "America/Argentina/Ushuaia"
+}, {
+  "TZNAME" : "America/Aruba"
+}, {
+  "TZNAME" : "America/Asuncion"
+}, {
+  "TZNAME" : "America/Atikokan"
+}, {
+  "TZNAME" : "America/Atka"
+}, {
+  "TZNAME" : "America/Bahia"
+}, {
+  "TZNAME" : "America/Bahia_Banderas"
+}, {
+  "TZNAME" : "America/Barbados"
+}, {
+  "TZNAME" : "America/Belem"
+}, {
+  "TZNAME" : "America/Belize"
+}, {
+  "TZNAME" : "America/Blanc-Sablon"
+}, {
+  "TZNAME" : "America/Boa_Vista"
+}, {
+  "TZNAME" : "America/Bogota"
+}, {
+  "TZNAME" : "America/Boise"
+}, {
+  "TZNAME" : "America/Buenos_Aires"
+}, {
+  "TZNAME" : "America/Cambridge_Bay"
+}, {
+  "TZNAME" : "America/Campo_Grande"
+}, {
+  "TZNAME" : "America/Cancun"
+}, {
+  "TZNAME" : "America/Caracas"
+}, {
+  "TZNAME" : "America/Catamarca"
+}, {
+  "TZNAME" : "America/Cayenne"
+}, {
+  "TZNAME" : "America/Cayman"
+}, {
+  "TZNAME" : "America/Chicago"
+}, {
+  "TZNAME" : "America/Chihuahua"
+}, {
+  "TZNAME" : "America/Coral_Harbour"
+}, {
+  "TZNAME" : "America/Cordoba"
+}, {
+  "TZNAME" : "America/Costa_Rica"
+}, {
+  "TZNAME" : "America/Cuiaba"
+}, {
+  "TZNAME" : "America/Curacao"
+}, {
+  "TZNAME" : "America/Danmarkshavn"
+}, {
+  "TZNAME" : "America/Dawson"
+}, {
+  "TZNAME" : "America/Dawson_Creek"
+}, {
+  "TZNAME" : "America/Denver"
+}, {
+  "TZNAME" : "America/Detroit"
+}, {
+  "TZNAME" : "America/Dominica"
+}, {
+  "TZNAME" : "America/Edmonton"
+}, {
+  "TZNAME" : "America/Eirunepe"
+}, {
+  "TZNAME" : "America/El_Salvador"
+}, {
+  "TZNAME" : "America/Ensenada"
+}, {
+  "TZNAME" : "America/Fort_Wayne"
+}, {
+  "TZNAME" : "America/Fortaleza"
+}, {
+  "TZNAME" : "America/Glace_Bay"
+}, {
+  "TZNAME" : "America/Godthab"
+}, {
+  "TZNAME" : "America/Goose_Bay"
+}, {
+  "TZNAME" : "America/Grand_Turk"
+}, {
+  "TZNAME" : "America/Grenada"
+}, {
+  "TZNAME" : "America/Guadeloupe"
+}, {
+  "TZNAME" : "America/Guatemala"
+}, {
+  "TZNAME" : "America/Guayaquil"
+}, {
+  "TZNAME" : "America/Guyana"
+}, {
+  "TZNAME" : "America/Halifax"
+}, {
+  "TZNAME" : "America/Havana"
+}, {
+  "TZNAME" : "America/Hermosillo"
+}, {
+  "TZNAME" : "America/Indiana/Indianapolis"
+}, {
+  "TZNAME" : "America/Indiana/Knox"
+}, {
+  "TZNAME" : "America/Indiana/Marengo"
+}, {
+  "TZNAME" : "America/Indiana/Petersburg"
+}, {
+  "TZNAME" : "America/Indiana/Tell_City"
+}, {
+  "TZNAME" : "America/Indiana/Vevay"
+}, {
+  "TZNAME" : "America/Indiana/Vincennes"
+}, {
+  "TZNAME" : "America/Indiana/Winamac"
+}, {
+  "TZNAME" : "America/Indianapolis"
+}, {
+  "TZNAME" : "America/Inuvik"
+}, {
+  "TZNAME" : "America/Iqaluit"
+}, {
+  "TZNAME" : "America/Jamaica"
+}, {
+  "TZNAME" : "America/Jujuy"
+}, {
+  "TZNAME" : "America/Juneau"
+}, {
+  "TZNAME" : "America/Kentucky/Louisville"
+}, {
+  "TZNAME" : "America/Kentucky/Monticello"
+}, {
+  "TZNAME" : "America/Knox_IN"
+}, {
+  "TZNAME" : "America/La_Paz"
+}, {
+  "TZNAME" : "America/Lima"
+}, {
+  "TZNAME" : "America/Los_Angeles"
+}, {
+  "TZNAME" : "America/Louisville"
+}, {
+  "TZNAME" : "America/Maceio"
+}, {
+  "TZNAME" : "America/Managua"
+}, {
+  "TZNAME" : "America/Manaus"
+}, {
+  "TZNAME" : "America/Marigot"
+}, {
+  "TZNAME" : "America/Martinique"
+}, {
+  "TZNAME" : "America/Matamoros"
+}, {
+  "TZNAME" : "America/Mazatlan"
+}, {
+  "TZNAME" : "America/Mendoza"
+}, {
+  "TZNAME" : "America/Menominee"
+}, {
+  "TZNAME" : "America/Merida"
+}, {
+  "TZNAME" : "America/Mexico_City"
+}, {
+  "TZNAME" : "America/Miquelon"
+}, {
+  "TZNAME" : "America/Moncton"
+}, {
+  "TZNAME" : "America/Monterrey"
+}, {
+  "TZNAME" : "America/Montevideo"
+}, {
+  "TZNAME" : "America/Montreal"
+}, {
+  "TZNAME" : "America/Montserrat"
+}, {
+  "TZNAME" : "America/Nassau"
+}, {
+  "TZNAME" : "America/New_York"
+}, {
+  "TZNAME" : "America/Nipigon"
+}, {
+  "TZNAME" : "America/Nome"
+}, {
+  "TZNAME" : "America/Noronha"
+}, {
+  "TZNAME" : "America/North_Dakota/Center"
+}, {
+  "TZNAME" : "America/North_Dakota/New_Salem"
+}, {
+  "TZNAME" : "America/Ojinaga"
+}, {
+  "TZNAME" : "America/Panama"
+}, {
+  "TZNAME" : "America/Pangnirtung"
+}, {
+  "TZNAME" : "America/Paramaribo"
+}, {
+  "TZNAME" : "America/Phoenix"
+}, {
+  "TZNAME" : "America/Port-au-Prince"
+}, {
+  "TZNAME" : "America/Port_of_Spain"
+}, {
+  "TZNAME" : "America/Porto_Acre"
+}, {
+  "TZNAME" : "America/Porto_Velho"
+}, {
+  "TZNAME" : "America/Puerto_Rico"
+}, {
+  "TZNAME" : "America/Rainy_River"
+}, {
+  "TZNAME" : "America/Rankin_Inlet"
+}, {
+  "TZNAME" : "America/Recife"
+}, {
+  "TZNAME" : "America/Regina"
+}, {
+  "TZNAME" : "America/Resolute"
+}, {
+  "TZNAME" : "America/Rio_Branco"
+}, {
+  "TZNAME" : "America/Rosario"
+}, {
+  "TZNAME" : "America/Santa_Isabel"
+}, {
+  "TZNAME" : "America/Santiago"
+}, {
+  "TZNAME" : "America/Santo_Domingo"
+}, {
+  "TZNAME" : "America/Sao_Paulo"
+}, {
+  "TZNAME" : "America/Scoresbysund"
+}, {
+  "TZNAME" : "America/Shiprock"
+}, {
+  "TZNAME" : "America/St_Barthelemy"
+}, {
+  "TZNAME" : "America/St_Johns"
+}, {
+  "TZNAME" : "America/St_Kitts"
+}, {
+  "TZNAME" : "America/St_Lucia"
+}, {
+  "TZNAME" : "America/St_Thomas"
+}, {
+  "TZNAME" : "America/St_Vincent"
+}, {
+  "TZNAME" : "America/Swift_Current"
+}, {
+  "TZNAME" : "America/Tegucigalpa"
+}, {
+  "TZNAME" : "America/Thule"
+}, {
+  "TZNAME" : "America/Thunder_Bay"
+}, {
+  "TZNAME" : "America/Tijuana"
+}, {
+  "TZNAME" : "America/Toronto"
+}, {
+  "TZNAME" : "America/Tortola"
+}, {
+  "TZNAME" : "America/Vancouver"
+}, {
+  "TZNAME" : "America/Virgin"
+}, {
+  "TZNAME" : "America/Whitehorse"
+}, {
+  "TZNAME" : "America/Winnipeg"
+}, {
+  "TZNAME" : "America/Yakutat"
+}, {
+  "TZNAME" : "America/Yellowknife"
+}, {
+  "TZNAME" : "Antarctica/Casey"
+}, {
+  "TZNAME" : "Antarctica/Davis"
+}, {
+  "TZNAME" : "Antarctica/DumontDUrville"
+}, {
+  "TZNAME" : "Antarctica/Macquarie"
+}, {
+  "TZNAME" : "Antarctica/Mawson"
+}, {
+  "TZNAME" : "Antarctica/McMurdo"
+}, {
+  "TZNAME" : "Antarctica/Palmer"
+}, {
+  "TZNAME" : "Antarctica/South_Pole"
+}, {
+  "TZNAME" : "Antarctica/Syowa"
+}, {
+  "TZNAME" : "Arctic/Longyearbyen"
+}, {
+  "TZNAME" : "Asia/Aden"
+}, {
+  "TZNAME" : "Asia/Almaty"
+}, {
+  "TZNAME" : "Asia/Amman"
+}, {
+  "TZNAME" : "Asia/Anadyr"
+}, {
+  "TZNAME" : "Asia/Aqtau"
+}, {
+  "TZNAME" : "Asia/Aqtobe"
+}, {
+  "TZNAME" : "Asia/Ashgabat"
+}, {
+  "TZNAME" : "Asia/Ashkhabad"
+}, {
+  "TZNAME" : "Asia/Baghdad"
+}, {
+  "TZNAME" : "Asia/Bahrain"
+}, {
+  "TZNAME" : "Asia/Baku"
+}, {
+  "TZNAME" : "Asia/Bangkok"
+}, {
+  "TZNAME" : "Asia/Beirut"
+}, {
+  "TZNAME" : "Asia/Bishkek"
+}, {
+  "TZNAME" : "Asia/Brunei"
+}, {
+  "TZNAME" : "Asia/Calcutta"
+}, {
+  "TZNAME" : "Asia/Choibalsan"
+}, {
+  "TZNAME" : "Asia/Chongqing"
+}, {
+  "TZNAME" : "Asia/Chungking"
+}, {
+  "TZNAME" : "Asia/Colombo"
+}, {
+  "TZNAME" : "Asia/Dacca"
+}, {
+  "TZNAME" : "Asia/Damascus"
+}, {
+  "TZNAME" : "Asia/Dhaka"
+}, {
+  "TZNAME" : "Asia/Dili"
+}, {
+  "TZNAME" : "Asia/Dubai"
+}, {
+  "TZNAME" : "Asia/Dushanbe"
+}, {
+  "TZNAME" : "Asia/Gaza"
+}, {
+  "TZNAME" : "Asia/Harbin"
+}, {
+  "TZNAME" : "Asia/Ho_Chi_Minh"
+}, {
+  "TZNAME" : "Asia/Hong_Kong"
+}, {
+  "TZNAME" : "Asia/Hovd"
+}, {
+  "TZNAME" : "Asia/Irkutsk"
+}, {
+  "TZNAME" : "Asia/Istanbul"
+}, {
+  "TZNAME" : "Asia/Jakarta"
+}, {
+  "TZNAME" : "Asia/Jayapura"
+}, {
+  "TZNAME" : "Asia/Jerusalem"
+}, {
+  "TZNAME" : "Asia/Kabul"
+}, {
+  "TZNAME" : "Asia/Kamchatka"
+}, {
+  "TZNAME" : "Asia/Karachi"
+}, {
+  "TZNAME" : "Asia/Kashgar"
+}, {
+  "TZNAME" : "Asia/Kathmandu"
+}, {
+  "TZNAME" : "Asia/Katmandu"
+}, {
+  "TZNAME" : "Asia/Kolkata"
+}, {
+  "TZNAME" : "Asia/Krasnoyarsk"
+}, {
+  "TZNAME" : "Asia/Kuala_Lumpur"
+}, {
+  "TZNAME" : "Asia/Kuching"
+}, {
+  "TZNAME" : "Asia/Kuwait"
+}, {
+  "TZNAME" : "Asia/Macao"
+}, {
+  "TZNAME" : "Asia/Macau"
+}, {
+  "TZNAME" : "Asia/Magadan"
+}, {
+  "TZNAME" : "Asia/Makassar"
+}, {
+  "TZNAME" : "Asia/Manila"
+}, {
+  "TZNAME" : "Asia/Muscat"
+}, {
+  "TZNAME" : "Asia/Nicosia"
+}, {
+  "TZNAME" : "Asia/Novosibirsk"
+}, {
+  "TZNAME" : "Asia/Omsk"
+}, {
+  "TZNAME" : "Asia/Oral"
+}, {
+  "TZNAME" : "Asia/Phnom_Penh"
+}, {
+  "TZNAME" : "Asia/Pontianak"
+}, {
+  "TZNAME" : "Asia/Pyongyang"
+}, {
+  "TZNAME" : "Asia/Qatar"
+}, {
+  "TZNAME" : "Asia/Qyzylorda"
+}, {
+  "TZNAME" : "Asia/Rangoon"
+}, {
+  "TZNAME" : "Asia/Riyadh"
+}, {
+  "TZNAME" : "Asia/Saigon"
+}, {
+  "TZNAME" : "Asia/Sakhalin"
+}, {
+  "TZNAME" : "Asia/Samarkand"
+}, {
+  "TZNAME" : "Asia/Seoul"
+}, {
+  "TZNAME" : "Asia/Shanghai"
+}, {
+  "TZNAME" : "Asia/Singapore"
+}, {
+  "TZNAME" : "Asia/Taipei"
+}, {
+  "TZNAME" : "Asia/Tashkent"
+}, {
+  "TZNAME" : "Asia/Tbilisi"
+}, {
+  "TZNAME" : "Asia/Tehran"
+}, {
+  "TZNAME" : "Asia/Tel_Aviv"
+}, {
+  "TZNAME" : "Asia/Thimbu"
+}, {
+  "TZNAME" : "Asia/Thimphu"
+}, {
+  "TZNAME" : "Asia/Tokyo"
+}, {
+  "TZNAME" : "Asia/Ujung_Pandang"
+}, {
+  "TZNAME" : "Asia/Ulaanbaatar"
+}, {
+  "TZNAME" : "Asia/Ulan_Bator"
+}, {
+  "TZNAME" : "Asia/Urumqi"
+}, {
+  "TZNAME" : "Asia/Vientiane"
+}, {
+  "TZNAME" : "Asia/Vladivostok"
+}, {
+  "TZNAME" : "Asia/Yakutsk"
+}, {
+  "TZNAME" : "Asia/Yekaterinburg"
+}, {
+  "TZNAME" : "Asia/Yerevan"
+}, {
+  "TZNAME" : "Atlantic/Azores"
+}, {
+  "TZNAME" : "Atlantic/Bermuda"
+}, {
+  "TZNAME" : "Atlantic/Canary"
+}, {
+  "TZNAME" : "Atlantic/Cape_Verde"
+}, {
+  "TZNAME" : "Atlantic/Faeroe"
+}, {
+  "TZNAME" : "Atlantic/Faroe"
+}, {
+  "TZNAME" : "Atlantic/Jan_Mayen"
+}, {
+  "TZNAME" : "Atlantic/Madeira"
+}, {
+  "TZNAME" : "Atlantic/Reykjavik"
+}, {
+  "TZNAME" : "Atlantic/South_Georgia"
+}, {
+  "TZNAME" : "Atlantic/St_Helena"
+}, {
+  "TZNAME" : "Atlantic/Stanley"
+}, {
+  "TZNAME" : "Australia/ACT"
+}, {
+  "TZNAME" : "Australia/Adelaide"
+}, {
+  "TZNAME" : "Australia/Brisbane"
+}, {
+  "TZNAME" : "Australia/Broken_Hill"
+}, {
+  "TZNAME" : "Australia/Canberra"
+}, {
+  "TZNAME" : "Australia/Currie"
+}, {
+  "TZNAME" : "Australia/Darwin"
+}, {
+  "TZNAME" : "Australia/Eucla"
+}, {
+  "TZNAME" : "Australia/Hobart"
+}, {
+  "TZNAME" : "Australia/LHI"
+}, {
+  "TZNAME" : "Australia/Lindeman"
+}, {
+  "TZNAME" : "Australia/Lord_Howe"
+}, {
+  "TZNAME" : "Australia/Melbourne"
+}, {
+  "TZNAME" : "Australia/NSW"
+}, {
+  "TZNAME" : "Australia/North"
+}, {
+  "TZNAME" : "Australia/Perth"
+}, {
+  "TZNAME" : "Australia/Queensland"
+}, {
+  "TZNAME" : "Australia/South"
+}, {
+  "TZNAME" : "Australia/Sydney"
+}, {
+  "TZNAME" : "Australia/Tasmania"
+}, {
+  "TZNAME" : "Australia/Victoria"
+}, {
+  "TZNAME" : "Australia/West"
+}, {
+  "TZNAME" : "Australia/Yancowinna"
+}, {
+  "TZNAME" : "Brazil/Acre"
+}, {
+  "TZNAME" : "Brazil/DeNoronha"
+}, {
+  "TZNAME" : "Brazil/East"
+}, {
+  "TZNAME" : "Brazil/West"
+}, {
+  "TZNAME" : "CET"
+}, {
+  "TZNAME" : "CST"
+}, {
+  "TZNAME" : "CST6CDT"
+}, {
+  "TZNAME" : "Canada/Atlantic"
+}, {
+  "TZNAME" : "Canada/Central"
+}, {
+  "TZNAME" : "Canada/East-Saskatchewan"
+}, {
+  "TZNAME" : "Canada/Eastern"
+}, {
+  "TZNAME" : "Canada/Mountain"
+}, {
+  "TZNAME" : "Canada/Newfoundland"
+}, {
+  "TZNAME" : "Canada/Pacific"
+}, {
+  "TZNAME" : "Canada/Saskatchewan"
+}, {
+  "TZNAME" : "Canada/Yukon"
+}, {
+  "TZNAME" : "Chile/Continental"
+}, {
+  "TZNAME" : "Chile/EasterIsland"
+}, {
+  "TZNAME" : "Cuba"
+}, {
+  "TZNAME" : "EET"
+}, {
+  "TZNAME" : "EST"
+}, {
+  "TZNAME" : "EST5EDT"
+}, {
+  "TZNAME" : "Egypt"
+}, {
+  "TZNAME" : "Eire"
+}, {
+  "TZNAME" : "Etc/GMT"
+}, {
+  "TZNAME" : "Etc/GMT+0"
+}, {
+  "TZNAME" : "Etc/GMT+1"
+}, {
+  "TZNAME" : "Etc/GMT+10"
+}, {
+  "TZNAME" : "Etc/GMT+11"
+}, {
+  "TZNAME" : "Etc/GMT+12"
+}, {
+  "TZNAME" : "Etc/GMT+2"
+}, {
+  "TZNAME" : "Etc/GMT+3"
+}, {
+  "TZNAME" : "Etc/GMT+4"
+}, {
+  "TZNAME" : "Etc/GMT+5"
+}, {
+  "TZNAME" : "Etc/GMT+6"
+}, {
+  "TZNAME" : "Etc/GMT+7"
+}, {
+  "TZNAME" : "Etc/GMT+8"
+}, {
+  "TZNAME" : "Etc/GMT+9"
+}, {
+  "TZNAME" : "Etc/GMT-0"
+}, {
+  "TZNAME" : "Etc/GMT-1"
+}, {
+  "TZNAME" : "Etc/GMT-10"
+}, {
+  "TZNAME" : "Etc/GMT-11"
+}, {
+  "TZNAME" : "Etc/GMT-12"
+}, {
+  "TZNAME" : "Etc/GMT-13"
+}, {
+  "TZNAME" : "Etc/GMT-14"
+}, {
+  "TZNAME" : "Etc/GMT-2"
+}, {
+  "TZNAME" : "Etc/GMT-3"
+}, {
+  "TZNAME" : "Etc/GMT-4"
+}, {
+  "TZNAME" : "Etc/GMT-5"
+}, {
+  "TZNAME" : "Etc/GMT-6"
+}, {
+  "TZNAME" : "Etc/GMT-7"
+}, {
+  "TZNAME" : "Etc/GMT-8"
+}, {
+  "TZNAME" : "Etc/GMT-9"
+}, {
+  "TZNAME" : "Etc/GMT0"
+}, {
+  "TZNAME" : "Etc/Greenwich"
+}, {
+  "TZNAME" : "Europe/Amsterdam"
+}, {
+  "TZNAME" : "Europe/Andorra"
+}, {
+  "TZNAME" : "Europe/Athens"
+}, {
+  "TZNAME" : "Europe/Belfast"
+}, {
+  "TZNAME" : "Europe/Belgrade"
+}, {
+  "TZNAME" : "Europe/Berlin"
+}, {
+  "TZNAME" : "Europe/Bratislava"
+}, {
+  "TZNAME" : "Europe/Brussels"
+}, {
+  "TZNAME" : "Europe/Bucharest"
+}, {
+  "TZNAME" : "Europe/Budapest"
+}, {
+  "TZNAME" : "Europe/Chisinau"
+}, {
+  "TZNAME" : "Europe/Copenhagen"
+}, {
+  "TZNAME" : "Europe/Dublin"
+}, {
+  "TZNAME" : "Europe/Gibraltar"
+}, {
+  "TZNAME" : "Europe/Guernsey"
+}, {
+  "TZNAME" : "Europe/Helsinki"
+}, {
+  "TZNAME" : "Europe/Isle_of_Man"
+}, {
+  "TZNAME" : "Europe/Istanbul"
+}, {
+  "TZNAME" : "Europe/Jersey"
+}, {
+  "TZNAME" : "Europe/Kaliningrad"
+}, {
+  "TZNAME" : "Europe/Kiev"
+}, {
+  "TZNAME" : "Europe/Lisbon"
+}, {
+  "TZNAME" : "Europe/Ljubljana"
+}, {
+  "TZNAME" : "Europe/London"
+}, {
+  "TZNAME" : "Europe/Luxembourg"
+}, {
+  "TZNAME" : "Europe/Madrid"
+}, {
+  "TZNAME" : "Europe/Malta"
+}, {
+  "TZNAME" : "Europe/Mariehamn"
+}, {
+  "TZNAME" : "Europe/Minsk"
+}, {
+  "TZNAME" : "Europe/Monaco"
+}, {
+  "TZNAME" : "Europe/Moscow"
+}, {
+  "TZNAME" : "Europe/Nicosia"
+}, {
+  "TZNAME" : "Europe/Oslo"
+}, {
+  "TZNAME" : "Europe/Paris"
+}, {
+  "TZNAME" : "Europe/Podgorica"
+}, {
+  "TZNAME" : "Europe/Prague"
+}, {
+  "TZNAME" : "Europe/Riga"
+}, {
+  "TZNAME" : "Europe/Rome"
+}, {
+  "TZNAME" : "Europe/Samara"
+}, {
+  "TZNAME" : "Europe/San_Marino"
+}, {
+  "TZNAME" : "Europe/Sarajevo"
+}, {
+  "TZNAME" : "Europe/Simferopol"
+}, {
+  "TZNAME" : "Europe/Skopje"
+}, {
+  "TZNAME" : "Europe/Sofia"
+}, {
+  "TZNAME" : "Europe/Stockholm"
+}, {
+  "TZNAME" : "Europe/Tallinn"
+}, {
+  "TZNAME" : "Europe/Tirane"
+}, {
+  "TZNAME" : "Europe/Tiraspol"
+}, {
+  "TZNAME" : "Europe/Uzhgorod"
+}, {
+  "TZNAME" : "Europe/Vaduz"
+}, {
+  "TZNAME" : "Europe/Vatican"
+}, {
+  "TZNAME" : "Europe/Vienna"
+}, {
+  "TZNAME" : "Europe/Vilnius"
+}, {
+  "TZNAME" : "Europe/Volgograd"
+}, {
+  "TZNAME" : "Europe/Warsaw"
+}, {
+  "TZNAME" : "Europe/Zagreb"
+}, {
+  "TZNAME" : "Europe/Zaporozhye"
+}, {
+  "TZNAME" : "Europe/Zurich"
+}, {
+  "TZNAME" : "GB"
+}, {
+  "TZNAME" : "GB-Eire"
+}, {
+  "TZNAME" : "GMT"
+}, {
+  "TZNAME" : "GMT+0"
+}, {
+  "TZNAME" : "GMT-0"
+}, {
+  "TZNAME" : "GMT0"
+}, {
+  "TZNAME" : "Greenwich"
+}, {
+  "TZNAME" : "HST"
+}, {
+  "TZNAME" : "Hongkong"
+}, {
+  "TZNAME" : "Iceland"
+}, {
+  "TZNAME" : "Indian/Antananarivo"
+}, {
+  "TZNAME" : "Indian/Chagos"
+}, {
+  "TZNAME" : "Indian/Christmas"
+}, {
+  "TZNAME" : "Indian/Cocos"
+}, {
+  "TZNAME" : "Indian/Comoro"
+}, {
+  "TZNAME" : "Indian/Kerguelen"
+}, {
+  "TZNAME" : "Indian/Mahe"
+}, {
+  "TZNAME" : "Indian/Maldives"
+}, {
+  "TZNAME" : "Indian/Mauritius"
+}, {
+  "TZNAME" : "Indian/Mayotte"
+}, {
+  "TZNAME" : "Indian/Reunion"
+}, {
+  "TZNAME" : "Iran"
+}, {
+  "TZNAME" : "Israel"
+}, {
+  "TZNAME" : "Jamaica"
+}, {
+  "TZNAME" : "Japan"
+}, {
+  "TZNAME" : "Kwajalein"
+}, {
+  "TZNAME" : "Libya"
+}, {
+  "TZNAME" : "MET"
+}, {
+  "TZNAME" : "MST"
+}, {
+  "TZNAME" : "MST7MDT"
+}, {
+  "TZNAME" : "Mexico/BajaNorte"
+}, {
+  "TZNAME" : "Mexico/BajaSur"
+}, {
+  "TZNAME" : "Mexico/General"
+}, {
+  "TZNAME" : "NZ"
+}, {
+  "TZNAME" : "NZ-CHAT"
+}, {
+  "TZNAME" : "Navajo"
+}, {
+  "TZNAME" : "PRC"
+}, {
+  "TZNAME" : "PST"
+}, {
+  "TZNAME" : "PST8PDT"
+}, {
+  "TZNAME" : "Pacific/Apia"
+}, {
+  "TZNAME" : "Pacific/Auckland"
+}, {
+  "TZNAME" : "Pacific/Chatham"
+}, {
+  "TZNAME" : "Pacific/Easter"
+}, {
+  "TZNAME" : "Pacific/Efate"
+}, {
+  "TZNAME" : "Pacific/Enderbury"
+}, {
+  "TZNAME" : "Pacific/Fakaofo"
+}, {
+  "TZNAME" : "Pacific/Fiji"
+}, {
+  "TZNAME" : "Pacific/Funafuti"
+}, {
+  "TZNAME" : "Pacific/Galapagos"
+}, {
+  "TZNAME" : "Pacific/Gambier"
+}, {
+  "TZNAME" : "Pacific/Guadalcanal"
+}, {
+  "TZNAME" : "Pacific/Guam"
+}, {
+  "TZNAME" : "Pacific/Honolulu"
+}, {
+  "TZNAME" : "Pacific/Johnston"
+}, {
+  "TZNAME" : "Pacific/Kiritimati"
+}, {
+  "TZNAME" : "Pacific/Kosrae"
+}, {
+  "TZNAME" : "Pacific/Kwajalein"
+}, {
+  "TZNAME" : "Pacific/Majuro"
+}, {
+  "TZNAME" : "Pacific/Marquesas"
+}, {
+  "TZNAME" : "Pacific/Midway"
+}, {
+  "TZNAME" : "Pacific/Nauru"
+}, {
+  "TZNAME" : "Pacific/Niue"
+}, {
+  "TZNAME" : "Pacific/Norfolk"
+}, {
+  "TZNAME" : "Pacific/Noumea"
+}, {
+  "TZNAME" : "Pacific/Pago_Pago"
+}, {
+  "TZNAME" : "Pacific/Palau"
+}, {
+  "TZNAME" : "Pacific/Pitcairn"
+}, {
+  "TZNAME" : "Pacific/Ponape"
+}, {
+  "TZNAME" : "Pacific/Port_Moresby"
+}, {
+  "TZNAME" : "Pacific/Rarotonga"
+}, {
+  "TZNAME" : "Pacific/Saipan"
+}, {
+  "TZNAME" : "Pacific/Samoa"
+}, {
+  "TZNAME" : "Pacific/Tahiti"
+}, {
+  "TZNAME" : "Pacific/Tarawa"
+}, {
+  "TZNAME" : "Pacific/Tongatapu"
+}, {
+  "TZNAME" : "Pacific/Truk"
+}, {
+  "TZNAME" : "Pacific/Wake"
+}, {
+  "TZNAME" : "Pacific/Wallis"
+}, {
+  "TZNAME" : "Pacific/Yap"
+}, {
+  "TZNAME" : "Poland"
+}, {
+  "TZNAME" : "Portugal"
+}, {
+  "TZNAME" : "ROC"
+}, {
+  "TZNAME" : "ROK"
+}, {
+  "TZNAME" : "Singapore"
+}, {
+  "TZNAME" : "Turkey"
+}, {
+  "TZNAME" : "US/Alaska"
+}, {
+  "TZNAME" : "US/Aleutian"
+}, {
+  "TZNAME" : "US/Arizona"
+}, {
+  "TZNAME" : "US/Central"
+}, {
+  "TZNAME" : "US/East-Indiana"
+}, {
+  "TZNAME" : "US/Eastern"
+}, {
+  "TZNAME" : "US/Hawaii"
+}, {
+  "TZNAME" : "US/Indiana-Starke"
+}, {
+  "TZNAME" : "US/Michigan"
+}, {
+  "TZNAME" : "US/Mountain"
+}, {
+  "TZNAME" : "US/Pacific"
+}, {
+  "TZNAME" : "US/Pacific-New"
+}, {
+  "TZNAME" : "US/Samoa"
+}, {
+  "TZNAME" : "UTC"
+}, {
+  "TZNAME" : "W-SU"
+}, {
+  "TZNAME" : "WET"
+} ]

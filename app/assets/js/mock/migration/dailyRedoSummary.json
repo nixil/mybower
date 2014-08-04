@@ -1,0 +1,202 @@
+[
+{
+
+    "inst_id": 1,
+    "dday": "28-JAN-2014",
+    "switches": 3,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "27-JAN-2014",
+    "switches": 3,
+    "daily_churn_gb": 1
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "26-JAN-2014",
+    "switches": 5,
+    "daily_churn_gb": 1
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "25-JAN-2014",
+    "switches": 5,
+    "daily_churn_gb": 3
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "24-JAN-2014",
+    "switches": 3,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "23-JAN-2014",
+    "switches": 4,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "22-JAN-2014",
+    "switches": 5,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "21-JAN-2014",
+    "switches": 3,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "20-JAN-2014",
+    "switches": 4,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "19-JAN-2014",
+    "switches": 3,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "18-JAN-2014",
+    "switches": 5,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "17-JAN-2014",
+    "switches": 3,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "16-JAN-2014",
+    "switches": 4,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "15-JAN-2014",
+    "switches": 5,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "14-JAN-2014",
+    "switches": 7,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "13-JAN-2014",
+    "switches": 3,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "10-JAN-2014",
+    "switches": 1,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "09-JAN-2014",
+    "switches": 3,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "08-JAN-2014",
+    "switches": 2,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "07-JAN-2014",
+    "switches": 2,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "06-JAN-2014",
+    "switches": 8,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "25-DEC-2013",
+    "switches": 3,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "24-DEC-2013",
+    "switches": 3,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "23-DEC-2013",
+    "switches": 3,
+    "daily_churn_gb": 0
+
+},
+{
+
+    "inst_id": 1,
+    "dday": "22-DEC-2013",
+    "switches": 4,
+    "daily_churn_gb": 0
+
+}
+]

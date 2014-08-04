@@ -1,0 +1,56 @@
+[ {
+  "id" : 130,
+  "name" : "sample",
+  "sql" : "SELECT TIME,CPU_UTILIZATION,MEMORY_UTILIZATION FROM TIME_REPORT",
+  "dataSourceJNDI" : "jdbc/portal",
+  "privileges" : [ ],
+  "paramList" : [ ]
+}, {
+  "id" : 131,
+  "name" : "cpu_only",
+  "sql" : "SELECT TIME,CPU_UTILIZATION FROM TIME_REPORT",
+  "dataSourceJNDI" : "jdbc/portal",
+  "privileges" : [ ],
+  "paramList" : [ ]
+}, {
+  "id" : 132,
+  "name" : "simple_param",
+  "sql" : "SELECT TIME,CPU_USAGE FROM CPU_MONITOR WHERE CPU_USAGE < :cpu_usage",
+  "dataSourceJNDI" : "jdbc/portal",
+  "privileges" : [ ],
+  "paramList" : [ {
+    "id" : 133,
+    "name" : "cpu_usage",
+    "type" : "int",
+    "value" : null
+  } ]
+}, {
+  "id" : 133,
+  "name" : "double_param",
+  "sql" : "SELECT TIME,CPU_USAGE FROM CPU_MONITOR WHERE CPU_USAGE between :cpu_low and :cpu_high",
+  "dataSourceJNDI" : "jdbc/portal",
+  "privileges" : [ ],
+  "paramList" : [ {
+    "id" : 134,
+    "name" : "cpu_low",
+    "type" : "int",
+    "value" : null
+  }, {
+    "id" : 135,
+    "name" : "cpu_high",
+    "type" : "int",
+    "value" : null
+  } ]
+}, {
+  "id" : 134,
+  "name" : "by_time",
+  "sql" : "select time, cpu_usage from CPU_MONITOR where time(time) > :time",
+  "dataSourceJNDI" : "jdbc/portal",
+  "privileges" : [ ],
+  "paramList" : [ {
+    "id" : 136,
+    "name" : "time",
+    "type" : "string",
+    "value" : null
+  } ]
+} ]

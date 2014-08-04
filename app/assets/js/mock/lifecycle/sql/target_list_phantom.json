@@ -1,0 +1,38 @@
+[
+    {
+        "TEMPLATE_ID": 1,
+        "PHANTOM_ID": "Exadata_X3-2_F_HC",
+        "SYSTEM_CONFIG": "Oracle Exadata Database Machine X3-2 (Full Rack / High Capacity Disk)",
+        "TEMPLATE_TYPE": "Exadata",
+        "TARGET_TYPE": "oracle_dbmachine",
+        "SYSTEM_VENDOR": "Oracle",
+        "COMMENTS": "Derived SPECint rate"
+    },
+    {
+        "TEMPLATE_ID": 2,
+        "PHANTOM_ID": "Exadata_X3-2_F_HP",
+        "SYSTEM_CONFIG": "Oracle Exadata Database Machine X3-2 (Full Rack / High Perf Disk)",
+        "TEMPLATE_TYPE": "Exadata",
+        "TARGET_TYPE": "oracle_dbmachine",
+        "SYSTEM_VENDOR": "Oracle",
+        "COMMENTS": "Derived SPECint rate"
+    },
+    {
+        "TEMPLATE_ID": 3,
+        "PHANTOM_ID": "Exadata_X3-2_H_HC",
+        "SYSTEM_CONFIG": "Oracle Exadata Database Machine X3-2 (Half Rack / High Capacity Disk)",
+        "TEMPLATE_TYPE": "Exadata",
+        "TARGET_TYPE": "oracle_dbmachine",
+        "SYSTEM_VENDOR": "Oracle",
+        "COMMENTS": "Derived SPECint rate"
+    },
+    {
+        "TEMPLATE_ID": 4,
+        "PHANTOM_ID": "Exadata_X3-2_H_HP",
+        "SYSTEM_CONFIG": "Oracle Exadata Database Machine X3-2 (Half Rack / High Perf Disk)",
+        "TEMPLATE_TYPE": "Exadata",
+        "TARGET_TYPE": "oracle_dbmachine",
+        "SYSTEM_VENDOR": "Oracle",
+        "COMMENTS": "Derived SPECint rate"
+    }
+]

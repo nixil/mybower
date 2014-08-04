@@ -1,0 +1,49 @@
+[
+
+    {
+        "owner_source": "SAPCAT",
+        "object_name": "ECLOG_SCR_001_00001",
+        "object_type": "TABLE"
+    },
+    {
+        "owner_source": "SAPCAT",
+        "object_name": "ECLOG_SCR_001_00002",
+        "object_type": "TABLE"
+    },
+    {
+        "owner_source": "SAPCAT",
+        "object_name": "ECLOG_SCR_001_00003",
+        "object_type": "TABLE"
+    },
+    {
+        "owner_source": "SAPCAT",
+        "object_name": "ECLOG_SCR_001_00001",
+        "object_type": "TABLE"
+    },
+    {
+        "owner_source": "SAPCAT",
+        "object_name": "ECLOG_SCR_001_00002",
+        "object_type": "TABLE"
+    },
+    {
+        "owner_source": "SAPCAT",
+        "object_name": "ECLOG_SCR_001_00003",
+        "object_type": "TABLE"
+    },
+    {
+        "owner_source": "SAPCAT",
+        "object_name": "ECLOG_SCR_001_00001",
+        "object_type": "TABLE"
+    },
+    {
+        "owner_source": "SAPCAT",
+        "object_name": "ECLOG_SCR_001_00002",
+        "object_type": "TABLE"
+    },
+    {
+        "owner_source": "SAPCAT",
+        "object_name": "ECLOG_SCR_001_00003",
+        "object_type": "TABLE"
+    }
+
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "object_type": "PROCEDURE",
+        "total": 1
+    },
+    {
+        "object_type": "PACKAGE BODY",
+        "total": 124
+    },
+    {
+        "object_type": "TYPE BODY",
+        "total": 6
+    },
+    {
+        "object_type": "TRIGGER",
+        "total": 56
+    },
+    {
+        "object_type": "FUNCTION",
+        "total": 4
+    },
+    {
+        "object_type": "SYNONYM",
+        "total": 156
+    },
+    {
+        "object_type": "VIEW",
+        "total": 151
+    }
+]

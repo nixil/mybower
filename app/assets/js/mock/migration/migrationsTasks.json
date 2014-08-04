@@ -1,0 +1,79 @@
+[
+
+    {
+        "phase_name": "Data Transfer and Load phase",
+        "value": "0 days 0 hrs 45 mins",
+        "description": "During this phase all objects (tables, primary keys.. stored procedures etc) and data are copied from the source database to the destination database. This is typically the most time consuming phase for a migration."
+    },
+    {
+        "phase_name": "Data Transfered Integrity Check",
+        "value": "0 days 8 hrs 57 mins",
+        "description": "During this phase the source and destination databases are compared based on object definitions and row counts. Missing objects and/or data will be reported."
+    },
+    {
+        "phase_name": "Database Configuration on Target",
+        "value": "0 days 1 hrs 5 mins",
+        "description": "During this phase, the migration is finalized. This includes import of database statistics, generation of data dictionary statistics and system statistics. The database is set to the archive log mode as the final step"
+    },
+    {
+        "phase_name": "Migration Pre-processing phase",
+        "value": "0 days 2 hrs 8 mins",
+        "description": "During this phase, first all objects and structure are migrated, which are needed to perform the data transfer"
+    },
+    {
+        "phase_name": "Migration time",
+        "value": "0 days 11 hrs 25 mins",
+        "description": "This is overall time needed for all steps influencing the duration of migration. The time starts with when the perform phase is started and ends with the post phase. This is the RTO time (Recovery Time Objective) for this migration"
+    },
+    {
+        "phase_name": "Data Transfer and Load phase",
+        "value": "0 days 1 hrs 22 mins",
+        "description": "During this phase all objects (tables, primary keys.. stored procedures etc) and data are copied from the source database to the destination database. This is typically the most time consuming phase for a migration."
+    },
+    {
+        "phase_name": "Data Transfered Integrity Check",
+        "value": "0 days 8 hrs 57 mins",
+        "description": "During this phase the source and destination databases are compared based on object definitions and row counts. Missing objects and/or data will be reported."
+    },
+    {
+        "phase_name": "Database Configuration on Target",
+        "value": "0 days 1 hrs 5 mins",
+        "description": "During this phase, the migration is finalized. This includes import of database statistics, generation of data dictionary statistics and system statistics. The database is set to the archive log mode as the final step"
+    },
+    {
+        "phase_name": "Migration Pre-processing phase",
+        "value": "0 days 2 hrs 8 mins",
+        "description": "During this phase, first all objects and structure are migrated, which are needed to perform the data transfer"
+    },
+    {
+        "phase_name": "Migration time",
+        "value": "0 days 11 hrs 25 mins",
+        "description": "This is overall time needed for all steps influencing the duration of migration. The time starts with when the perform phase is started and ends with the post phase. This is the RTO time (Recovery Time Objective) for this migration"
+    },
+    {
+        "phase_name": "Data Transfer and Load phase",
+        "value": "0 days 1 hrs 22 mins",
+        "description": "During this phase all objects (tables, primary keys.. stored procedures etc) and data are copied from the source database to the destination database. This is typically the most time consuming phase for a migration."
+    },
+    {
+        "phase_name": "Data Transfered Integrity Check",
+        "value": "0 days 8 hrs 57 mins",
+        "description": "During this phase the source and destination databases are compared based on object definitions and row counts. Missing objects and/or data will be reported."
+    },
+    {
+        "phase_name": "Database Configuration on Target",
+        "value": "0 days 1 hrs 5 mins",
+        "description": "During this phase, the migration is finalized. This includes import of database statistics, generation of data dictionary statistics and system statistics. The database is set to the archive log mode as the final step"
+    },
+    {
+        "phase_name": "Migration Pre-processing phase",
+        "value": "0 days 2 hrs 8 mins",
+        "description": "During this phase, first all objects and structure are migrated, which are needed to perform the data transfer"
+    },
+    {
+        "phase_name": "Migration time",
+        "value": "0 days 11 hrs 25 mins",
+        "description": "This is overall time needed for all steps influencing the duration of migration. The time starts with when the perform phase is started and ends with the post phase. This is the RTO time (Recovery Time Objective) for this migration"
+    }
+
+]

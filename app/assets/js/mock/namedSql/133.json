@@ -1,0 +1,18 @@
+{
+    "id" : 133,
+    "name" : "double_param",
+    "sql" : "SELECT TIME,CPU_USAGE FROM CPU_MONITOR WHERE CPU_USAGE between ? and ?",
+    "dataSourceJNDI" : "jdbc/portal",
+    "privileges" : [ ],
+    "paramList" : [ {
+        "id" : 134,
+        "name" : "cpu_low",
+        "type" : "int",
+        "value" : null
+    }, {
+        "id" : 135,
+        "name" : "cpu_high",
+        "type" : "int",
+        "value" : null
+    } ]
+}

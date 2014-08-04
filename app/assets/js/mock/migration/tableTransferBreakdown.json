@@ -1,0 +1,24 @@
+[
+
+    {
+        "c3_value": 3553,
+        "c3_text": "Estimated space needed for datapump dump files:",
+        "val_pct": 17.38
+    },
+    {
+        "c3_value": 16570,
+        "c3_text": "Tables by bulk export/ import:",
+        "val_pct": 81.04
+    },
+    {
+        "c3_value": 209,
+        "c3_text": "Tables by separate scripts",
+        "val_pct": 1.02
+    },
+    {
+        "c3_value": 115,
+        "c3_text": "Tables by datapump",
+        "val_pct": 0.56
+    }
+
+]

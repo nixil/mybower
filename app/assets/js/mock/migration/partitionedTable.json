@@ -1,0 +1,204 @@
+[
+
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P403",
+        "row_count_src": 1,
+        "row_count_trg": 1
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P404",
+        "row_count_src": 0,
+        "row_count_trg": 0
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P405",
+        "row_count_src": 1,
+        "row_count_trg": 1
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P406",
+        "row_count_src": 0,
+        "row_count_trg": 0
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P407",
+        "row_count_src": 0,
+        "row_count_trg": 0
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P408",
+        "row_count_src": 1,
+        "row_count_trg": 1
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P409",
+        "row_count_src": 0,
+        "row_count_trg": 0
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P410",
+        "row_count_src": 0,
+        "row_count_trg": 0
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P411",
+        "row_count_src": 4,
+        "row_count_trg": 4
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P412",
+        "row_count_src": 1,
+        "row_count_trg": 1
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P413",
+        "row_count_src": 0,
+        "row_count_trg": 0
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P414",
+        "row_count_src": 1,
+        "row_count_trg": 1
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P415",
+        "row_count_src": 2,
+        "row_count_trg": 2
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P416",
+        "row_count_src": 1,
+        "row_count_trg": 1
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P417",
+        "row_count_src": 0,
+        "row_count_trg": 0
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P418",
+        "row_count_src": 1,
+        "row_count_trg": 1
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P419",
+        "row_count_src": 4,
+        "row_count_trg": 4
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P420",
+        "row_count_src": 0,
+        "row_count_trg": 0
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P421",
+        "row_count_src": 1,
+        "row_count_trg": 1
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P422",
+        "row_count_src": 1,
+        "row_count_trg": 1
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P423",
+        "row_count_src": 1,
+        "row_count_trg": 1
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P424",
+        "row_count_src": 2,
+        "row_count_trg": 2
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P425",
+        "row_count_src": 1,
+        "row_count_trg": 1
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P426",
+        "row_count_src": 1,
+        "row_count_trg": 1
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "DRMTEST",
+        "partition_name": "SYS_P427",
+        "row_count_src": 3,
+        "row_count_trg": 3
+    }
+
+]

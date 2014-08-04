@@ -1,0 +1,10 @@
+[{"tablespace_name":"APEX_2206622315876821","cur_use_mb":4,"cur_sz_mb":10,"cur_pct_full":37,"free_space_mb":96,"max_sz_mb":100,"pct_full":4},
+ {"tablespace_name":"SYSAUX","cur_use_mb":669,"cur_sz_mb":710,"cur_pct_full":94,"free_space_mb":32099,"max_sz_mb":32768,"pct_full":2},
+ {"tablespace_name":"UNDOTBS1","cur_use_mb":13,"cur_sz_mb":255,"cur_pct_full":5,"free_space_mb":32755,"max_sz_mb":32768,"pct_full":0},
+ {"tablespace_name":"ACSCLOUD","cur_use_mb":54,"cur_sz_mb":1000,"cur_pct_full":5,"free_space_mb":32714,"max_sz_mb":32768,"pct_full":0},
+ {"tablespace_name":"USERS","cur_use_mb":4,"cur_sz_mb":5,"cur_pct_full":81,"free_space_mb":32764,"max_sz_mb":32768,"pct_full":0},
+ {"tablespace_name":"EXAMPLE","cur_use_mb":310,"cur_sz_mb":346,"cur_pct_full":90,"free_space_mb":32458,"max_sz_mb":32768,"pct_full":1},
+ {"tablespace_name":"SYSTEM","cur_use_mb":749,"cur_sz_mb":820,"cur_pct_full":91,"free_space_mb":32019,"max_sz_mb":32768,"pct_full":2},
+ {"tablespace_name":"APEX423","cur_use_mb":230,"cur_sz_mb":1000,"cur_pct_full":23,"free_space_mb":32538,"max_sz_mb":32768,"pct_full":1},
+ {"tablespace_name":"LOB_STORE","cur_use_mb":1,"cur_sz_mb":1000,"cur_pct_full":0,"free_space_mb":32767,"max_sz_mb":32768,"pct_full":0}
+]

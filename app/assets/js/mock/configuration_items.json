@@ -1,0 +1,101 @@
+[
+    {
+        "uuid": "abcd-12345-werwer-1234124",
+        "name": "Test-CI-01",
+        "org_id": 12345,
+        "customer": "Test Customer",
+        "status": "Staging",
+        "category": "ComputerSystem",
+        "type": "Server",
+        "make": "SUN",
+        "model": "T1234",
+        "probes": [
+            {
+               "name": "dbprobe1",
+               "type": "Database"
+            },
+            {
+                "name": "dbprobe2",
+                "type": "Database"
+            },
+            {
+                "name": "dbprobe3",
+                "type": "Database"
+            }
+        ]
+    },
+    {
+        "uuid": "abcd-12345-werwer-1234125",
+        "name": "Test-CI-02",
+        "org_id": 12345,
+        "customer": "Test Customer",
+        "status": "Staging",
+        "category": "ComputerSystem",
+        "type": "Server",
+        "make": "SUN",
+        "model": "T1234",
+        "probes": [
+            {
+                "name": "dbprobe1",
+                "type": "Database"
+            },
+            {
+                "name": "dbprobe2",
+                "type": "Database"
+            }
+        ]
+
+    },
+    {
+        "uuid": "abcd-12345-werwer-1234126",
+        "name": "Test-CI-03",
+        "org_id": 12345,
+        "customer": "Test Customer",
+        "status": "Staging",
+        "category": "ComputerSystem",
+        "type": "Server",
+        "make": "SUN",
+        "model": "T1234",
+        "probes": [
+            {
+                "name": "dbprobe1",
+                "type": "Database"
+            },
+            {
+                "name": "dbprobe3",
+                "type": "Database"
+            }
+        ]
+    },
+    {
+        "uuid": "abcd-12345-werwer-1234127",
+        "name": "Test-CI-04",
+        "org_id": 12345,
+        "customer": "Test Customer",
+        "status": "Staging",
+        "category": "ComputerSystem",
+        "type": "Server",
+        "make": "SUN",
+        "model": "T1234",
+        "probes": [
+            {
+                "name": "dbprobe1",
+                "type": "Database"
+            }
+        ]
+    },
+    {
+        "uuid": "abcd-12345-werwer-1234128",
+        "name": "Test-CI-05",
+        "org_id": 12345,
+        "customer": "Test Customer",
+        "status": "Staging",
+        "category": "ComputerSystem",
+        "type": "Server",
+        "make": "SUN",
+        "model": "T1234",
+        "probes": []
+
+    }
+
+]

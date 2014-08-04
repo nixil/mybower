@@ -1,0 +1,91 @@
+[
+
+    {
+        "job_description": "<b>Small Table Batch Jobs</b>"
+    },
+    {
+        "job_description": "&amp;nbsp;&amp;nbsp;Small tables - Batch Data Export",
+        "pkgdone": 259,
+        "totalpkgs": 262,
+        "pct": "98.85"
+    },
+    {
+        "job_description": "&amp;nbsp;&amp;nbsp;Small tables - Batch Data Import",
+        "pkgdone": 260,
+        "totalpkgs": 260,
+        "pct": "100.00"
+    },
+    {
+        "job_description": "<b>Large Table Dedicated Migration Jobs</b>"
+    },
+    {
+        "job_description": "&amp;nbsp;&amp;nbsp;Create Table As Select - Jobs",
+        "pkgdone": 211,
+        "totalpkgs": 211,
+        "pct": "100.00"
+    },
+    {
+        "job_description": "&amp;nbsp;&amp;nbsp;Large tables - Single Job Export",
+        "pkgdone": 165,
+        "totalpkgs": 165,
+        "pct": "100.00"
+    },
+    {
+        "job_description": "&amp;nbsp;&amp;nbsp;Large tables - Single Job Import",
+        "pkgdone": 165,
+        "totalpkgs": 165,
+        "pct": "100.00"
+    },
+    {
+        "job_description": "&amp;nbsp;&amp;nbsp;Create Large Table Indexes",
+        "pkgdone": 598,
+        "totalpkgs": 598,
+        "pct": "100.00"
+    },
+    {
+        "job_description": "<b>Large Tables Row Count Validation</b>"
+    },
+    {
+        "job_description": "&amp;nbsp;&amp;nbsp;Verify Source Table Rowcounts",
+        "pkgdone": 379,
+        "totalpkgs": 379,
+        "pct": "100.00"
+    },
+    {
+        "job_description": "&amp;nbsp;&amp;nbsp;Verify Target Table Rowcounts",
+        "pkgdone": 379,
+        "totalpkgs": 379,
+        "pct": "100.00"
+    },
+    {
+        "job_description": "<b>Constraints and Statistics</b>"
+    },
+    {
+        "job_description": "&amp;nbsp;&amp;nbsp;Load or Calculate Table Statistics",
+        "pkgdone": 638,
+        "totalpkgs": 638,
+        "pct": "100.00"
+    },
+    {
+        "job_description": "&amp;nbsp;&amp;nbsp;Create Constraints For Tables",
+        "pkgdone": 3,
+        "totalpkgs": 76,
+        "pct": "3.95"
+    },
+    {
+        "job_description": "&amp;nbsp;&amp;nbsp;Comparison On Object Level",
+        "pkgdone": 29,
+        "totalpkgs": 76,
+        "pct": "38.16"
+    },
+    {
+        "job_description": "<b>Post Phase</b>"
+    },
+    {
+        "job_description": "&amp;nbsp;&amp;nbsp;Create Remaining Objects And Security",
+        "pkgdone": 0,
+        "totalpkgs": 76,
+        "pct": "0.00"
+    }
+
+]

@@ -1,0 +1,129 @@
+[
+
+    {
+        "owner_target": "DEV_BIPLATFORM",
+        "object_name": "SDCHOICEHISTORYCLEANUP",
+        "object_type": "PROCEDURE"
+    },
+    {
+        "owner_target": "DEV_BIPLATFORM",
+        "object_name": "SDCLEANUP",
+        "object_type": "PROCEDURE"
+    },
+    {
+        "owner_target": "DEV_BIPLATFORM",
+        "object_name": "SDCOMMITSTUDY",
+        "object_type": "PROCEDURE"
+    },
+    {
+        "owner_target": "DEV_BIPLATFORM",
+        "object_name": "SDDELETESTUDY",
+        "object_type": "PROCEDURE"
+    },
+    {
+        "owner_target": "DEV_BIPLATFORM",
+        "object_name": "SDGETLEARNINGDATA",
+        "object_type": "PROCEDURE"
+    },
+    {
+        "owner_target": "DEV_BIPLATFORM",
+        "object_name": "SDGETLEARNINGIDRANGE",
+        "object_type": "PROCEDURE"
+    },
+    {
+        "owner_target": "DEV_BIPLATFORM",
+        "object_name": "SDLEARNINGMAPPINGCLEANUP",
+        "object_type": "PROCEDURE"
+    },
+    {
+        "owner_target": "DEV_BIPLATFORM",
+        "object_name": "SDLEARNINGSTORAGECLEANUP",
+        "object_type": "PROCEDURE"
+    },
+    {
+        "owner_target": "DEV_BIPLATFORM",
+        "object_name": "SDSTATISTICSCLEANUP",
+        "object_type": "PROCEDURE"
+    },
+    {
+        "owner_target": "IX",
+        "object_name": "AQ$_STREAMS_QUEUE_TABLE_C",
+        "object_type": "TABLE"
+    },
+    {
+        "owner_target": "IX",
+        "object_name": "AQ$_STREAMS_QUEUE_TABLE_Y",
+        "object_type": "INDEX"
+    },
+    {
+        "owner_target": "OE",
+        "object_name": "PURCHASEORDER$xd",
+        "object_type": "PROCEDURE"
+    },
+    {
+        "owner_target": "OE",
+        "object_name": "ACTION_TABLE",
+        "object_type": "TABLE"
+    },
+    {
+        "owner_target": "OE",
+        "object_name": "ACTION_TABLE_MEMBERS",
+        "object_type": "INDEX"
+    },
+    {
+        "owner_target": "OE",
+        "object_name": "CUSTOMERS",
+        "object_type": "TABLE"
+    },
+    {
+        "owner_target": "OE",
+        "object_name": "CUSTOMERS_PK",
+        "object_type": "INDEX"
+    },
+    {
+        "owner_target": "OE",
+        "object_name": "CUST_ACCOUNT_MANAGER_IX",
+        "object_type": "INDEX"
+    },
+    {
+        "owner_target": "OE",
+        "object_name": "CUST_EMAIL_IX",
+        "object_type": "INDEX"
+    },
+    {
+        "owner_target": "OE",
+        "object_name": "CUST_LNAME_IX",
+        "object_type": "INDEX"
+    },
+    {
+        "owner_target": "OE",
+        "object_name": "CUST_UPPER_NAME_IX",
+        "object_type": "INDEX"
+    },
+    {
+        "owner_target": "OE",
+        "object_name": "EXTRADATA886_L",
+        "object_type": "LOB"
+    },
+    {
+        "owner_target": "OE",
+        "object_name": "LINEITEM_TABLE",
+        "object_type": "TABLE"
+    },
+    {
+        "owner_target": "OE",
+        "object_name": "LINEITEM_TABLE_MEMBERS",
+        "object_type": "INDEX"
+    },
+    {
+        "owner_target": "OE",
+        "object_name": "NAMESPACES887_L",
+        "object_type": "LOB"
+    },
+    {
+        "owner_target": "OE",
+        "object_name": "PURCHASEORDER$xd",
+        "object_type": "TRIGGER"
+    }
+
+]

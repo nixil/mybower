@@ -1,0 +1,47 @@
+[
+
+    {
+        "hostname": "dm01db01.acs.oracle.com",
+        "job_description": "Create table structure",
+        "jobtype": "Table structure",
+        "pkgdone": 3,
+        "totalpkgs": 3,
+        "pct": "100.00"
+    },
+    {
+        "job_description": "Individual Table Migration",
+        "jobtype": "SAPCATECLOG_SCR",
+        "pkgdone": 3,
+        "totalpkgs": 3,
+        "pct": "100.00"
+    },
+    {
+        "job_description": "Individual Table Migration",
+        "jobtype": "SAPSR3EKKO_NONPART",
+        "pkgdone": 2,
+        "totalpkgs": 2,
+        "pct": "100.00"
+    },
+    {
+        "job_description": "Individual Table Migration",
+        "jobtype": "SAPSR3EKKO",
+        "pkgdone": 135,
+        "totalpkgs": 135,
+        "pct": "100.00"
+    },
+    {
+        "job_description": "Merge table parts into final table",
+        "jobtype": "Create final table",
+        "pkgdone": 3,
+        "totalpkgs": 3,
+        "pct": "100.00"
+    },
+    {
+        "job_description": "Re-Create table indexes",
+        "jobtype": "Create indexes",
+        "pkgdone": 16,
+        "totalpkgs": 16,
+        "pct": "100.00"
+    }
+
+]

@@ -1,0 +1,52 @@
+[
+
+    {
+        "inst_id": 1,
+        "week": "01-2014",
+        "switches": 10,
+        "weekly_churn_gb": 0
+    },
+    {
+        "inst_id": 1,
+        "week": "02-2014",
+        "switches": 16,
+        "weekly_churn_gb": 1
+    },
+    {
+        "inst_id": 1,
+        "week": "03-2014",
+        "switches": 27,
+        "weekly_churn_gb": 1
+    },
+    {
+        "inst_id": 1,
+        "week": "04-2014",
+        "switches": 28,
+        "weekly_churn_gb": 1
+    },
+    {
+        "inst_id": 1,
+        "week": "49-2013",
+        "switches": 8,
+        "weekly_churn_gb": 0
+    },
+    {
+        "inst_id": 1,
+        "week": "50-2013",
+        "switches": 45,
+        "weekly_churn_gb": 2
+    },
+    {
+        "inst_id": 1,
+        "week": "51-2013",
+        "switches": 26,
+        "weekly_churn_gb": 1
+    },
+    {
+        "inst_id": 1,
+        "week": "52-2013",
+        "switches": 6,
+        "weekly_churn_gb": 0
+    }
+
+]

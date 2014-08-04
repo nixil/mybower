@@ -1,0 +1,56 @@
+[ {
+  "id" : 1534,
+  "name" : "Authenticated-User",
+  "description" : "Logged-in User",
+  "resourceType" : null
+}, {
+  "id" : 1535,
+  "name" : "Migration-View",
+  "description" : "Migration View Privilege",
+  "resourceType" : null
+}, {
+  "id" : 1536,
+  "name" : "Life-Cycle-View",
+  "description" : "Life-Cycle View Privilege",
+  "resourceType" : null
+}, {
+  "id" : 1537,
+  "name" : "User-View",
+  "description" : "User-View Privilege",
+  "resourceType" : null
+}, {
+  "id" : 1538,
+  "name" : "User-Edit",
+  "description" : "User-Edit Privilege",
+  "resourceType" : null
+}, {
+  "id" : 1539,
+  "name" : "User-Delete",
+  "description" : "User-Delete Privilege",
+  "resourceType" : null
+}, {
+  "id" : 1540,
+  "name" : "Developer",
+  "description" : "Developer Privilege",
+  "resourceType" : null
+}, {
+  "id" : 1541,
+  "name" : "Life-Cycle-Edit",
+  "description" : "Life-Cycle Edit Privilege",
+  "resourceType" : null
+}, {
+  "id" : 1542,
+  "name" : "Life-Cycle-Delete",
+  "description" : "Life-Cycle Delete Privilege",
+  "resourceType" : null
+}, {
+  "id" : 1543,
+  "name" : "Migration-Edit",
+  "description" : "Migration Edit Privilege",
+  "resourceType" : null
+}, {
+  "id" : 1544,
+  "name" : "Migration-Delete",
+  "description" : "Migration Delete Privilege",
+  "resourceType" : null
+} ]

@@ -1,0 +1,25 @@
+[ {
+    "TIME" : "10:15",
+    "CPU_UTILIZATION" : "1"
+}, {
+    "TIME" : "10:25",
+    "CPU_UTILIZATION" : "2"
+}, {
+    "TIME" : "10:30",
+    "CPU_UTILIZATION" : "0"
+}, {
+    "TIME" : "10:35",
+    "CPU_UTILIZATION" : "10"
+}, {
+    "TIME" : "10:40",
+    "CPU_UTILIZATION" : "32"
+}, {
+    "TIME" : "10:45",
+    "CPU_UTILIZATION" : "50"
+}, {
+    "TIME" : "10:45",
+    "CPU_UTILIZATION" : "85"
+}, {
+    "TIME" : "10:50",
+    "CPU_UTILIZATION" : "80"
+} ]

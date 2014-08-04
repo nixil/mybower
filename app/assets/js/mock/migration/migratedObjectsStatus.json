@@ -1,0 +1,22 @@
+[
+
+    {
+        "object_type": "DEFAULTVALUE",
+        "total_objects_src": 2015460,
+        "total_objects_trg": 2015460,
+        "nr_diff": 0
+    },
+    {
+        "object_type": "VIEW",
+        "total_objects_src": 21285,
+        "total_objects_trg": 21285,
+        "nr_diff": 0
+    },
+    {
+        "object_type": "CONSTRAINT",
+        "total_objects_src": 2325,
+        "total_objects_trg": 2235,
+        "nr_diff": 90
+    }
+
+]

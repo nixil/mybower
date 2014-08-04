@@ -1,0 +1,130 @@
+[
+
+    {
+        "comp_id": "AMD",
+        "comp_name": "OLAP Catalog",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:32"
+    },
+    {
+        "comp_id": "APEX",
+        "comp_name": "Oracle Application Express",
+        "version": "3.2.1.00.12",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:32"
+    },
+    {
+        "comp_id": "APS",
+        "comp_name": "OLAP Analytic Workspace",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:31"
+    },
+    {
+        "comp_id": "CATALOG",
+        "comp_name": "Oracle Database Catalog Views",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:28"
+    },
+    {
+        "comp_id": "CATJAVA",
+        "comp_name": "Oracle Database Java Packages",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:29"
+    },
+    {
+        "comp_id": "CATPROC",
+        "comp_name": "Oracle Database Packages and Types",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:28"
+    },
+    {
+        "comp_id": "CONTEXT",
+        "comp_name": "Oracle Text",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:29"
+    },
+    {
+        "comp_id": "EM",
+        "comp_name": "Oracle Enterprise Manager",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:15:15"
+    },
+    {
+        "comp_id": "EXF",
+        "comp_name": "Oracle Expression Filter",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:29"
+    },
+    {
+        "comp_id": "JAVAVM",
+        "comp_name": "JServer JAVA Virtual Machine",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:29"
+    },
+    {
+        "comp_id": "ORDIM",
+        "comp_name": "Oracle Multimedia",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:31"
+    },
+    {
+        "comp_id": "OWB",
+        "comp_name": "OWB",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:32"
+    },
+    {
+        "comp_id": "OWM",
+        "comp_name": "Oracle Workspace Manager",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:28"
+    },
+    {
+        "comp_id": "RUL",
+        "comp_name": "Oracle Rules Manager",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:31"
+    },
+    {
+        "comp_id": "SDO",
+        "comp_name": "Spatial",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:32"
+    },
+    {
+        "comp_id": "XDB",
+        "comp_name": "Oracle XML Database",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:29"
+    },
+    {
+        "comp_id": "XML",
+        "comp_name": "Oracle XDK",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:29"
+    },
+    {
+        "comp_id": "XOQ",
+        "comp_name": "Oracle OLAP API",
+        "version": "11.2.0.2.0",
+        "status": "VALID",
+        "modified": "05-SEP-2010 06:23:31"
+    }
+
+]

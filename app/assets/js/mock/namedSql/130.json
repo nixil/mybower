@@ -1,0 +1,8 @@
+{
+    "id" : 130,
+    "name" : "sample",
+    "sql" : "SELECT TIME,CPU_UTILIZATION,MEMORY_UTILIZATION FROM TIME_REPORT",
+    "dataSourceJNDI" : "jdbc/portal",
+    "privileges" : [ ],
+    "paramList" : [ ]
+}

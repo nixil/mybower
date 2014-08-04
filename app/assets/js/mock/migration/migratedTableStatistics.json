@@ -1,0 +1,179 @@
+[
+
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "KTEST",
+        "row_count_src": 499999,
+        "row_count_trg": 499999
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "KTEST_NEW",
+        "row_count_src": 499999,
+        "row_count_trg": 499999
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "TEST101",
+        "row_count_src": 5,
+        "row_count_trg": 5
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "X",
+        "row_count_src": 1,
+        "row_count_trg": 1
+    },
+    {
+        "owner_source": "JHOBSON",
+        "owner_target": "JHOBSON",
+        "table_name": "Y",
+        "row_count_src": 1,
+        "row_count_trg": 1
+    },
+    {
+        "owner_source": "LPANA",
+        "owner_target": "LPANA",
+        "table_name": "/BA1/F2_TAB_POSV",
+        "row_count_src": 0,
+        "row_count_trg": 0
+    },
+    {
+        "owner_source": "LPANA",
+        "owner_target": "LPANA",
+        "table_name": "AAA",
+        "row_count_src": 398331,
+        "row_count_trg": 398331
+    },
+    {
+        "owner_source": "LPANA",
+        "owner_target": "LPANA",
+        "table_name": "TEST_TABLE",
+        "row_count_src": 96808,
+        "row_count_trg": 96808
+    },
+    {
+        "owner_source": "OE",
+        "owner_target": "<trgown>",
+        "table_name": "CUSTOMERS",
+        "row_count_src": 319,
+        "row_count_trg": -12
+    },
+    {
+        "owner_source": "OE",
+        "owner_target": "<trgown>",
+        "table_name": "PURCHASEORDER",
+        "row_count_src": 132,
+        "row_count_trg": -12
+    },
+    {
+        "owner_source": "OE",
+        "owner_target": "<trgown>",
+        "table_name": "WAREHOUSES",
+        "row_count_src": 9,
+        "row_count_trg": -12
+    },
+    {
+        "owner_source": "OE",
+        "owner_target": "OE",
+        "table_name": "CATEGORIES_TAB",
+        "row_count_src": 22,
+        "row_count_trg": 22
+    },
+    {
+        "owner_source": "OE",
+        "owner_target": "OE",
+        "table_name": "INVENTORIES",
+        "row_count_src": 1112,
+        "row_count_trg": 1112
+    },
+    {
+        "owner_source": "OE",
+        "owner_target": "OE",
+        "table_name": "ORDERS",
+        "row_count_src": 105,
+        "row_count_trg": 105
+    },
+    {
+        "owner_source": "OE",
+        "owner_target": "OE",
+        "table_name": "ORDER_ITEMS",
+        "row_count_src": 665,
+        "row_count_trg": 665
+    },
+    {
+        "owner_source": "OE",
+        "owner_target": "OE",
+        "table_name": "PRODUCT_DESCRIPTIONS",
+        "row_count_src": 8640,
+        "row_count_trg": 8640
+    },
+    {
+        "owner_source": "OE",
+        "owner_target": "OE",
+        "table_name": "PRODUCT_INFORMATION",
+        "row_count_src": 288,
+        "row_count_trg": 288
+    },
+    {
+        "owner_source": "OE",
+        "owner_target": "OE",
+        "table_name": "PRODUCT_REF_LIST_NESTEDTAB",
+        "row_count_src": 288,
+        "row_count_trg": 288
+    },
+    {
+        "owner_source": "OE",
+        "owner_target": "OE",
+        "table_name": "PROMOTIONS",
+        "row_count_src": 2,
+        "row_count_trg": 2
+    },
+    {
+        "owner_source": "OE",
+        "owner_target": "OE",
+        "table_name": "SUBCATEGORY_REF_LIST_NESTEDTAB",
+        "row_count_src": 21,
+        "row_count_trg": 21
+    },
+    {
+        "owner_source": "OPS$EDUADM",
+        "owner_target": "OPS$EDUADM",
+        "table_name": "SAPUSER",
+        "row_count_src": 1,
+        "row_count_trg": 1
+    },
+    {
+        "owner_source": "PM",
+        "owner_target": "<trgown>",
+        "table_name": "ONLINE_MEDIA",
+        "row_count_src": 9,
+        "row_count_trg": -12
+    },
+    {
+        "owner_source": "PM",
+        "owner_target": "PM",
+        "table_name": "PRINT_MEDIA",
+        "row_count_src": 4,
+        "row_count_trg": 4
+    },
+    {
+        "owner_source": "PM",
+        "owner_target": "PM",
+        "table_name": "TEXTDOCS_NESTEDTAB",
+        "row_count_src": 12,
+        "row_count_trg": 12
+    },
+    {
+        "owner_source": "POST",
+        "owner_target": "POST",
+        "table_name": "COUNTIES",
+        "row_count_src": 119,
+        "row_count_trg": 119
+    }
+
+]

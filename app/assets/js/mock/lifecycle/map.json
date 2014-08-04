@@ -1,0 +1,44 @@
+{
+  "properties" : [{
+    "id" : 3,
+    "engagementId" : 1,
+    "scope" : "SOURCE",
+    "name" : "HOST_GUID",
+    "value" : "699FA65A6B811686F41CB1A19CDFE483",
+    "dateValue" : null,
+    "refId" : "579D5694B3479650E3F5A0E804525F28"
+  }, {
+    "id" : 4,
+    "engagementId" : 1,
+    "scope" : "SOURCE",
+    "name" : "HOST_GUID",
+    "value" : "699FA65A6B811686F41CB1A19CDFE484",
+    "dateValue" : null,
+    "refId" : "579D5694B3479650E3F5A0E804525F29"
+  }, {
+    "id" : 5,
+    "engagementId" : 1,
+    "scope" : "DESTINATION",
+    "name" : "HOST_GUID",
+    "value" : "699FA65A6B811686F41CB1A19CDFE493",
+    "dateValue" : null,
+    "refId" : "9C65"
+  }, {
+    "id" : 7,
+    "engagementId" : 1,
+    "scope" : "SOURCE",
+    "name" : "PINNED_DESTN_GUID",
+    "value" : "9C65",
+    "dateValue" : null,
+    "refId" : "579D5694B3479650E3F5A0E804525F28"
+  } ],
+  "engagementId" : 1,
+  "serviceId" : 1,
+  "description" : "Test Consolidation Service",
+  "title" : "Test Consolidation Service Title",
+  "status" : "Scoped",
+  "createBy" : "admin",
+  "createDate" : 1398623400000,
+  "lastModifyBy" : null,
+  "lastModifyDate" : 1398623400000
+}

@@ -1,0 +1,35 @@
+[{
+        "properties": [{
+                "id": 1,
+                "scenarioId": 1,
+                "scope": "SCENARIO",
+                "name": "FEEDBACK_LEVEL",
+                "value": "1",
+                "refId": null
+            }],
+        "scenarioId": 1,
+        "engagementId": 1,
+        "status": "New",
+        "description": "Test Scenario1",
+        "createBy": "admin",
+        "createDate": 1398017843000,
+        "lastModifyBy": null,
+        "lastModifyDate": null
+    }, {
+        "properties": [{
+                "id": 2,
+                "scenarioId": 2,
+                "scope": "SCENARIO",
+                "name": "FEEDBACK_LEVEL",
+                "value": "2",
+                "refId": null
+            }],
+        "scenarioId": 2,
+        "engagementId": 2,
+        "status": "New",
+        "description": "Test Scenario1",
+        "createBy": "admin",
+        "createDate": 1387918600000,
+        "lastModifyBy": null,
+        "lastModifyDate": null
+    }]

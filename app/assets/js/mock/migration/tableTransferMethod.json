@@ -1,0 +1,5 @@
+[
+    {"RESULT_VALUE":"16570","RESULT_TEXT":"Tables by bulk export/ import:"},
+    {"RESULT_VALUE":"209","RESULT_TEXT":"Tables by separate scripts"},
+    {"RESULT_VALUE":"115","RESULT_TEXT":"Tables by datapump"}
+]

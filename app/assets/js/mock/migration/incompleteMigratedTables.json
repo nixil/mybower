@@ -1,0 +1,179 @@
+[
+
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_G",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_G",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_G",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_H",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_H",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_H",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_I",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_I",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_I",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_L",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_L",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_L",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_S",
+        "owner_target": "<trgown>",
+        "row_count_src": 4,
+        "row_count_trg": -12,
+        "nr_diff": 16
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_S",
+        "owner_target": "<trgown>",
+        "row_count_src": 4,
+        "row_count_trg": -12,
+        "nr_diff": 16
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_S",
+        "owner_target": "<trgown>",
+        "row_count_src": 4,
+        "row_count_trg": -12,
+        "nr_diff": 16
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_T",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_T",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_ORDERS_QUEUETABLE_T",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_STREAMS_QUEUE_TABLE_C",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_STREAMS_QUEUE_TABLE_C",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_STREAMS_QUEUE_TABLE_C",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_STREAMS_QUEUE_TABLE_G",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_STREAMS_QUEUE_TABLE_G",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_STREAMS_QUEUE_TABLE_G",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    },
+    {
+        "table_name_diff": "AQ$_STREAMS_QUEUE_TABLE_H",
+        "owner_target": "<trgown>",
+        "row_count_src": 0,
+        "row_count_trg": -12,
+        "nr_diff": 12
+    }
+
+]

@@ -1,0 +1,75 @@
+[ {
+  "properties" : [ {
+    "id" : 1,
+    "engagementId" : 1,
+    "scope" : "ENGAGEMENT",
+    "name" : "CONTRACT_ID",
+    "value" : "100",
+    "refId" : null
+  } ],
+  "engagementId" : 1,
+  "serviceId" : 1,
+  "description" : "Test Engagements1",
+  "title" : "Title1",
+  "status" : "In Progress",
+  "createBy" : "admin",
+  "createDate" : 1398018600000,
+  "lastModifyBy" : null,
+  "lastModifyDate" : null
+}, {
+  "properties" : [ {
+    "id" : 2,
+    "engagementId" : 4,
+    "scope" : "ENGAGEMENT",
+    "name" : "CONTRACT_ID",
+    "value" : "101",
+    "refId" : null
+  } ],
+  "engagementId" : 4,
+  "serviceId" : 1,
+  "description" : "Test Engagements2",
+  "title" : "Title2",
+  "status" : "New",
+  "createBy" : "admin",
+  "createDate" : 1398018600000,
+  "lastModifyBy" : null,
+  "lastModifyDate" : null
+},
+{
+  "properties" : [ {
+    "id" : 2,
+    "engagementId" : 2,
+    "scope" : "ENGAGEMENT",
+    "name" : "CONTRACT_ID",
+    "value" : "101",
+    "refId" : null
+  } ],
+  "engagementId" : 2,
+  "serviceId" : 1,
+  "description" : "Test Engagements3",
+  "title" : "Title2",
+  "status" : "Scoped",
+  "createBy" : "admin",
+  "createDate" : 1398018600000,
+  "lastModifyBy" : null,
+  "lastModifyDate" : null
+},
+{
+  "properties" : [ {
+    "id" : 3,
+    "engagementId" : 3,
+    "scope" : "ENGAGEMENT",
+    "name" : "CONTRACT_ID",
+    "value" : "101",
+    "refId" : null
+  } ],
+  "engagementId" : 3,
+  "serviceId" : 1,
+  "description" : "Test Engagements4",
+  "title" : "Title2",
+  "status" : "Complete",
+  "createBy" : "admin",
+  "createDate" : 1398018600000,
+  "lastModifyBy" : null,
+  "lastModifyDate" : null
+} ]

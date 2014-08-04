@@ -1,0 +1,9 @@
+[
+
+    {
+        "phase_name": "Data Preparation phase",
+        "value": "0 days 1 hrs 49 mins",
+        "description": "This phase includes all steps needed to prepare the destination database for the migration."
+    }
+    
+]

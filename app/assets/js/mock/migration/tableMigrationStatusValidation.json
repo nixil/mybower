@@ -1,0 +1,28 @@
+[
+
+    {
+        "database_name": "O2OEXA11",
+        "migration_started": "25Sep2013 15:38:26",
+        "text": "Fully migrated tables",
+        "category": "complete",
+        "tables_cnt": 17310,
+        "tables_pct": 90.84
+    },
+    {
+        "database_name": "O2OEXA11",
+        "migration_started": "25Sep2013 15:38:26",
+        "text": "Incomplete migrated tables",
+        "category": "incomplete",
+        "tables_cnt": 27,
+        "tables_pct": 20.16
+    },
+    {
+        "database_name": "O2OEXA11",
+        "migration_started": "25Sep2013 15:38:26",
+        "text": "Total number of tables",
+        "category": "total",
+        "tables_cnt": 17337,
+        "tables_pct": 100
+    }
+
+]

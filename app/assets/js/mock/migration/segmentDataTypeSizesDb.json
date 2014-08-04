@@ -1,0 +1,8 @@
+[{"segment_type":"INDEX","segment_size_gb":0.09307861328125},
+ {"segment_type":"INDEX PARTITION","segment_size_gb":0.0103759765625},
+ {"segment_type":"LOBINDEX","segment_size_gb":0.00848388671875},
+ {"segment_type":"LOBSEGMENT","segment_size_gb":0.06292724609375},
+ {"segment_type":"NESTED TABLE","segment_size_gb":0.000732421875},
+ {"segment_type":"TABLE","segment_size_gb":0.17071533203125},
+ {"segment_type":"TABLE PARTITION","segment_size_gb":0.25}
+]

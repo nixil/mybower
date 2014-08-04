@@ -1,0 +1,8 @@
+{
+  "id" : 131,
+  "name" : "cpu_only",
+  "sql" : "SELECT TIME,CPU_UTILIZATION FROM TIME_REPORT",
+  "dataSourceJNDI" : "jdbc/portal",
+  "privileges" : [ ],
+  "paramList" : [ ]
+}

@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "guid": "roosevelt.lai@oracle.com",
+        "firstName": "Roosevelt",
+        "lastName": "Lai",
+        "status": 1,
+        "roles": "admin,root,customer"
+    },
+    {
+        "id": 2,
+        "guid": "michael.seminaro@oracle.com",
+        "firstName": "Michael",
+        "lastName": "Seminaro",
+        "status": 1,
+        "roles": "root,user"
+    },
+    {
+        "id": 3,
+        "guid": "ellen.tice@oracle.com",
+        "firstName": "Ellen",
+        "lastName": "Tice",
+        "status": 0,
+        "roles": "customer,user"
+    },
+    {
+        "id": 4,
+        "guid": "shawn.ferry@oracle.com",
+        "firstName": "Shawn",
+        "lastName": "Ferry",
+        "status": 1,
+        "roles": "guest"
+    }
+
+]

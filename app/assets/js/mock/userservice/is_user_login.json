@@ -1,0 +1,311 @@
+{
+    "username": "test",
+    "routes": [
+        {
+            "path": "#/myservices",
+            "verb": "get",
+            "templateNamePath": "monitors/my_monitor_services",
+            "viewModelNamePath": "modules/monitors/my_monitor_services",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "View",
+            "menu": "My Services"
+        },
+        {
+            "path": "#/lifecycle/commonDashboard",
+            "verb": "get",
+            "templateNamePath": "lifecycle/common_dashboard",
+            "viewModelNamePath": "modules/lifecycle/common_dashboard",
+            "beforeRoutingAction": "beforeRoutingAction",
+            "afterRoutingAction": null,
+            "privilege": "Life-Cycle-View",
+            "menu": "Lifecycle Dashboard"
+        },
+        {
+            "path": "#/migration/analysis",
+            "verb": "get",
+            "templateNamePath": "migration/analysis",
+            "viewModelNamePath": "modules/migration/analysis",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "Remove",
+            "menu": null
+        },
+        {
+            "path": "#/migration/analysis",
+            "verb": "get",
+            "templateNamePath": "migration/analysis",
+            "viewModelNamePath": "modules/migration/analysis",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "Remove",
+            "menu": null
+        },
+        {
+            "path": "#/migration/migration_status",
+            "verb": "get",
+            "templateNamePath": "migration/migration_status",
+            "viewModelNamePath": "modules/migration/migration_status",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "Remove",
+            "menu": null
+        },
+        {
+            "path": "#/migration/migration_run",
+            "verb": "get",
+            "templateNamePath": "migration/migration_run",
+            "viewModelNamePath": "modules/migration/migration_run",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "Remove",
+            "menu": null
+        },
+        {
+            "path": "#/lifecycle/serviceDashboard",
+            "verb": "get",
+            "templateNamePath": "lifecycle/service_dashboard",
+            "viewModelNamePath": "modules/lifecycle/service_dashboard",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "Migration-View",
+            "menu": null
+        },
+     
+        {
+            "path": "#/migration/migration_engagement",
+            "verb": "get",
+            "templateNamePath": "migration/migration_engagement",
+            "viewModelNamePath": "modules/migration/migration_engagement",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "Remove",
+            "menu": null
+        },
+        {
+            "path": "#/monitors/sads",
+            "verb": "get",
+            "templateNamePath": "monitors/service_access_definitions",
+            "viewModelNamePath": "modules/monitors/service_access_definitions",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "edit-sads",
+            "menu": "Monitoring | Service Access Definition"
+        },
+        {
+            "path": "#/monitors/probes",
+            "verb": "get",
+            "templateNamePath": "monitors/probes",
+            "viewModelNamePath": "modules/monitors/probes",
+            "beforeRoutingAction": "beforeRoutingAction",
+            "afterRoutingAction": null,
+            "privilege": "view-probes",
+            "menu": "Monitoring | Probes"
+        },
+        {
+            "path": "#/monitors/create_probes",
+            "verb": "get",
+            "templateNamePath": "monitors/edit_probe",
+            "viewModelNamePath": "modules/monitors/probes",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "edit-probes",
+            "menu": null
+        },
+        {
+            "path": "#/monitors/save_probes",
+            "verb": "get",
+            "templateNamePath": "monitors/probes",
+            "viewModelNamePath": "modules/monitors/probes",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "edit-probes",
+            "menu": null
+        },
+        {
+            "path": "#/monitors/filtersets",
+            "verb": "get",
+            "templateNamePath": "monitors/probes",
+            "viewModelNamePath": "modules/monitors/probes",
+            "beforeRoutingAction": "beforeRoutingAction",
+            "afterRoutingAction": null,
+            "privilege": "view-probes",
+            "menu": "Monitoring | FilterSet | Manage FilterSet"
+        },
+        {
+            "path": "#/monitors/assign_filterset",
+            "verb": "get",
+            "templateNamePath": "monitors/probes",
+            "viewModelNamePath": "modules/monitors/probes",
+            "beforeRoutingAction": "beforeRoutingAction",
+            "afterRoutingAction": null,
+            "privilege": "view-probes",
+            "menu": "Monitoring | FilterSet | Assign FilterSet"
+        },
+        {
+            "path": "#/users/users",
+            "verb": "get",
+            "viewModelNamePath": "modules/users/user_management",
+            "beforeRoutingAction": "beforeRoutingAction",
+            "afterRoutingAction": null,
+            "privilege": "view-probes",
+            "menu": "Settings | User Management"
+        },
+        {
+            "path": "#/developer/guide",
+            "verb": "get",
+            "templateNamePath": "developer/style_guide",
+            "viewModelNamePath": "modules/developer/style_guide",
+            "afterRenderAction": "afterRender",
+            "menu": "Developer | Style Guide"
+        },
+        {
+            "path": "#/developer/chart_builder",
+            "verb": "get",
+            "templateNamePath": "developer/chart_builder",
+            "viewModelNamePath": "modules/developer/chart_builder",
+            "afterRenderAction": "afterRender",
+            "menu": "Developer | Chart Builder"
+        },
+        {
+            "path": "#/migration/migration_service",
+            "verb": "get",
+            "templateNamePath": "migration/migration_service",
+            "viewModelNamePath": "modules/migration/migration_service",
+            "menu": "Developer | Test Page"
+        },
+        {
+            "path": "#/migration/migration_service2",
+            "verb": "get",
+            "templateNamePath": "migration/migration_service2",
+            "viewModelNamePath": "modules/migration/migration_service2",
+            "menu": "Developer | Test Page 2"
+        },
+        {
+            "path": "#/developer/sql_chart",
+            "verb": "get",
+            "templateNamePath": "developer/sql_chart",
+            "viewModelNamePath": "modules/developer/sql_chart",
+            "beforeRoutingAction": "beforeRoutingAction",
+            "menu": "Developer | SQL Chart"
+        },
+        {
+            "path": "#/developer/samples/date",
+            "verb": "get",
+            "templateNamePath": "developer/samples/date",
+            "viewModelNamePath": "modules/developer/date",
+            "menu": "Developer | Sample Pages | Date Picker"
+        },
+        {
+            "path": "#/developer/sql/list",
+            "verb": "get",
+            "templateNamePath": "developer/named_sql/sql_management",
+            "viewModelNamePath": "modules/developer/named_sql/sql_management",
+            "beforeRoutingAction": "beforeList",
+            "privilege": "Developer",
+            "menu": "Developer | Named SQL Manager"
+        },
+        {
+            "path": "#/developer/sql/:id",
+            "verb": "get",
+            "templateNamePath": "developer/named_sql/edit_named_sql",
+            "viewModelNamePath": "modules/developer/named_sql/sql_management",
+            "beforeRoutingAction": "beforeEdit",
+            "privilege": "Developer",
+            "animation": "slide"
+        },
+        {
+            "path": "#/developer/sql/test/:id",
+            "verb": "get",
+            "templateNamePath": "developer/named_sql/test",
+            "viewModelNamePath": "modules/developer/named_sql/sql_management",
+            "beforeRoutingAction": "beforeTest",
+            "afterRenderAction": "afterRender",
+            "animation": "slide",
+            "privilege": "Developer"
+        },
+        {
+            "path": "#/lifecycle/tam-admin",
+            "verb": "get",
+            "templateNamePath": "/lifecycle/tam-admin",
+            "viewModelNamePath": "modules/lifecycle/tam-admin",
+            "beforeRoutingAction": "beforeRoutingAction",
+            "afterRoutingAction": null,
+            "privilege": "Developer",
+            "menu": "Admin"
+        },
+        {
+            "path": "#/lifecycle/engagement",
+            "verb": "get",
+            "templateNamePath": "/lifecycle/engagement",
+            "viewModelNamePath": "modules/lifecycle/tam-admin",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "Developer",
+            "menu": null
+        },
+        {
+            "path": "#/lifecycle/scenarioConfig",
+            "verb": "get",
+            "templateNamePath": "lifecycle/scenario_config",
+            "viewModelNamePath": "modules/lifecycle/scenario_config",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "View",
+            "menu": null
+        },
+        {
+            "path": "#/lifecycle/scenario",
+            "verb": "get",
+            "templateNamePath": "/lifecycle/createScenario",
+            "viewModelNamePath": "modules/lifecycle/tam-admin",
+            "beforeRoutingAction": null,
+            "afterRoutingAction": null,
+            "privilege": "Developer",
+            "menu": null
+        },
+        {
+            "path": "#/lifecycle/performance_tuning",
+            "verb": "get",
+            "templateNamePath": "/lifecycle/pref_tunning_scope",
+            "viewModelNamePath": "modules/lifecycle/scenario_scope",
+            "beforeRoutingAction": "beforeRoutingAction",
+            "afterRoutingAction": null,
+            "privilege": "Life-Cycle-View"
+        },
+        {
+            "path": "#/lifecycle/load_testing",
+            "verb": "get",
+            "templateNamePath": "/lifecycle/load_test_scope",
+            "viewModelNamePath": "modules/lifecycle/scenario_scope",
+            "beforeRoutingAction": "beforeRoutingAction",
+            "afterRoutingAction": null,
+            "privilege": "Life-Cycle-View"
+        },
+        {
+            "path": "#/lifecycle/consolidation",
+            "verb": "get",
+            "templateNamePath": "/lifecycle/consolidation_plan_scope",
+            "viewModelNamePath": "modules/lifecycle/scenario_scope",
+            "beforeRoutingAction": "beforeRoutingAction",
+            "afterRoutingAction": null,
+            "privilege": "Life-Cycle-View"
+        },
+        {
+            "path": "#/lifecycle/migration",
+            "verb": "get",
+            "templateNamePath": "/lifecycle/migration_scope",
+            "viewModelNamePath": "modules/lifecycle/scenario_scope",
+            "beforeRoutingAction": "beforeRoutingAction",
+            "afterRoutingAction": null,
+            "privilege": "Life-Cycle-View"
+        }
+
+
+    ],
+    "userid": "test@oracle.com",
+    "timezone": "America/Los_Angeles",
+    "dateformat": "MM-DD-YYYY",
+    "timeformat": "hh:mm:ss a Z",
+    "isloggedin": true
+}

@@ -1,0 +1,37 @@
+[ {
+  "renderMappingsTab" : "Y",
+  "serviceId" : "1",
+  "description" : "Cloud Database Consolidation Modelling",
+  "serviceCode" : "MOD",
+  "destinationTargetTypes" : "host"
+}, {
+  "renderMappingsTab" : "Y",
+  "serviceId" : "2",
+  "description" : "Cloud Database Migration",
+  "serviceCode" : "MIG",
+  "destinationTargetTypes" : "host"
+}, {
+  "renderMappingsTab" : "N",
+  "serviceId" : "3",
+  "description" : "Performance and Benchmarking",
+  "serviceCode" : "PRF",
+  "destinationTargetTypes" : "undef"
+}, {
+  "renderMappingsTab" : "N",
+  "serviceId" : "4",
+  "description" : "Load Testing and Analysis",
+  "serviceCode" : "LTA",
+  "destinationTargetTypes" : "undef"
+}, {
+  "renderMappingsTab" : "N",
+  "serviceId" : "5",
+  "description" : "Performance Assessment (Fixed Scope)",
+  "serviceCode" : "PFS",
+  "destinationTargetTypes" : "undef"
+}, {
+  "renderMappingsTab" : "N",
+  "serviceId" : "6",
+  "description" : "Cloud Systems Consolidation Modelling and Migration",
+  "serviceCode" : "ACS",
+  "destinationTargetTypes" : "undef"
+} ]
