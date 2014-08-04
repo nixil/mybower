@@ -114,31 +114,33 @@ define(['jquery', 'knockout', 'acs-nav', 'modules/common/user',
                 return foundItem;
             }
 
-
-            //data array for holding the menu
-//            this.menuItems = [];
-
             this.menuItems = ko.observableArray([
                 {
-                    url: '#/myservices',
-                    menuText: 'My Services',
-                    submenus: [],
-                    icon:'fa-code'
-                },
-                {
-                    url: '#/monitors/sads',
-                    menuText: 'Monitors',
+                    url: '#',
+                    menuText: 'Developer Guide',
                     icon:'fa-code',
                     submenus: [
                         {
-                            url: '#/monitors/sads',
-                            menuText: 'Service Access Definitions',
+                            url: '#/developer/style_guide',
+                            menuText: 'Date Picker',
+                            submenus: [],
+                            icon:'fa-calendar'
+                        },
+                        {
+                            url: '#/',
+                            menuText: 'Data Grid',
+                            submenus: [],
+                            icon:'fa-calendar'
+                        },
+                        {
+                            url: '#',
+                            menuText: 'Layouts',
                             submenus: [],
                             icon:'fa-code'
                         },
                         {
-                            url: '/monitors/probes',
-                            menuText: 'Probes',
+                            url: '#',
+                            menuText: 'Notification',
                             submenus: [],
                             icon:'fa-code'
                         }
