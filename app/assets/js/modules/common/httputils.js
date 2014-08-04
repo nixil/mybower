@@ -46,7 +46,7 @@ define(['jquery', 'debug_option', 'modules/common/dialog-utils', 'modules/common
 
             if ( url && (/^rest\//).test(url) ) {
 
-                url = url.replace(/rest/, 'js/mock') + '.json';
+                url = url.replace(/rest/, '/assets/js/mock') + '.json';
 
             }
 

@@ -168,8 +168,8 @@ define(['jquery', 'knockout', 'moment-timezone', 'modules/common/user', 'moment-
                 function(i, v){self.availableTimeFormats.push(new Choice(now.format(v), v))});
 
             self.availableTimeZones = ko.observableArray();
-            $.each(moment.tz.zones(),
-                function(i, v){self.availableTimeZones.push(v.displayName)});
+//            $.each(moment.tz.zones(),
+//                function(i, v){self.availableTimeZones.push(v.displayName)});
         };
 
         return new DateUtil();

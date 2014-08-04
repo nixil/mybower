@@ -14,7 +14,7 @@ define(['jquery', 'knockout', 'google-code-prettify', 'date-util', 'modules/comm
 
         self.userList = ko.observableArray(null);
 
-        $.getJSON("js/mock/usermgmtservice/list.json",
+        $.getJSON("/assets/js/mock/usermgmtservice/list.json",
             function (data) {
               self.userList(data);
             }

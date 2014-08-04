@@ -157,6 +157,19 @@ define(['jquery', 'knockout', 'app', 'sammy', 'modules/common/user'],
     
             /* define the common routes for all users */
             self.routes = new sammy(function () {
+
+                this.get("#/developer/style_guide",function(){
+                    var style_guide_model = 'modules/developer/style_guide';
+                    require([style_guide_model], function (style_guide_model) {
+                        app.template({
+                           pageTemplate: 'developer/style_guide',
+                           templateData: style_guide_model,
+                           doPostRenderLogic: function(){
+                               console.log("doPostRenderLogic");
+                           }
+                        });
+                    });
+                });
     
                 /* login action */
                 this.get('#/login', function() {
