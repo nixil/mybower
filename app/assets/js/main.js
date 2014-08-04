@@ -29,7 +29,7 @@ requirejs.config({
         'date-util': 'modules/common/date-util',
         'moment': '/bower_components/moment/min/moment.min',
         'moment-timezone': '/bower_components/moment-timezone/builds/moment-timezone.min',
-        // 'moment-timezone-data': 'lib/moment/moment-timezone-data',
+        'moment-timezone-data': '/lib/moment-timezone-data/moment-timezone-data',
         'kogrid': '/bower_components/koGrid/koGrid-2.0.6',
 
         //these are javascript code for styling need
@@ -130,6 +130,7 @@ requirejs.config({
 
                 /* load the default page no prior url */
                 routes.runDefault(window.location.hash);
+
 
                 // //check if user is logged
                 // validation.isLoggedIn(

@@ -118,7 +118,7 @@ define(['jquery', 'knockout', 'acs-nav', 'modules/common/user',
                 {
                     url: '#',
                     menuText: 'Developer Guide',
-                    icon:'fa-code',
+                    icon:'fa-sitemap',
                     submenus: [
                         {
                             url: '#/developer/style_guide',
