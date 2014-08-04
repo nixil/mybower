@@ -18,7 +18,6 @@
     "knockout": "https://github.com/knockout/knockout.git#3.2.0-beta",
     "knockout-validation": "https://github.com/Knockout-Contrib/Knockout-Validation.git",
     "koGrid": "https://github.com/Knockout-Contrib/KoGrid.git",
-    "express": "*",
     "eonasdan-bootstrap-datetimepicker": "~3.0.0",
     "metisMenu": "~1.1.1",
     "pnotify": "~2.0.1",
